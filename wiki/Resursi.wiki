@@ -1,4 +1,4 @@
-#summary Linkovi i materijalni zgodni za naš projekat
+#summary Linkovi i materijali zgodni za naš projekat
 
 *Managed Library for Nintendo's Wiimote*, kratko WiimoteLib. Odavo može biti odličam izvor koda, primera i/ili ideja, u zavisnosti od puta koji izaberemo.
 http://www.codeplex.com/WiimoteLib
