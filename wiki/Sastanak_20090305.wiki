@@ -1,0 +1,29 @@
+#summary Sastanak petog maja 2009.
+
+= Termin: 16h kod Veljka=
+
+Ovo će biti naš prvi zajednički radni sastanak. Sastajemo se u *16h* kod Veljka, a posle *18h* prelazimo kod Danila koji živi u blizini i ima veći stan. :)
+Svi članovi tima pozvani su da dođu, kako bi smo se dogovorili oko što većeg broja stvari.
+
+
+= Teme sastanka =
+
+Neke od tema koje ćemo pokrenuti biće:
+  * Uvod u korišćene tehnologije
+  * Podela hardvera/Wiimote-a
+  * Dogovor oko podele prvih poslova
+
+Planira se takođe kraća _hacking_ sesija, tj. početak rada na projektu. Ko ima neka ponese laptop. Poželjno je imati instaliran Visual C# i poneti kraći ethernet kabel.
+
+== Adrese ==
+*Veljko*: Novaka Radonjica 59/12
+
+*Danilo*: Cara Lazara 108, 5. sprat, stan 30
+
+Možete ih naći ovde:
+http://www.planplus.co.yu/?lang=en-us
+
+= Rezultati =
+Opis i zaključke sa sastanka možemo opisati ovde
+
+
