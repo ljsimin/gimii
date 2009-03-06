@@ -4,6 +4,7 @@
 
 Testirani su sledeći Bluetooth stekovi:
 -Windows XP default stack (SP2 i SP3)
+
 -Widcom
 
 
