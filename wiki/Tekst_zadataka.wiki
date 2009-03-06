@@ -8,7 +8,7 @@ Originalan tekst:
 
 Teme izučavanja Wii kontrolera 
 
-Wii kontroler kao 3D pointerski uređaj (svaki zadatak po 1 izvršioc):
+*Wii kontroler kao 3D pointerski uređaj (svaki zadatak po 1 izvršioc):*
 
 
 1. API za upotrebu Wii kontrolera kao 3D pointerskog uređaja pri čemu se oslanja na interni senzor 3D pokreta. Omogućiti simuliranje jednostrukog i dvostrukog klika, drag&drop. Diskusija o osetljivosti ovakve implementacije. Ilustracioni program.
@@ -20,7 +20,7 @@ Wii kontroler kao 3D pointerski uređaj (svaki zadatak po 1 izvršioc):
 Obe teme moraju podržati i tastere kontrolera i zvučnika. 
  
 
-Wii kontroler za tracking (svaki zadatak po 3 izvršioca): 
+*Wii kontroler za tracking (svaki zadatak po 3 izvršioca): *
 
 
 1. API za upotrebu Wii kontrolera za praćenje olovke kojoj je ugrađena IR dioda (napravljen je hardver). Ilustracija APIja sa jednostavnim PAINT programom po projekcionoj površini. Omogućiti simuliranje jednostrukog i dvostrukog klika, drag&drop.
