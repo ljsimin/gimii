@@ -1,0 +1,9 @@
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Form1.resources
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Properties.Resources.resources
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
