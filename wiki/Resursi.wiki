@@ -2,3 +2,9 @@
 
 *Managed Library for Nintendo's Wiimote*, kratko WiimoteLib. Ovo može biti odličam izvor koda, primera i/ili ideja, u zavisnosti od puta koji izaberemo.
 http://www.codeplex.com/WiimoteLib
+
+*GlovePIE* PIE stands for programmable input emulator. Emulira drajver miša, tastature, džojstika i jos nekih stvari. Kao ulaz može da koristi wiimote. Mapiranje se radi pisanjem skripta sa izuzetno jednostavnom sintaksom. Može biti korisno za testiranje nekih ideja/mogućnosti kontrolera.
+
+http://www.wiili.org/GlovePIE
+
+http://carl.kenner.googlepages.com/glovepie
