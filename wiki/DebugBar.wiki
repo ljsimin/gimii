@@ -2,12 +2,13 @@
 
 = Uvod =
 
-Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR svetlosti promenljivog rasporeda dioda, koji po mogućstvu ne troši baterije. Ovde razmatramo dizajn i cenu jednog !SenzorBar-a koji bi mogli napraviti sami. Nazvaćemo ga DebugBar
+Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR svetlosti promenljivog rasporeda dioda, koji po mogućstvu ne troši baterije. Ovde razmatramo dizajn i cenu jednog !SenzorBar-a koji bi mogli napraviti sami. Nazvaćemo ga !DebugBar
 
 
 = Potrebne karakteristike =
+  * Promenljiv raspored dioda - mogućnost paljenja i gašenja individualnih dioda po potrebi
+  * Mogućnost napajanja iz "žičnog" izvora napona, npr USB ili zidni utikač
+  * Opciono mogućnost baterijskog napajanja
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Cene komponenti = 
+  * IR LED 15din komad
