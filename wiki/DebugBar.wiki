@@ -15,7 +15,7 @@ Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR sv
   * *Bušena tabla* oko 80 din, nije nužna
   * *USB konektor* 20-30 din, ako koristimo napajanje preko USB-a
   * *DC konektor* 15 din, ako koristimo DC napajanje
-  * *Metar flat kabla* oko 100+ dinara, nije nužno, olakšava posao
+  * *Metar flat kabla* oko 100+ dinara, nije nužan, olakšava posao
   * *Metar UTP kabla*, 25 din, ako ne koristimo flat kabel
   * *Regulator napona* 25 din, ako koristimo DC napon
   * *Otpornici* <20 din ukupno
