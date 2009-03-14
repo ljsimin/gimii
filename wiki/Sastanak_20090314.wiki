@@ -10,3 +10,13 @@
   * Generalni dogovori i podela rada
 
 *Ko god može neka ponese laptop i neku stolicu za rasklapanje, ako ima.*
+
+= Rezime sastanka =
+Testirali smo emulaciju miša preko programa GlovePie i zaključili da radi "dovoljno dobro".
+Podelili smo međusobno nekoliko zadataka:
+  * Veljko piše prototip rešenja emulacije miša preko IR senzora
+  * Ljubomir piše prototip rešenja emulacije miša preko akceletometra
+  * Dragan i Nikola Staletović pišu prototip rešenja headtracking-a
+  * Željko i Nikola Rajačić pišu specifikaciju API-ja za gimii wrapper
+
+Svi slobodni članovi tima mogu se priključiti radu na gore pomenutim zadcima. Radi koordinacije koristiti mailing listu.
