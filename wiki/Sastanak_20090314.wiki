@@ -1,0 +1,12 @@
+#summary Sastanak 14. marta u subotu
+
+= Termin: 14h kod Veljka =
+
+
+= Teme sastanka: =
+
+  * Rad nad prototipovima rešenja Ivetićevih zadataka
+  * Izrada specifikacije API-ja za gimii wrapper
+  * Generalni dogovori i podela rada
+
+*Ko god može neka ponese laptop i neku stolicu za rasklapanje, ako ima.*
