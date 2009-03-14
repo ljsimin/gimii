@@ -1,0 +1,13 @@
+#summary DebugBar - naša zamena za SenzorBar većih mogućnosti
+
+= Uvod =
+
+Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR svetlosti promenljivog rasporeda dioda, koji po mogućstvu ne troši baterije. Ovde razmatramo dizajn i cenu jednog SenzorBara koji bi mogli napraviti sami. Nazvaćemo ga DebugBar
+
+
+= Potrebne karakteristike =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
