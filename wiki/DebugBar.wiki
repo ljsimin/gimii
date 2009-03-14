@@ -2,7 +2,7 @@
 
 = Uvod =
 
-Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR svetlosti promenljivog rasporeda dioda, koji po mogućstvu ne troši baterije. Ovde razmatramo dizajn i cenu jednog SenzorBara koji bi mogli napraviti sami. Nazvaćemo ga DebugBar
+Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR svetlosti promenljivog rasporeda dioda, koji po mogućstvu ne troši baterije. Ovde razmatramo dizajn i cenu jednog !SenzorBar-a koji bi mogli napraviti sami. Nazvaćemo ga DebugBar
 
 
 = Potrebne karakteristike =
