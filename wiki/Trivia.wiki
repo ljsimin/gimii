@@ -7,3 +7,8 @@
 
 ===Zašto uvek jedna komponenta akcelerometra pokazuje vrednost blisku 1?===
 Akcelerometar uključuje gravitacionu komponentu u merenja
+
+===Dimenzije SensorBar-a===
+8mm heigh
+236mm long
+21mm wide
