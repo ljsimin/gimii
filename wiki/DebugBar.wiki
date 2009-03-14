@@ -11,4 +11,4 @@ Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR sv
   * Opciono mogućnost baterijskog napajanja
 
 = Cene komponenti = 
-  * IR LED 15din komad
+  * *IR LED* 15din komad
