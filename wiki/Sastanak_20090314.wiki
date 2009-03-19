@@ -1,4 +1,5 @@
 #summary Sastanak 14. marta u subotu
+#labels sastanak
 
 = Termin: 14h kod Veljka =
 
