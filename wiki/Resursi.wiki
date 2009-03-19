@@ -5,9 +5,8 @@ http://www.codeplex.com/WiimoteLib
 
   **GlovePIE* PIE stands for programmable input emulator. Emulira drajver miša, tastature, džojstika i jos nekih stvari. Kao ulaz može da koristi wiimote. Mapiranje se radi pisanjem skripta sa izuzetno jednostavnom sintaksom. Može biti korisno za testiranje nekih ideja/mogućnosti kontrolera.
 
-http://www.wiili.org/GlovePIE
+  #   http://www.wiili.org/GlovePIE
+  #   http://carl.kenner.googlepages.com/glovepie
 
-http://carl.kenner.googlepages.com/glovepie
-
-  **WiiLi Wiki* Wiki stranica WiiLii projekta - port Linuxa za Wii. Puno dokumentacije samog hardvera, vrlo korisno.
+  **!WiiLi Wiki* Wiki stranica WiiLii projekta - port Linuxa za Wii. Puno dokumentacije samog hardvera, vrlo korisno.
 http://www.wiili.org/index.php/Main_Page
