@@ -1,0 +1,17 @@
+#summary Sastanak 20. marta, petak
+#labels sastanak
+
+= Petak, 20. mart, 18h kod Danila =
+
+
+= Plan =
+
+  * Testiranje pravog SenzorBar-a
+  * Diskusija o pravljenju reprodukcije SenzorBara za naše potrebe
+  * Prezentacija programa uređenih do sada
+  * Dogovori oko daljeg rada
+
+Ko može da dođe, odlično. Ostali neka pročitaju rezime na ovoj stranici.
+
+= Rezime =
+_će da dude_
