@@ -6,7 +6,7 @@
 
 = Plan =
 
-  * Testiranje pravog SenzorBar-a
+  * Testiranje pravog !SenzorBar-a
   * Diskusija o pravljenju reprodukcije SenzorBara za naše potrebe
   * Prezentacija programa uređenih do sada
   * Dogovori oko daljeg rada
@@ -14,4 +14,4 @@
 Ko može da dođe, odlično. Ostali neka pročitaju rezime na ovoj stranici.
 
 = Rezime =
-_će da dude_
+_će da bude_
