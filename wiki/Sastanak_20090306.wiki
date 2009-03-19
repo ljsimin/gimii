@@ -1,4 +1,5 @@
 ﻿#summary Sastanak sestog marta 2009.
+#labels sastanak
 
 = Termin: 16h kod Veljka=
 
