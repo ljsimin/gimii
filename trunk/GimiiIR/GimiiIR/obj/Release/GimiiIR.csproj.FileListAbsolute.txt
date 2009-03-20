@@ -1,0 +1,9 @@
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\bin\Release\GimiiIR.exe
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\bin\Release\GimiiIR.pdb
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.frmMain.resources
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.Properties.Resources.resources
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.exe
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.pdb
