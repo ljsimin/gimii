@@ -1,0 +1,9 @@
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\bin\Release\MouseAccelDemo.exe
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\bin\Release\MouseAccelDemo.pdb
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Release\MouseAccelDemo.Form1.resources
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Release\MouseAccelDemo.Properties.Resources.resources
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Release\MouseAccelDemo.csproj.GenerateResource.Cache
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Release\MouseAccelDemo.exe
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Release\MouseAccelDemo.pdb
