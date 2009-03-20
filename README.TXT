@@ -16,3 +16,4 @@ Projekat izdat pod GNU GPL v3 licencom. Tekst licence nalazi se u datoteci LICEN
 
 Struktura projekta:
   * SimpleWiiRecorder - GUI aplikacija za očitavanje i snimanje događaja sa Wii kontrolera, kao i njihovu reprodukciju
+  * MouseAccelDemo - GUI aplikacija koja na osnovu očitavanja akcelerometra Wii kontrolera upravlja kursorom na ekranu
