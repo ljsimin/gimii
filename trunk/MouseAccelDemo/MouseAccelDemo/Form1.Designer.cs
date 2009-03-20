@@ -56,6 +56,7 @@
             this.pnlCanvas.Size = new System.Drawing.Size(485, 386);
             this.pnlCanvas.TabIndex = 1;
             this.pnlCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCanvas_Paint);
+            this.pnlCanvas.Resize += new System.EventHandler(this.pnlCanvas_Resize);
             // 
             // lblMessage
             // 

@@ -24,3 +24,12 @@ C:\Documents and Settings\ljubomir\My Documents\Visual Studio 2008\Projects\Mous
 C:\Documents and Settings\ljubomir\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Form1.resources
 C:\Documents and Settings\ljubomir\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Properties.Resources.resources
 C:\Documents and Settings\ljubomir\My Documents\Visual Studio 2008\Projects\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.csproj.GenerateResource.Cache
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.exe
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.pdb
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\bin\Debug\MouseAccelDemo.exe
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\bin\Debug\MouseAccelDemo.pdb
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\bin\Debug\WiimoteLib.dll
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Form1.resources
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Properties.Resources.resources
+C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.csproj.GenerateResource.Cache
