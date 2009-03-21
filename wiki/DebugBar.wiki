@@ -1,16 +1,37 @@
-#summary DebugBar - naša zamena za SenzorBar većih mogućnosti
+#summary DebugBar - naša zamena za SenzorBar
 
 = Uvod =
 
-Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR svetlosti promenljivog rasporeda dioda, koji po mogućstvu ne troši baterije. Ovde razmatramo dizajn i cenu jednog !SenzorBar-a koji bi mogli napraviti sami. Nazvaćemo ga !DebugBar
+Ovde razmatramo dizajn i cenu jednog !SenzorBar-a koji bi mogli napraviti sami. Nazvaćemo ga !DebugBar. Planirana funkcionalnost je ista kao i originala.
 
 
 = Potrebne karakteristike =
-  * Promenljiv raspored dioda - mogućnost paljenja i gašenja individualnih dioda po potrebi
+  * Isti raspored dioda kao kod !SenzorBar-a
   * Mogućnost napajanja iz "žičnog" izvora napona, npr USB ili zidni utikač
   * Opciono mogućnost baterijskog napajanja
 
+
+= Dimenzije =
+  * dužina 24 cm
+  * širina 2 cm
+  * debljina 9 mm
+
+= Rapored dioda =
+Otprilike ovakav:
+| * *** *                * *** * |
+
+= Razmak između dioda (u milimetrima)= 
+  * 8 (između ivice i prve diode)
+  * 7
+  * 5
+  * 5
+  * 7
+  * 240 (između poslednje leve i prve desne diode)
+
+
+
 = Cene komponenti = 
+Ovo nisu finalne cene, i još ću ih ažurirati kada završimo projekat dizajna.
   * *IR LED* 15 din komad
   * *Bušena tabla* oko 80 din, nije nužna
   * *USB konektor* 20-30 din, ako koristimo napajanje preko USB-a
@@ -19,5 +40,3 @@ Za potrebe testiranja Wiimote-a zgodno je imati stabilan, nepokretan izvor IR sv
   * *Metar UTP kabla*, 25 din, ako ne koristimo flat kabel
   * *Regulator napona* 25 din, ako koristimo DC napon
   * *Otpornici* <20 din ukupno
-
-To Be Continued...
