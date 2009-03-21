@@ -14,4 +14,10 @@
 Ko može da dođe, odlično. Ostali neka pročitaju rezime na ovoj stranici.
 
 = Rezime =
-Napisaću tek danas uveče, ako me neko ne pretekne.
+Na sastanku su bili Ljuba, Vlada, Danilo i Veljko. Iznajmili smo Wii i izmerili dimenzije i osobine !SenzorBar-a, kao i testirali efikasnost Wiimote-a u nativnom okruženju. Dovršili smo naše aplikacije za simuliranje rada sa mišem.
+
+Zaključci:
+  * !SenzorBar je odličan izvor IR svetlosti za Wiimote i želeli bi smo da napravimo njegovu [DebugBar repliku]
+  * Simulacija rada sa mišem funkcioniše dovoljno efikasno preko IR senzora kao i preko akcelerometra. 
+  * U naš wrapper vredi dodati Liftoff događaj za dugmiće (kako bi u programu mogli registrovati otpuštanje tastera)
+  * Vreme je da se započne rad na samom wrapperu
