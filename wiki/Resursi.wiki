@@ -9,4 +9,4 @@
   #   http://carl.kenner.googlepages.com/glovepie
 
   * *!WiiLi Wiki* Wiki stranica !WiiLii projekta - port Linuxa za Wii. Puno dokumentacije samog hardvera, vrlo korisno. http://www.wiili.org/index.php/Main_Page
-  * *http://www.myavatareditor.com/* Online Mii editor
+  * *[My Avatar Editor http://www.myavatareditor.com/]* Online Mii editor
