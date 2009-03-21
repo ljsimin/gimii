@@ -18,7 +18,7 @@ Ovde razmatramo dizajn i cenu jednog !SenzorBar-a koji bi mogli napraviti sami. 
 
 = Rapored dioda =
 Otprilike ovakav:
-{{{| * *** *                * *** * |}}}
+{{{| * *** *      `              `          * *** * |}}}
 
 = Razmak između dioda (u milimetrima)= 
   * 8 (između ivice i prve diode)
