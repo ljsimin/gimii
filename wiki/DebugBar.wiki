@@ -31,4 +31,5 @@ Otprilike ovakav:
 
 
 = Cene komponenti = 
-Pregled cena moze se pogledati ovde: http://spreadsheets.google.com/pub?key=pNcqrKn8eSi35am980q1rUg
+Pregled cena može se pogledati ovde: http://spreadsheets.google.com/pub?key=pNcqrKn8eSi35am980q1rUg
+Pojedine cene su zaokružene prema gore.
