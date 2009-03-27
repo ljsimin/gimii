@@ -1,0 +1,6 @@
+C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi\WiiApi\bin\Debug\WiiApi.XML
+C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi\WiiApi\bin\Debug\WiiApi.dll
+C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
+C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi\WiiApi\obj\Debug\WiiApi.dll
+C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
