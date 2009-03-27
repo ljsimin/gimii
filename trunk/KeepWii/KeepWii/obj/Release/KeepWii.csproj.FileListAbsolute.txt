@@ -1,0 +1,9 @@
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Release\KeepWii.exe
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Release\KeepWii.pdb
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.Form1.resources
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.Properties.Resources.resources
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.csproj.GenerateResource.Cache
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.exe
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.pdb
