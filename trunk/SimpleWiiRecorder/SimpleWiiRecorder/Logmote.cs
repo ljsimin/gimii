@@ -7,31 +7,44 @@ using System.IO;
 
 namespace SimpleWiiRecorder
 {
+    //Delegat za obradjivac dogadjaja promene stanja 
     public delegate void ChangeHandler(Object sender, WiimoteChangedEventArgs args);
+    //Delegat za obradjivac dogadjaja zaustavljanja
+    //Ovaj dogadjaj triggeruje Logmote kada se zaustavi time obavestavajuci formu
+    //da treba da odgovarajuce modifikuje interfejs.
     public delegate void StopHandler(Object sender);
     class Logmote
     {
+        //list obuhvata ucitana stanja
         List<SimpleWiiState> list;
         public event ChangeHandler LogmoteChange;
         public event StopHandler LogmoteStop;
 
         public void run()
         {
-            //run this only from a gorram thread
+            //Ovo mora da se pokrene iz thread-a (zato je i namenjeno)
             int j = 0;
+            //nasa pozicija u listi
             foreach(SimpleWiiState s in list)
             {
-                //System.Diagnostics.Debug.WriteLine(s.time);
                 TimeSpan tt;
+                //TimeSpan je razmak izmedju stanja koga smo upravo ucitali
+                //i sledeceg (i.e koliko cekamo)
                 if (list.Count == j + 1)
                 {
                     tt = new TimeSpan(0);
+                    //kraj liste, ovo je poslednje stanje -- nema potrebe da se
+                    //ceka
                 }
                 else
                 {
+                    //razmak za cekanje izmedju ovog i sledeceg
+                    //se racuna u odnosu na (zabelezeno) vreme sledeceg i ovog
+                    //u odnosu na vreme pocetka.
                     tt = new TimeSpan(list[j + 1].time - s.time);
                 }
                 WiimoteState ws = new WiimoteState();
+                //sada napunimo stanje ucitanim podacima
                 ButtonState bs = new ButtonState();
                 bs.A = s.buttonA;
                 bs.B = s.buttonB;
@@ -57,34 +70,24 @@ namespace SimpleWiiRecorder
                 ws.IRState = irs;
                 ws.ButtonState = bs;
                 ws.AccelState = ast;
+                //Napravimo argumente wrappovanjem stanja u argumente dogadjaja
                 WiimoteChangedEventArgs a = new WiimoteChangedEventArgs(ws);
+                //triggeruje se dogadjaj proemene stanja
                 LogmoteChange(this, a);
                 System.Threading.Thread.Sleep(tt);
                 j++;
             }
+            //posto je Logmote ostao bez daljih zabelezenih dogadjaja 
+            //salje dogadjaj da je stao
             LogmoteStop(this);
         }
 
         public Logmote(BinaryReader r)
         {
+            //Ucitavanje podataka iz binarnog fajla
             list = new List<SimpleWiiState>();
             while (true)
             {
-                /*
-                 wrec.Write(System.DateTime.Now.Ticks - time);
-                wrec.Write(ws.ButtonState.A);
-                wrec.Write(ws.ButtonState.B);
-                wrec.Write(ws.AccelState.Values.X);
-                wrec.Write(ws.AccelState.Values.Y);
-                wrec.Write(ws.AccelState.Values.Z);
-                for (int i = 0; i < 4; i++)
-                {
-                    wrec.Write(ws.IRState.IRSensors[i].Found);
-                    wrec.Write(ws.IRState.IRSensors[i].Position.X);
-                    wrec.Write(ws.IRState.IRSensors[i].Position.Y);
-                    wrec.Write(ws.IRState.IRSensors[i].Size);
-                } 
-                */
                 try
                 {
                     SimpleWiiState s = new SimpleWiiState();
@@ -106,6 +109,9 @@ namespace SimpleWiiRecorder
                 }
                 catch (EndOfStreamException ex)
                 {
+                    //'Ponestalo' nam je stream-a to znaci kraj
+                    //posto primenjujemo strategiju (D) iz Baza Podataka
+                    //i.e. nema posebne oznake za kraj fajla
                     break;
                 }
             }

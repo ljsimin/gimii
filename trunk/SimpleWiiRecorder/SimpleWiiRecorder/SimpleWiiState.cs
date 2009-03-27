@@ -7,6 +7,9 @@ namespace SimpleWiiRecorder
 {
     class SimpleWiiState
     {
+        //Funkcija ove klase je samo da belezi one elemente stanja koje
+        //belezimo u fajl. 
+
         public SimpleWiiState()
         {
 

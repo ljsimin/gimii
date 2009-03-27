@@ -13,15 +13,24 @@ namespace SimpleWiiRecorder
 {
     public partial class Form1 : Form
     {
+        
         Wiimote kontroler = new Wiimote();
+        //Da li smo povezani
         bool connected = false;
+        //Grafika za crtanje po panelu
         Graphics g = null;
+        //Stream za snimanje
         Stream rec = null;
+        //Stream za ucitavanje
         Stream input = null;
+        //Writer za snimanje
         BinaryWriter wrec;
+        //Reader za ucitavanje;
         BinaryReader rinput;
         Logmote l;
+        //Thread koji sluzi za replay
         System.Threading.Thread t;
+        //Stanje
         bool recording = false;
         bool playing = false;
         long time = 0;
@@ -48,6 +57,7 @@ namespace SimpleWiiRecorder
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            //Sluzi za povezivanje
             try
             {
                 if (connected)
@@ -62,6 +72,8 @@ namespace SimpleWiiRecorder
                 {
                     btnConnect.Text = "Disconnect";
                     kontroler.Connect();
+                    //Donji kod je neophodan da bi radio. U protivnom osetljivost
+                    //IR senzora ce biti takva da se nista nece videti.
                     if (kontroler.WiimoteState.ExtensionType != ExtensionType.BalanceBoard)
                         kontroler.SetReportType(InputReport.IRExtensionAccel, IRSensitivity.Maximum, true);
                     kontroler.WiimoteChanged += UpdateState;
@@ -79,6 +91,9 @@ namespace SimpleWiiRecorder
         {
             try
             {
+                //BeginInvoke samo znaci da ose obrada ovog dogadjaja
+                //odlaze tako da ne blokira ostale dogadjaje
+                //analogni mehanizam u Javi je invokeLater()
                 BeginInvoke(new UpdateWiimoteStateDelegate(UpdateWiimoteChanged), args);
             }
             catch (Exception ex)
@@ -89,6 +104,8 @@ namespace SimpleWiiRecorder
 
         public void UpdateWiimoteChanged(WiimoteChangedEventArgs args)
         {
+            //Ovde se samo stanje ucita u formu, parametri se ispisu na
+            //odgovarajucim labelama a pozicija senzora ide na panel
             WiimoteState ws = args.WiimoteState;
 
             //Buttons
@@ -164,6 +181,7 @@ namespace SimpleWiiRecorder
 
         public void write(WiimoteState ws)
         {
+            //Upis u fajl, binarna forma
             if (rec != null && wrec != null)
             {
                 wrec.Write(System.DateTime.Now.Ticks - time);
@@ -184,6 +202,7 @@ namespace SimpleWiiRecorder
 
         private void btnRecord_Click(object sender, EventArgs e)
         {
+            //Startovanje snimanja
             if(recording){
                 btnRecord.Text = "Record";
                 recording = false;
@@ -211,6 +230,8 @@ namespace SimpleWiiRecorder
             BeginInvoke(new LogStopHandler(stopHandler));
         }
 
+        //Resetujemo stanje interfejsa kada logmote dodje do kraja
+        //fajla
         private void stopHandler()
         {
             playing = false;
@@ -222,6 +243,8 @@ namespace SimpleWiiRecorder
             btnLoad.Text = "Load";
         }
 
+
+        //ucitavanje za pustanje snimljenih dogadjaja
         private void btnLoad_Click(object sender, EventArgs e)
         {
             if (playing)
@@ -245,17 +268,18 @@ namespace SimpleWiiRecorder
                     playing = true;
                     rinput = new BinaryReader(input);
                     
-                    //Disconnect from real thing
+                    //Razvezivanje stvarnog kontrolera
                     kontroler.Disconnect();
                     kontroler.WiimoteChanged -= UpdateState;
                     btnConnect.Text = "Connect";
                     connected = false;
 
-                    //Aaand connect to the fake
+                    //Povezivanje na logmote umesto stvarnog
                     l = new Logmote(rinput);
                     l.LogmoteChange += UpdateState;
                     l.LogmoteStop += onStop;
                     //l.run();
+                    //Pokreni playback dogadjaja u posebnoj niti
                     t = new System.Threading.Thread(new System.Threading.ThreadStart(l.run));
                     t.Start();
                 }
