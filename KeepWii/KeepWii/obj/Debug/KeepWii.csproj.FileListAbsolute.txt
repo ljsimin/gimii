@@ -1,0 +1,17 @@
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\bin\Debug\KeepWii.exe
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\bin\Debug\KeepWii.pdb
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\obj\Debug\KeepWii.Form1.resources
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\obj\Debug\KeepWii.Properties.Resources.resources
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\obj\Debug\KeepWii.csproj.GenerateResource.Cache
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\obj\Debug\KeepWii.exe
+C:\Documents and Settings\laptop\Local Settings\Application Data\Temporary Projects\KeepWii\obj\Debug\KeepWii.pdb
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Debug\KeepWii.exe
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Debug\KeepWii.pdb
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Debug\KeepWii.Form1.resources
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Debug\KeepWii.Properties.Resources.resources
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Debug\KeepWii.csproj.GenerateResource.Cache
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\KeepWii.exe
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\KeepWii.pdb
+C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\WiimoteLib.dll
