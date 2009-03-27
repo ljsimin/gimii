@@ -10,7 +10,7 @@ namespace WiiApi
     /// Elementi stanja su hijerarhijski organizovani u 4 podgrupe:<br/>
     /// Dugmici, Akcelerometar, Infracrveni Senzori, LE diode i vibrator
     /// </summary>
-    public class Stanje : EventArgs
+    public class Stanje
     {
         /// <summary>
         /// Stanje dugmica
