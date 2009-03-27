@@ -8,6 +8,7 @@ namespace WiiApi
     ///<summary>
     /// Singleton klasa koja sluzi ka kreiranje Kontrolera i prekid komunikaije sa kontrolerima.
     ///</summary>
+    ///up i down
     public class WiiFabrika
     {
         /// <summary>
@@ -15,22 +16,6 @@ namespace WiiApi
         /// </summary>
         /// <returns>instanca WiiFabrike</returns>
         public WiiFabrika dobaviInstancu() { return null; }
-
-        ///<summary>
-        /// Enumeracija tipova kontrolera koje fabrika moze da proizvodi
-        ///</summary>
-        public enum WiiTip
-        {
-            /// <summary>
-            /// emulator kontrolera
-            /// </summary>
-            WII_EMULATOR, 
-
-            /// <summary>
-            /// realni kontroler
-            /// </summary>
-            WII_KONTROLER
-        }
 
         ///<summary>
         /// Postavlja putanju do datoteke iz koje ce se citati ponasanje emulatora 
@@ -67,16 +52,36 @@ namespace WiiApi
         public void iskljuci(Kontroler kontroler){
             return;
         }
-
-        ///<summary>
-        /// Delegat koji ce okupljati sve osluskivace za promenu stanja kontrolera
-        ///</summary>
-        public delegate void ObradjivacPromeneStanja(object kontroler, Stanje stanje);
-
-        ///<summary>
-        /// Delegat koji ce osluskivati promenu stanja dugmadi
-        ///</summary>
-        public delegate void ObradjivacPromeneStanjaDugmeta(object kontroler, Stanje stanje);
-
     }
+
+    ///<summary>
+    /// Enumeracija tipova kontrolera koje fabrika moze da proizvodi
+    ///</summary>
+    public enum WiiTip
+    {
+        /// <summary>
+        /// emulator kontrolera
+        /// </summary>
+        WII_EMULATOR,
+
+        /// <summary>
+        /// realni kontroler
+        /// </summary>
+        WII_KONTROLER
+    }
+
+    ///<summary>
+    /// Delegat koji ce okupljati sve osluskivace za promenu stanja kontrolera
+    ///</summary>
+    public delegate void ObradjivacPromeneStanja(object kontroler, ParametriDogadjaja parametri);
+
+    ///<summary>
+    /// Delegat koji ce osluskivati pritiska dugmeta
+    ///</summary>
+    public delegate void ObradjivacPritiskaDugmeta(object kontroler, ParametriDogadjaja parametri);
+
+    ///<summary>
+    /// Delegat koji ce osluskivati otpustanje dugmeta
+    ///</summary>
+    public delegate void ObradjivacOtpustanjaDugmeta(object kontroler, ParametriDogadjaja parametri);
 }

@@ -20,36 +20,38 @@ namespace WiiApi
         ///</summary>
         bool ukljuciVibrator(bool ukljucen);
 
-
         ///<summary>
         /// Dogadjaj promene stanja
         ///</summary>
-        event WiiApi.WiiFabrika.ObradjivacPromeneStanja PromenaStanja;
-
+        event WiiApi.ObradjivacPromeneStanja PromenaStanja;
 
         ///<summary>
-        /// Dogadjaj promene stanja
+        /// Dogadjaj otpustanja dugmeta
         ///</summary>
-        event WiiApi.WiiFabrika.ObradjivacPromeneStanjaDugmeta PromenaStanjaDugmeta;
+        event WiiApi.ObradjivacOtpustanjaDugmeta OtpustenoDugme;
+
+        ///<summary>
+        /// Dogadjaj pritiskanja dugmeta
+        ///</summary>
+        event WiiApi.ObradjivacPritiskaDugmeta PritisnutoDugme;
         
         /// <summary>
         /// Metoda koja pokrece citanje iz fajla ukoliko je objekat koji se nalazi iza interfejsa
         /// WiiEmulator, a prazna je ukoliko je iza interfejsa WiiKontroler.
         /// </summary>
-        /// <param name="replay">Da li se po zavrsetku fajla ponavlja emulacija</param>
-        void play(bool replay);
+        /// <param name="ponavljanje">Da li se po zavrsetku fajla ponavlja emulacija</param>
+        void kreni(bool ponavljanje);
 
         /// <summary>
         /// Metoda zaustavlja emulator (ukoliko je on iza interfejsa), a ukoliko je
         /// WiiKontroler metoda je prazna
         /// </summary>
-        void stop();
+        void pauza();
 
         /// <summary>
         /// Metoda za prekid konekcije sa WiiKontrolerom, odnosno kraj rada sa emulatorom
         /// </summary>
         void prekiniKomunikaciju();
-        //TODO: -listener pojave/nestanka dioda
-        //      -na chega kachiti 
+
     }
 }

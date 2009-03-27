@@ -13,17 +13,34 @@ namespace WiiApi
         /// <summary>
         /// Stanje po X osi
         /// </summary>
-        public double X = 0;
+        public float x = 0;
 
         /// <summary>
         /// Stanje po Y osi
         /// </summary>
-        public double Y = 0;
+        public float y = 0;
 
         /// <summary>
         /// Stanje po Z osi
         /// </summary>
-        public double Z = 0;
+        public float z = 0;
+
+        public float X {
+            get { return x; }
+            set { x = value; }
+        }
+
+        public float Y
+        {
+            get { return y; }
+            set { y = value; }
+        }
+
+        public float Z
+        {
+            get { return z; }
+            set { z = value; }
+        }
 
         /// <summary>
         /// Konstruktor koji vrsi inicijalizaciju
@@ -31,7 +48,7 @@ namespace WiiApi
         /// <param name="x">vrednost po X osi</param>
         /// <param name="y">vrednost po Y osi</param>
         /// <param name="z">vrednost po Z osi</param>
-        public Akcelerometar(double x, double y, double z) { return; }
+        public Akcelerometar(float x, float y, float z) { X = x; Y = y; Z = z; }
 
         /// <summary>
         /// Podrazumevani konstruktor
