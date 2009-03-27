@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WiiApi</name>
+    </assembly>
+    <members>
+        <member name="T:WiiApi.WiiFabrika">
+            <summary>
+             Singleton klasa koja sluzi ka kreiranje Kontrolera i prekid komunikaije sa kontrolerima.
+            </summary>
+        </member>
+        <member name="M:WiiApi.WiiFabrika.dobaviInstancu">
+            <summary>
+            Metoda za dobavljanje instance WiiFabrike.
+            </summary>
+            <returns>instanca WiiFabrike</returns>
+        </member>
+        <member name="M:WiiApi.WiiFabrika.postaviDatoteku(System.String)">
+            <summary>
+             Postavlja putanju do datoteke iz koje ce se citati ponasanje emulatora 
+            </summary>
+        </member>
+        <member name="M:WiiApi.WiiFabrika.postaviTipKontrolera(WiiApi.WiiFabrika.WiiTip)">
+            <summary>
+             Postavljanje promenjive na osnovu koje fabrika zna da li da 
+             proizvodi emulator ili se konektuje za realni kontroler
+             Koristi se WiiTip enumeracija
+            </summary>
+        </member>
+        <member name="M:WiiApi.WiiFabrika.kreirajKontroler">
+            <summary>
+             Vraca instancu objekta WiiKontroler/WiiEmulator i njegov id vezuje u mapu "kontroleri".
+             Ako se trazi kontroler a svi su vec u mapi, vraca void inace vraca sledeci kontroler.
+             Ako je polje "tip" postavljeno na WII_EMULATOR, kreira novi od fajla i vraca ga.
+             Ako je polje "fajl" nevalidno vraca null.
+            </summary>
+        </member>
+        <member name="M:WiiApi.WiiFabrika.kreirajKontroler(System.String)">
+            <summary>
+             Vraca instancu objekta WiiEmulator kreiranu na osnovi datoteke sa zadate putanje.
+            </summary>
+        </member>
+        <member name="M:WiiApi.WiiFabrika.iskljuci(WiiApi.Kontroler)">
+            <summary>
+             Metoda prekida komunikaciju sa prosledjenim WiiKontrolerom
+            </summary>
+        </member>
+        <member name="T:WiiApi.WiiFabrika.WiiTip">
+            <summary>
+             Enumeracija tipova kontrolera koje fabrika moze da proizvodi
+            </summary>
+        </member>
+        <member name="F:WiiApi.WiiFabrika.WiiTip.WII_EMULATOR">
+            <summary>
+            emulator kontrolera
+            </summary>
+        </member>
+        <member name="F:WiiApi.WiiFabrika.WiiTip.WII_KONTROLER">
+            <summary>
+            realni kontroler
+            </summary>
+        </member>
+        <member name="T:WiiApi.WiiFabrika.ObradjivacPromeneStanja">
+            <summary>
+             Delegat koji ce okupljati sve osluskivace za promenu stanja kontrolera
+            </summary>
+        </member>
+        <member name="T:WiiApi.WiiFabrika.ObradjivacPromeneStanjaDugmeta">
+            <summary>
+             Delegat koji ce osluskivati promenu stanja dugmadi
+            </summary>
+        </member>
+        <member name="T:WiiApi.Kontroler">
+            <summary>
+             Interfejs koji implementiraju WiiEmulator i WiiKontroler
+            </summary>
+        </member>
+        <member name="M:WiiApi.Kontroler.postaviLED(System.Int32,System.Boolean)">
+            <summary>
+             Metoda za manipulaciju nad LED kontrolera, za WiiEmulator metoda je prazna.
+            </summary>
+        </member>
+        <member name="M:WiiApi.Kontroler.ukljuciVibrator(System.Boolean)">
+            <summary>
+             Metoda za manipulaciju nad vibracijom kontrolera, za WiiEmulator metoda je prazna.
+            </summary>
+        </member>
+        <member name="E:WiiApi.Kontroler.PromenaStanja">
+            <summary>
+             Dogadjaj promene stanja
+            </summary>
+        </member>
+        <member name="E:WiiApi.Kontroler.PromenaStanjaDugmeta">
+            <summary>
+             Dogadjaj promene stanja
+            </summary>
+        </member>
+        <member name="T:WiiApi.Stanje">
+            <summary>
+            Klasa koja sadrzi informacije o stanju Wii kontrolera.
+            Elementi stanja su hijerarhijski organizovani u 4 podgrupe:<br/>
+            Dugmici, Akcelerometar, Infracrveni Senzori, LE diode i vibrator
+            </summary>
+        </member>
+        <member name="F:WiiApi.Stanje.dugmici">
+            <summary>
+            Stanje dugmica
+            </summary>
+        </member>
+        <member name="F:WiiApi.Stanje.akcelerometar">
+            <summary>
+            Stanje akcelerometra
+            </summary>
+        </member>
+        <member name="F:WiiApi.Stanje.senzori">
+            <summary>
+            Stanje senzora
+            </summary>
+        </member>
+        <member name="F:WiiApi.Stanje.reakcija">
+            <summary>
+            Stanje LE Dioda i vibratora
+            </summary>
+        </member>
+        <member name="M:WiiApi.Stanje.#ctor">
+            <summary>
+              Podrazumevani konstruktor
+            </summary>
+        </member>
+        <member name="M:WiiApi.Stanje.#ctor(WiiApi.Dugmici,WiiApi.Akcelerometar,WiiApi.ICSenzor[],WiiApi.Reakcija)">
+            <summary>
+            Konstruktor za sva polja
+            </summary>
+            <param name="dugmici">instanca klase WiiApi.Dugmici</param>
+            <param name="akcelerator">instanca klase WiiApi.Akcelerator</param>
+            <param name="senzori">instanca klase WiiApi.Senzori</param>
+            <param name="reakcija">instanca klase WiiApi.Reakcija</param>
+        </member>
+        <member name="T:WiiApi.Dugmici">
+            <summary>
+            Klasa koja sadrzhi informacije o stanju dugmica Wii kontrolera.
+            </summary>
+        </member>
+        <member name="F:WiiApi.Dugmici.A">
+            <summary>
+            stanje dugmeta A
+            </summary>
+        </member>
+        <member name="F:WiiApi.Dugmici.B">
+            <summary>
+            stanje dugmeta B
+            </summary>
+        </member>
+        <member name="M:WiiApi.Dugmici.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor koji vrsi inicijalizaciju
+            </summary>
+            <param name="a">stanje dugmeta A</param>
+            <param name="b">stanje dugmeta B</param>
+        </member>
+        <member name="M:WiiApi.Dugmici.#ctor">
+            <summary>
+            Podrazumevani konstruktor
+            </summary>
+        </member>
+        <member name="T:WiiApi.ICSenzor">
+            <summary>
+            Klasa koja sadrzhi informacije o stanju infracrvenog senzora Wii kontrolera.
+            </summary>
+        </member>
+        <member name="F:WiiApi.ICSenzor.X">
+            <summary>
+            Stanje po X osi
+            </summary>
+        </member>
+        <member name="F:WiiApi.ICSenzor.Y">
+            <summary>
+            Stanje po Y osi
+            </summary>
+        </member>
+        <member name="M:WiiApi.ICSenzor.#ctor(System.Double,System.Double)">
+            <summary>
+            Konstruktor koji vrsi inicijalizaciju
+            </summary>
+            <param name="x">vrednost po X osi</param>
+            <param name="y">vrednost po Y osi</param>
+        </member>
+        <member name="M:WiiApi.ICSenzor.#ctor">
+            <summary>
+            Podrazumevani konstruktor
+            </summary>
+        </member>
+        <member name="T:WiiApi.Reakcija">
+            <summary>
+            Klasa koja sadrzhi informacije o stanju LE Dioda i vibartora Wii kontrolera.
+            </summary>
+        </member>
+        <member name="F:WiiApi.Reakcija.LED">
+            <summary>
+            stanje dioda na kontroleru
+            </summary>
+        </member>
+        <member name="F:WiiApi.Reakcija.vibracija">
+            <summary>
+            stanje vibratora
+            </summary>
+        </member>
+        <member name="M:WiiApi.Reakcija.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor klase Reakcija
+            </summary>
+            <param name="LED1">stanje LED 1</param>
+            <param name="LED2">stanje LED 1</param>
+            <param name="LED3">stanje LED 1</param>
+            <param name="LED4">stanje LED 1</param>
+            <param name="vibracija">stanje vibratora</param>
+        </member>
+        <member name="M:WiiApi.Reakcija.#ctor">
+            <summary>
+            Podrazumevani konstruktor
+            </summary>
+        </member>
+        <member name="T:WiiApi.Akcelerometar">
+            <summary>
+            Klasa koja sadrzhi informacije o stanju akcelerometra Wii kontrolera.
+            </summary>
+        </member>
+        <member name="F:WiiApi.Akcelerometar.X">
+            <summary>
+            Stanje po X osi
+            </summary>
+        </member>
+        <member name="F:WiiApi.Akcelerometar.Y">
+            <summary>
+            Stanje po Y osi
+            </summary>
+        </member>
+        <member name="F:WiiApi.Akcelerometar.Z">
+            <summary>
+            Stanje po Z osi
+            </summary>
+        </member>
+        <member name="M:WiiApi.Akcelerometar.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Konstruktor koji vrsi inicijalizaciju
+            </summary>
+            <param name="x">vrednost po X osi</param>
+            <param name="y">vrednost po Y osi</param>
+            <param name="z">vrednost po Z osi</param>
+        </member>
+        <member name="M:WiiApi.Akcelerometar.#ctor">
+            <summary>
+            Podrazumevani konstruktor
+            </summary>
+        </member>
+    </members>
+</doc>
