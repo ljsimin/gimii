@@ -46,6 +46,7 @@
     <Compile Include="Dugmici.cs" />
     <Compile Include="ICSenzor.cs" />
     <Compile Include="Kontroler.cs" />
+    <Compile Include="ParametriDogadjaja.cs" />
     <Compile Include="Reakcija.cs" />
     <Compile Include="Stanje.cs" />
     <Compile Include="WiiFabrika.cs" />
