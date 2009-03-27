@@ -26,7 +26,7 @@ Otprilike ovakav:
   * 5
   * 5
   * 7
-  * 240 (između poslednje leve i prve desne diode)
+  * 174 (između poslednje leve i prve desne diode)
 
 
 
