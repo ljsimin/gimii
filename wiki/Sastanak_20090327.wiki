@@ -14,3 +14,21 @@
   * Ko može trebalo bi da ponese laptop uz prateću opremu. 
   * Ko planira da dođe bi valjalo da se javi na grupu čisto da se zna brojno stanje. 
   * Za one koji ne mogu da dođu rezime sastanka će biti postavljen na ovu stranicu. 
+
+= Rezime =
+
+Rezultati sastanka su sledeći:
+
+  * Izdiskutovan API, koji su Željko i Raja osmislili
+  * Započet rad na implemetaciji API-ja
+  * Konstuisana prva verzija DebugBara
+
+Problemi: 
+  * Diode koje smo kupili imaju jako uzak ugao emitovanja.
+  * Iz nekog razloga (slab napon, loše diode/kablovi, gremlini, Ljuba-nema-pojma) nemoguće je aktivirati više od 4 diode.
+
+Dalji rad:
+  * Završiti implementaciju API-ja
+  * Naći diode koje imaju veći ugao emitovanja
+  * Rešiti problem sa aktiviranjem dioda
+
