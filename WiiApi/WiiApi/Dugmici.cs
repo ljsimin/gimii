@@ -156,8 +156,6 @@ namespace WiiApi
         /// <summary>
         /// Konstruktor koji vrsi inicijalizaciju
         /// </summary>
-        /// <param name="a">stanje dugmeta A</param>
-        /// <param name="b">stanje dugmeta B</param>
         public Dugmici(bool a, bool b, bool dom, bool jedan, bool dva, bool gore, bool dole, bool levo, bool desno, bool plus, bool minus)
         {
             A = a;
