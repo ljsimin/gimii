@@ -5,17 +5,54 @@ using System.Text;
 
 namespace WiiApi
 {
+    /*
+     * Author: Zeljko Vrbaski - e11442
+     * Klasa WiiFabrika je promenjena u toliko da sada postoji unutrasnja klasa koja obezbedjuje
+     * da se i pored pozivanja statickih metoda ove klase, njena instanca nece kreirati. 
+     * Prvo kreiranje njene isntance se desava pozivom metode dobaviInstancu().
+     * 
+     * Dodat je atribut sealed na WiiFabrika klasu kako bi se onemogucilo njeno nasledjivanje.
+     * 
+     */
+
     ///<summary>
     /// Singleton klasa koja sluzi ka kreiranje Kontrolera i prekid komunikaije sa kontrolerima.
     ///</summary>
     ///up i down
-    public class WiiFabrika
+    public sealed class WiiFabrika
     {
         /// <summary>
         /// Metoda za dobavljanje instance WiiFabrike.
         /// </summary>
         /// <returns>instanca WiiFabrike</returns>
-        public WiiFabrika dobaviInstancu() { return null; }
+        public static WiiFabrika dobaviInstancu() 
+        {
+                return UnutrasnjaKlasa.instancaFabrike;
+        }
+
+        /// <summary>
+        /// Unutrasnja klasa sluzi da obezbedi Lazy inicijalizaciju instance WiiFabrika klase
+        /// </summary>
+        class UnutrasnjaKlasa
+        {
+            /// <summary>
+            /// Konstruktor klase UnutrasnjaKlasa
+            /// </summary>
+            static UnutrasnjaKlasa() { }
+
+            /// <summary>
+            /// Jedina instanca klase WiiFabrika, skrivena u unutrasnjoj klasi radi lazy inicijalizacije
+            /// </summary>
+            internal static readonly WiiFabrika instancaFabrike = new WiiFabrika();
+        }
+
+        /// <summary>
+        /// Kao singleton klasa konstruktor je private.
+        /// </summary>
+        private WiiFabrika() 
+        {
+            //TODO
+        }
 
         ///<summary>
         /// Postavlja putanju do datoteke iz koje ce se citati ponasanje emulatora 
