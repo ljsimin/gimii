@@ -7,13 +7,13 @@ Ovde imamo spisak svih stvari koje su koristimo, kao i ko ih trenutno poseduje.
 
 == Lista ==
 
-  # *WiiMote br 1*                -   _Ljubomir Simin_
-  # *WiiMote br 2*                -   _Vladimir Ivančević_
-  # *BlueTooth dongle Ivetićev*   -   _Vladimir Ivančević_
-  # *DebugBar v1.0*               -   _Ljubomir Simin_
-  # *HeadTracing Naocare*         -   _Danilo Basarić_
-  # *IR marker Sith model br 1*   -   _Ljubomir Simin_
-  # *IR marker Sith model br 2*   -   _Ljubomir Simin_
-  # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
-  # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
-  # *IR CrownCable*               -   _Ljubomir Simin_
+  # *!WiiMote br 1*                -   _Ljubomir Simin_
+  # *!WiiMote br 2*                -   _Vladimir Ivančević_
+  # *!BlueTooth dongle Ivetićev*   -   _Vladimir Ivančević_
+  # *!DebugBar v1.0*               -   _Ljubomir Simin_
+  # *!HeadTracing Naocare*         -   _Danilo Basarić_
+  # *!IR marker Sith model br 1*   -   _Ljubomir Simin_
+  # *!IR marker Sith model br 2*   -   _Ljubomir Simin_
+  # *!IR marker Jedi model br 2*   -   _Ljubomir Simin_
+  # *!IR marker Jedi model br 2*   -   _Ljubomir Simin_
+  # *!IR CrownCable*               -   _Ljubomir Simin_
