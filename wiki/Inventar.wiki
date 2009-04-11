@@ -16,4 +16,4 @@ Ovde imamo spisak svih stvari koje su koristimo, kao i ko ih trenutno poseduje.
   # *IR marker Sith model br 2*   -   _Ljubomir Simin_
   # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
   # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
-  # *IR CrownCable*               -   _Ljubomir Simin_
+  # *IR !CrownCable*               -   _Ljubomir Simin_
