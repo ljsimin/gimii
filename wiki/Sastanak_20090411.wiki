@@ -13,3 +13,20 @@ Sastanak će se sastojati iz dva dela:
   * Radna sesija
 
 Nakon održanog prvog dela sastanka, ko ne želi može da ode kući :). Ostali ostaju kod Danila da kucaju kod. Možemo  takođe preko chata i video konferencije komunicirati sa članovima koji bi da rade od kuće.
+
+
+= Rezime =
+
+Na sastanku smo se dogovorili oko daljeg rada, i definisali sledeće poslove:
+  # Dovršavanje implementacije osnovnog API-ja
+  # Definisanje API-ja višeg nivoa (2 i 3D pointerski uređaji, za sada)
+  # Ispitivanje rada sa DirectX/Direct3D-om, za kasnije
+  # Nabavka boljih LED dioda
+
+Podelili posao na sledeći način:
+  * Implementacija klase WiiEmulator - Veljko
+  * Implementacija klase WiiFabrika - Danilo
+  * Implementacija klase WiiKontroler i nabavka i testiranje LED dioda - Ljubomir
+  * Dizajniranje API-ja višeg nivoa - Željko i Raja
+  * Istraživanje Direct3D-a - Vlada
+
