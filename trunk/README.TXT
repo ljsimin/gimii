@@ -8,6 +8,7 @@ Dragan Stevanov
 Nikola Staletović
 Željko Vrbaški
 Vladimir Ivančević
+Rajačić Nikola
 
 Projekat razvijan pod pokroviteljstvom Fakulteta Tehničkih Nauka u Novom Sadu.
 Mentor projekta: Prof. dr Dragan Ivetić, dipl. ing
