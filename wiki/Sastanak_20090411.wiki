@@ -1,4 +1,5 @@
 #summary Sastanak u subotu, 11. aprila
+#labels sastanak
 
 = 17h kod Danila =
 
