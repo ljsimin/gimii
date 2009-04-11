@@ -187,6 +187,18 @@ namespace SimpleWiiRecorder
                 wrec.Write(System.DateTime.Now.Ticks - time);
                 wrec.Write(ws.ButtonState.A);
                 wrec.Write(ws.ButtonState.B);
+
+                wrec.Write(ws.ButtonState.Plus);
+                wrec.Write(ws.ButtonState.Home);
+                wrec.Write(ws.ButtonState.Minus);
+                wrec.Write(ws.ButtonState.One);
+                wrec.Write(ws.ButtonState.Two);
+
+                wrec.Write(ws.ButtonState.Left);
+                wrec.Write(ws.ButtonState.Up);
+                wrec.Write(ws.ButtonState.Right);
+                wrec.Write(ws.ButtonState.Down);
+
                 wrec.Write(ws.AccelState.Values.X);
                 wrec.Write(ws.AccelState.Values.Y);
                 wrec.Write(ws.AccelState.Values.Z);

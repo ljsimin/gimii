@@ -94,6 +94,18 @@ namespace SimpleWiiRecorder
                     s.time = r.ReadInt64();
                     s.buttonA = r.ReadBoolean();
                     s.buttonB = r.ReadBoolean();
+
+                    s.buttonPlus = r.ReadBoolean();
+                    s.buttonHome = r.ReadBoolean();
+                    s.buttonMinus = r.ReadBoolean();
+                    s.buttonOne = r.ReadBoolean();
+                    s.buttonTwo = r.ReadBoolean();
+
+                    s.buttonLeft = r.ReadBoolean();
+                    s.buttonUp = r.ReadBoolean();
+                    s.buttonRight = r.ReadBoolean();
+                    s.buttonDown = r.ReadBoolean();
+
                     s.accelX = r.ReadSingle();
                     s.accelY = r.ReadSingle();
                     s.accelZ = r.ReadSingle();

@@ -7,3 +7,5 @@ C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleW
 C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.csproj.GenerateResource.Cache
 C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
 C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\gimii\My Documents\svn\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\gimii\My Documents\svn\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
