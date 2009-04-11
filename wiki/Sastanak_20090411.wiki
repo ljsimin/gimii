@@ -3,7 +3,6 @@
 
 = 17h kod Danila =
 
-Add your content here.
 
 
 = Plan =
@@ -29,4 +28,3 @@ Podelili posao na sledeći način:
   * Implementacija klase WiiKontroler i nabavka i testiranje LED dioda - Ljubomir
   * Dizajniranje API-ja višeg nivoa - Željko i Raja
   * Istraživanje Direct3D-a - Vlada
-
