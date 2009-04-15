@@ -9,3 +9,4 @@ Ovde bi trebalo da svako napiše da li radi bachelor ili seminarski rad, kao i i
 
   * Danilo Basarić   -   Odriče se pisanja rada
   * Ljubomir Simin   -   oće da piše, ne zna šta
+  * Željko Vrbaški   -   ja bih bio zadovoljan da pišem o API'ju, ali koliko se o tome može pisati
