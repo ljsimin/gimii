@@ -20,3 +20,4 @@ Struktura projekta:
   * MouseAccelDemo - GUI aplikacija koja na osnovu očitavanja akcelerometra Wii kontrolera upravlja kursorom na ekranu
   * GimiiIR - GUI aplikacija koja na osnovu očitavanja IR senzora Wii kontrolera upravlja kursorom na ekranu u 3 dimenzije
   * KeepWii - GUI aplikacija za cuvanje Bluetooth konekcije
+  * AccelerationDirectX - GUI aplikacija koja koristeci akcelerometar i dugmad Wii kontrolera omogucava kretanje u 3d sceni i jos ponesto, a podrzana je i tastatura; za realizaciju grafickih i multimedijalnih elemenata koriscen je DirectX
