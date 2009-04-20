@@ -1,0 +1,13 @@
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\i.jpg
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\m.wav
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\m1.wav
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\m2.wav
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\WiimoteLib.dll
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\AccelerationDirectX.exe
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\bin\Debug\AccelerationDirectX.pdb
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\ResolveAssemblyReference.cache
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.Form1.resources
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.Properties.Resources.resources
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.csproj.GenerateResource.Cache
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.exe
+C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.pdb
