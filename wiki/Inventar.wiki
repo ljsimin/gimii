@@ -14,6 +14,6 @@ Ovde imamo spisak svih stvari koje su koristimo, kao i ko ih trenutno poseduje.
   # *!HeadTracing Naocare*         -   _Danilo Basarić_
   # *IR marker Sith model br 1*   -   _Ljubomir Simin_
   # *IR marker Sith model br 2*   -   _Ljubomir Simin_
-  # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
+  # *IR marker Jedi model br 1*   -   _Ljubomir Simin_
   # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
   # *IR !CrownCable*               -   _Ljubomir Simin_
