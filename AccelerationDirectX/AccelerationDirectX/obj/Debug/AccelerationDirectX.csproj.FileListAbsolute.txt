@@ -11,3 +11,5 @@ C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\Acceleration
 C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.csproj.GenerateResource.Cache
 C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.exe
 C:\svngimii\trunk\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.pdb
+D:\Wii\GOOGLE PROJECT\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.exe
+D:\Wii\GOOGLE PROJECT\AccelerationDirectX\AccelerationDirectX\obj\Debug\AccelerationDirectX.pdb

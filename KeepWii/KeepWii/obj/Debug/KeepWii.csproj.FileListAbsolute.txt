@@ -15,3 +15,5 @@ C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWi
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\KeepWii.exe
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\KeepWii.pdb
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\WiimoteLib.dll
+D:\Wii\GOOGLE PROJECT\KeepWii\KeepWii\obj\Debug\KeepWii.exe
+D:\Wii\GOOGLE PROJECT\KeepWii\KeepWii\obj\Debug\KeepWii.pdb
