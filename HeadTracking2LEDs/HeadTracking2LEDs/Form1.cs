@@ -37,7 +37,8 @@ namespace HeadTracking2LEDs
 
         private Mesh tor = null;
         private Mesh glob = null;
-        private Mesh pil = null;
+        private Mesh lopta = null;
+        private Mesh zid = null;
 
         private Texture texI = null;
 
@@ -171,7 +172,8 @@ namespace HeadTracking2LEDs
             glob = Mesh.Sphere(device, 0.2f, 72, 72);
             //pil = Mesh.Box(device, 0.4f, 0.4f, 0.4f);
             //pil = Mesh.Cylinder(device, 0.4f, 0.3f, 1.0f, 72, 72);
-            pil = Mesh.Sphere(device, 0.5f, 72, 72);
+            lopta = Mesh.Sphere(device, 1.0f, 72, 72);
+            zid = Mesh.Box(device, 20.0f, 4.0f, 1.0f);
 
             vbTerrain = new VertexBuffer(typeof(CustomVertex.PositionNormalColored), 800, device, Usage.Dynamic | Usage.WriteOnly, CustomVertex.PositionNormalColored.Format, Pool.Default);
             vbTerrain.Created += new EventHandler(this.OnVertexBufferCreate);
@@ -183,7 +185,8 @@ namespace HeadTracking2LEDs
 
             mStack = new MatrixStack();
 
-            myCamera = new Camera(new Vector3(0.0f, 5.0f, -15.0f), new Vector3(0.0f, 5.0f, 40.0f), new Vector3(0.0f, 1.0f, 0.0f), new Vector3(0.0f, 0.0f, 1.0f), new Vector3(0.0f, 0.0f, 1.0f));
+            //myCamera = new Camera(new Vector3(0.0f, 5.0f, -15.0f), new Vector3(0.0f, 5.0f, 40.0f), new Vector3(0.0f, 1.0f, 0.0f), new Vector3(0.0f, 0.0f, 1.0f), new Vector3(0.0f, 0.0f, 1.0f));
+            myCamera = new Camera(new Vector3(0.0f, 5.0f, 60.0f), new Vector3(0.0f, 0.0f, 0.0f), new Vector3(0.0f, 1.0f, 0.0f), new Vector3(0.0f, 0.0f, 1.0f), new Vector3(0.0f, 0.0f, 1.0f));
         }
 
         private void OnIndexBufferCreate(object sender, EventArgs e)
@@ -259,7 +262,7 @@ namespace HeadTracking2LEDs
             device.Lights[0].Type = LightType.Directional;
             //device.Lights[0].Diffuse = Color.DarkBlue;
             device.Lights[0].Diffuse = Color.White;
-            device.Lights[0].Direction = new Vector3(0.0f, -0.5f, 1.0f);
+            device.Lights[0].Direction = new Vector3(0.3f, -0.5f, -0.3f);
             device.Lights[0].Enabled = true;
 
             Color lightDiffColor = Color.White;
@@ -305,7 +308,7 @@ namespace HeadTracking2LEDs
 
             mStack.Push();
             {
-                mStack.Push();
+               /* mStack.Push();
                 {
                     //DOUBLE PYRAMID
                     device.VertexFormat = CustomVertex.PositionNormalColored.Format;
@@ -338,7 +341,7 @@ namespace HeadTracking2LEDs
                 }
                 mStack.Pop();
 
-
+                */
 
 
 
@@ -347,56 +350,60 @@ namespace HeadTracking2LEDs
 
                 mStack.Push();
                 {
-                    // PILLAR
+                    // LOPTA
 
-                    Material pilMaterial = new Material();
-                    pilMaterial.Ambient = Color.White;
-                    pilMaterial.Diffuse = Color.White;
-                    pilMaterial.Specular = Color.White;
-                    device.Material = pilMaterial;
+                    Material loptaMaterial = new Material();
+                    loptaMaterial.Ambient = Color.White;
+                    loptaMaterial.Diffuse = Color.White;
+                    loptaMaterial.Specular = Color.White;
+                    device.Material = loptaMaterial;
 
                     device.VertexFormat = CustomVertex.PositionNormalTextured.Format;
 
                     mStack.Push();
                     {
                         mStack.MultiplyMatrixLocal(
-                            Matrix.RotationAxis(new Vector3(1, 0, 0), -(float)Math.PI / 2) *
-                            Matrix.Scaling(1.5f, 4.0f, 1.7f) *
-                            Matrix.Translation(2.0f, 2.0f, 34.0f)
+                            /*Matrix.RotationAxis(new Vector3(1, 0, 0), -(float)Math.PI / 2) *
+                            Matrix.Scaling(4.0f, 4.0f, 4.0f) **/
+                            Matrix.Translation(0.0f, 1.0f, 0.0f)
                             );
                         device.Transform.World = mStack.Top;
-                        pil.DrawSubset(0);
+                        lopta.DrawSubset(0);
                     }
                     mStack.Pop();
 
-                    mStack.Push();
-                    {
-                        mStack.MultiplyMatrixLocal(
-                            Matrix.RotationAxis(new Vector3(1, 0, 0), -(float)Math.PI / 2) *
-                            Matrix.Scaling(1.5f, 4.0f, 1.7f) *
-                            Matrix.Translation(-2.0f, 2.0f, 34.0f)
-                            );
-                        device.Transform.World = mStack.Top;
-                        pil.DrawSubset(0);
-                    }
-                    mStack.Pop();
-
-                    mStack.Push();
-                    {
-                        mStack.MultiplyMatrixLocal(
-                            Matrix.Scaling(1.5f, 5.0f, 1.5f) *
-                            Matrix.RotationAxis(new Vector3(1, 0, 0), -(float)Math.PI / 2) *
-                            Matrix.RotationAxis(new Vector3(0, 1, 0), -(float)Math.PI / 2) *
-                            Matrix.Translation(0.0f, 4.4f, 34.0f)
-                            );
-                        device.Transform.World = mStack.Top;
-                        pil.DrawSubset(0);
-                    }
-                    mStack.Pop();
+                   
                 }
                 mStack.Pop();
 
+
                 mStack.Push();
+                {
+                    // ZID
+                    Material zidMaterial = new Material();
+                    zidMaterial.Ambient = Color.White;
+                    zidMaterial.Diffuse = Color.Brown;
+                    zidMaterial.Specular = Color.White;
+                    device.Material = zidMaterial;
+
+                    device.VertexFormat = CustomVertex.PositionNormalTextured.Format;
+
+                    mStack.Push();
+                    {
+                        mStack.MultiplyMatrixLocal(
+                            /*Matrix.RotationAxis(new Vector3(1, 0, 0), -(float)Math.PI / 2) *
+                            Matrix.Scaling(4.0f, 4.0f, 4.0f) **/
+                            Matrix.Translation(0.0f, 2.0f, 10.0f)
+                            );
+                        device.Transform.World = mStack.Top;
+                        zid.DrawSubset(0);
+                    }
+                    mStack.Pop();
+
+                }
+                mStack.Pop();
+
+                /*mStack.Push();
                 {
                     device.VertexFormat = CustomVertex.PositionNormalTextured.Format;
 
@@ -435,7 +442,7 @@ namespace HeadTracking2LEDs
 
                     device.SetTexture(0, null);
                 }
-                mStack.Pop();
+                mStack.Pop();*/
 
             }
             mStack.Pop();
@@ -518,19 +525,19 @@ namespace HeadTracking2LEDs
 
             if (keys[DI.Key.A])
             {
-                myCamera.MoveStrafeLeftRight(moveStep);
+                myCamera.MoveStrafeLeftRight(-moveStep);
             }
             if (keys[DI.Key.D])
             {
-                myCamera.MoveStrafeLeftRight(-moveStep);
+                myCamera.MoveStrafeLeftRight(moveStep);
             }
             if (keys[DI.Key.W])
             {
-                myCamera.MoveForwardBackward(moveStep);
+                myCamera.MoveForwardBackward(-moveStep);
             }
             if (keys[DI.Key.S])
             {
-                myCamera.MoveForwardBackward(-moveStep);
+                myCamera.MoveForwardBackward(moveStep);
             }
             if (keys[DI.Key.C])
             {
@@ -568,7 +575,7 @@ namespace HeadTracking2LEDs
         protected void readWii()
         {
 
-            myCamera.SetPosition(new Vector3(-5 * wii.HeadX, 5 * wii.HeadY, -5 * wii.HeadDist));
+            myCamera.SetPosition(new Vector3(5 * wii.HeadX, 5 * wii.HeadY, 5 * wii.HeadDist));
 
         }
 
