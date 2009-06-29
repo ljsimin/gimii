@@ -26,7 +26,7 @@ namespace HeadTracking2LEDs
         float screenAspect = 0;
         float cameraVerticaleAngle = 0; //begins assuming the camera is point straight forward
         float relativeVerticalAngle = 0; //current head position view angle
-        bool cameraIsAboveScreen = false;//has no affect until zeroing and then is set automatically.
+        bool cameraIsAboveScreen = true;//has no affect until zeroing and then is set automatically.
 
         //headposition
         float headX = 0;
