@@ -56,7 +56,7 @@ namespace HeadTracking2LEDs
 
         protected System.Timers.Timer myTimer;
 
-        static private int TIMER_INTERVAL = 40;
+        static private int TIMER_INTERVAL = 20;
 
         static private int interval_counter = 0;    
 
@@ -69,6 +69,8 @@ namespace HeadTracking2LEDs
 
         private bool showInfo = true;
         static private bool gameover = false;
+        //promenljiva prati da li je potrbno vrsiti korekciju polozaja loptice
+        private bool correct = true;
 
 
         public Pong()
@@ -138,8 +140,9 @@ namespace HeadTracking2LEDs
             // Create device
             device = new Device(0, DeviceType.Hardware, this, CreateFlags.SoftwareVertexProcessing, presentParams);
 
-            device.RenderState.SourceBlend = Blend.One;
-            device.RenderState.DestinationBlend = Blend.One;
+            device.RenderState.AlphaBlendEnable = true;
+            device.RenderState.SourceBlend = Blend.SourceAlpha;
+            device.RenderState.DestinationBlend = Blend.InvSourceAlpha;
             ball = Mesh.Sphere(device, Ballradius, 16, 16);
             table = Mesh.Box(device, TableSize, TableSize, 0.1f);
             vbTerrain = new VertexBuffer(typeof(CustomVertex.PositionNormalColored), 800, device, Usage.Dynamic | Usage.WriteOnly, CustomVertex.PositionNormalColored.Format, Pool.Default);
@@ -251,6 +254,7 @@ namespace HeadTracking2LEDs
         private void MoveBall(){
         // process ball
             ballPosition += ballDirection;
+            Console.Out.WriteLine(ballPosition.Z);
 
             // check end
             if (ballPosition.Z < -15)
@@ -259,8 +263,18 @@ namespace HeadTracking2LEDs
                 gameover = true;
                 return;
             }
+            //korekcija polozaja loptice
+            //ako se loptica krace previse brzo nikada se nece naci u polozaju u kom bi mogla da se odbije
+            //zato se prvi put kad loptica prodje iza 0 ravni ona vraca na tu ravan kako bi se ispitalo da li
+            //je odbijena
+            if (ballPosition.Z < 0 && correct)
+            {
+                correct = false;
+                ballPosition -= ballDirection * (ballPosition.Z / ballDirection.Z);
+                Console.Out.WriteLine("correctes"+ballPosition.Z);
+             }
             // check panel hit
-            if (ballPosition.Z < 1.3 && ballPosition.Z > 0.3)
+            if (ballPosition.Z < 1.3 && ballPosition.Z >= -0.1)
             {
                 if ((ballPosition.X +0.5f > tablePosition.X - TableSize / 2 && ballPosition.X - 0.5f < tablePosition.X + TableSize / 2) &&
                        (ballPosition.Y + 0.5f > tablePosition.Y - TableSize / 2 && ballPosition.Y - 0.5f < tablePosition.Y + TableSize / 2)) 
@@ -272,10 +286,10 @@ namespace HeadTracking2LEDs
 
             }
             // check wall hit
-            if (ballPosition.X < 0.6f) ballDirection = Reflect(ballDirection, new Vector3(1, 0, 0));
-            if (ballPosition.X > FieldWidth - 0.6f) ballDirection = Reflect(ballDirection, new Vector3(-1, 0, 0));
-            if (ballPosition.Y < 0.6f) ballDirection = Reflect(ballDirection, new Vector3(0, 1, 0));
-            if (ballPosition.Y > FieldHeight-0.6f) ballDirection = Reflect(ballDirection, new Vector3(0, -1, 0));
+            if (ballPosition.X < 0.6f && ballPosition.Z>0) ballDirection = Reflect(ballDirection, new Vector3(1, 0, 0));
+            if (ballPosition.X > FieldWidth - 0.6f && ballPosition.Z > 0) ballDirection = Reflect(ballDirection, new Vector3(-1, 0, 0));
+            if (ballPosition.Y < 0.6f && ballPosition.Z > 0) ballDirection = Reflect(ballDirection, new Vector3(0, 1, 0));
+            if (ballPosition.Y > FieldHeight - 0.6f && ballPosition.Z > 0) ballDirection = Reflect(ballDirection, new Vector3(0, -1, 0));
             if (ballPosition.Z > FieldLength-0.6f) ballDirection = Reflect(ballDirection, new Vector3(0, 0, -1));
         }
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
@@ -320,13 +334,13 @@ namespace HeadTracking2LEDs
 
                     ball.DrawSubset(0);
                                        
-                    myMaterial.Diffuse = Color.Transparent;
-                    myMaterial.Ambient = Color.Transparent;
+                    myMaterial.Diffuse = Color.FromArgb(120,Color.Cyan);
+                    myMaterial.Ambient = Color.FromArgb(120, Color.Cyan);
                     device.Material = myMaterial;
                     device.Transform.World = Matrix.Translation(tablePosition);
-                    device.RenderState.FillMode = FillMode.WireFrame;
+                    //device.RenderState.FillMode = FillMode.WireFrame;
                     table.DrawSubset(0);
-                    device.RenderState.FillMode = FillMode.Solid;
+                    //device.RenderState.FillMode = FillMode.Solid;
             }
                 mStack.Pop();
             if (showInfo)
@@ -491,7 +505,8 @@ namespace HeadTracking2LEDs
         {
             // play sound
             // hitSound.Play(0, DSound.BufferPlayFlags.Default);
-
+            Console.Out.WriteLine("ref");
+            correct = true;
             return input - 2 * Vector3.Dot(input, normal) * normal;
         }
         static void Main()
