@@ -23,14 +23,17 @@ namespace HeadTracking2LEDs
     {
         private Device device = null;
 
-        public const int ScreenWidth = 800;
-        public const int ScreenHeight = 600;
+        public const int ScreenWidth = 1280;
+        public const int ScreenHeight = 800;
 
         private bool fullscreen = false;
 
         private VertexBuffer vbTerrain = null;
 
         private Microsoft.DirectX.Direct3D.Font infoFont;
+        private Microsoft.DirectX.Direct3D.Font timeFont;
+        private Microsoft.DirectX.Direct3D.Font gameoverFont;
+        private Microsoft.DirectX.Direct3D.Font gameovertimeFont;
         
         private Mesh ball = null;
         private Mesh table = null;
@@ -45,32 +48,28 @@ namespace HeadTracking2LEDs
         private const float FieldWidth = 30;
         private const float FieldHeight = 20;
         private const float TableSize = 4;
-        private const float Ballradius = 1;
+        private const float Ballradius = 0.5f;
         
-        private float angleTor = 0.0f;
-        private float angleTorStep = 0.002f;
-
-        private float pyrUpDown = 0.0f;
-        private float pyrUpDownStep = 0.005f;
-
-        private float angleGlob = 0.0f;
-        private float angleGlobStep = 0.02f;
-
-        private float moveStep = 0.25f;
-
         private Camera myCamera = null;
 
         private Microsoft.DirectX.DirectInput.Device keyb;
 
         protected System.Timers.Timer myTimer;
 
-        private int TIMER_INTERVAL = 40;
+        static private int TIMER_INTERVAL = 40;
+
+        static private int interval_counter = 0;    
+
+        static private int minutes = 0;
+        static private int seconds = 0;
 
         private MatrixStack mStack = new MatrixStack();
 
         private WiiController wii;
 
         private bool showInfo = true;
+        static private bool gameover = false;
+
 
         public Pong()
         {
@@ -105,7 +104,7 @@ namespace HeadTracking2LEDs
         {
             // Set presentation parameters
             PresentParameters presentParams = new PresentParameters();
-
+            
             presentParams.Windowed = true;
             presentParams.MultiSample = MultiSampleType.FourSamples;
             presentParams.SwapEffect = SwapEffect.Discard;
@@ -139,7 +138,8 @@ namespace HeadTracking2LEDs
             // Create device
             device = new Device(0, DeviceType.Hardware, this, CreateFlags.SoftwareVertexProcessing, presentParams);
 
-           
+            device.RenderState.SourceBlend = Blend.One;
+            device.RenderState.DestinationBlend = Blend.One;
             ball = Mesh.Sphere(device, Ballradius, 16, 16);
             table = Mesh.Box(device, TableSize, TableSize, 0.1f);
             vbTerrain = new VertexBuffer(typeof(CustomVertex.PositionNormalColored), 800, device, Usage.Dynamic | Usage.WriteOnly, CustomVertex.PositionNormalColored.Format, Pool.Default);
@@ -147,7 +147,9 @@ namespace HeadTracking2LEDs
             OnVertexBufferCreate(vbTerrain, null);
 
             infoFont = new Microsoft.DirectX.Direct3D.Font(device, new System.Drawing.Font("Arial", 12.0f, FontStyle.Regular));
-
+            timeFont = new Microsoft.DirectX.Direct3D.Font(device, new System.Drawing.Font("Arial", 22.0f, FontStyle.Regular));
+            gameoverFont = new Microsoft.DirectX.Direct3D.Font(device, new System.Drawing.Font("Courier", 40.0f, FontStyle.Bold));
+            gameovertimeFont = new Microsoft.DirectX.Direct3D.Font(device, new System.Drawing.Font("Courier", 22.0f, FontStyle.Regular));
             mStack = new MatrixStack();
 
             myCamera = new Camera(new Vector3(15.0f, 10.0f, -27.0f), new Vector3(15.0f, 10.0f, 50.0f), new Vector3(0.0f, 1.0f, 0.0f), new Vector3(0.0f, 0.0f, 1.0f), new Vector3(0.0f, 0.0f, 1.0f));
@@ -219,7 +221,6 @@ namespace HeadTracking2LEDs
         private void SetupCamera()
         {
             device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 3, this.Width / this.Height, 1.0f, 10000.0f);
-            //device.Transform.View = Matrix.LookAtLH(new Vector3(0, 0, -15.0f), new Vector3(0,0,0), new Vector3(0, 1, 0));
             device.Transform.View = myCamera.LookLeftHanded();
 
             // Setting back face culling
@@ -244,7 +245,6 @@ namespace HeadTracking2LEDs
 
             device.Lights[1].Type = LightType.Directional;
             device.Lights[1].Diffuse = lightDiffColor;
-            //device.Lights[1].Direction = new Vector3(0.0f, 1.0f, 0.0f);
             device.Lights[1].Direction = new Vector3(0.0f, 1.0f, 0.0f);
             device.Lights[1].Enabled = true;
         }
@@ -256,7 +256,7 @@ namespace HeadTracking2LEDs
             if (ballPosition.Z < -15)
             {
                // score2++;
-                ReStart();
+                gameover = true;
                 return;
             }
             // check panel hit
@@ -324,6 +324,7 @@ namespace HeadTracking2LEDs
                     myMaterial.Ambient = Color.Transparent;
                     device.Material = myMaterial;
                     device.Transform.World = Matrix.Translation(tablePosition);
+                    device.RenderState.FillMode = FillMode.WireFrame;
                     table.DrawSubset(0);
                     device.RenderState.FillMode = FillMode.Solid;
             }
@@ -341,12 +342,32 @@ namespace HeadTracking2LEDs
                     if (wii.Connected)
                         ctrl = "Press R to calibrate"
                             + "\nX1: " + wii.X1 + "  Y1: " + wii.Y1 + "  X2: " + wii.X2 + "  Y2: " + wii.Y2 +
-                            "  \nHeadX: " + wii.HeadX + "  HeadY: " + wii.HeadY + "  HeadDist: " + wii.HeadDist;
+                            "  \nHeadX: " + wii.HeadX *5 + "  HeadY: " + wii.HeadY *5 + "  HeadDist: " + wii.HeadDist;
 
-                infoFont.DrawText(null, ctrl, new Rectangle(25, 65, 0, 0),
+               infoFont.DrawText(null, ctrl, new Rectangle(25, 65, 0, 0),
                DrawTextFormat.NoClip, Color.PaleGreen);
+                /**********************************************************************************/
+                ctrl= "Time: ";
+                if (minutes < 10) { ctrl += "0"; }
+                ctrl+=minutes.ToString()+":";
+                if (seconds < 10) { ctrl += "0"; }
+                ctrl+=seconds.ToString();
+               timeFont.DrawText(null, ctrl , new Rectangle(1100, 40, 0, 0),
+              DrawTextFormat.NoClip, Color.PaleGreen);
 
-
+            }
+            if (gameover) {
+                string ctrl = "Your time: ";
+                if (minutes < 10) { ctrl += "0"; }
+                ctrl += minutes.ToString() + ":";
+                if (seconds < 10) { ctrl += "0"; }
+                ctrl += seconds.ToString();
+                gameoverFont.DrawText(null, "Game Over", new Rectangle(500, 300, 0, 0),
+                  DrawTextFormat.NoClip, Color.Cyan);
+                gameovertimeFont.DrawText(null, ctrl, new Rectangle(535, 380, 0, 0),
+                  DrawTextFormat.NoClip, Color.Cyan);
+                gameovertimeFont.DrawText(null, "Press space to try again", new Rectangle(490, 420, 0, 0),
+                 DrawTextFormat.NoClip, Color.Cyan);
             }
 
             device.EndScene();
@@ -386,25 +407,15 @@ namespace HeadTracking2LEDs
                     CloseTheForm();
                 }
             }
+            if (e.KeyCode == Keys.Space)
+            {
+                ReStart();
+            }
         }
 
         protected void readKeyboard()
         {
             DI.KeyboardState keys = keyb.GetCurrentKeyboardState();
-            if (keys[DI.Key.F1])
-            {
-                myCamera.SetPosition(new Vector3(0.0f, 20.0f, -15.0f));
-            }
-            if (keys[DI.Key.F2])
-            {
-                myCamera.SetPosition(new Vector3(-2.0f, 2.0f, -15.0f));
-            }
-            if (keys[DI.Key.F3])
-            {
-                myCamera.SetPosition(new Vector3(30.0f, -20.0f, -15.0f));
-            }
-
-
             if (keys[DI.Key.A])
             {
                 if (tablePosition.X > 0 + TableSize / 2) tablePosition.X -= 1;
@@ -421,68 +432,14 @@ namespace HeadTracking2LEDs
             {
                 if (tablePosition.Y < FieldHeight - TableSize / 2) tablePosition.Y += 1;
             }
-
-
-            if (keys[DI.Key.C])
-            {
-                myCamera.MoveUpDown(-moveStep);
-            }
-            if (keys[DI.Key.Space])
-            {
-                myCamera.MoveUpDown(moveStep);
-            }
-            if (keys[DI.Key.Up])
-            {
-                myCamera.Pitch(0.02f);
-            }
-            if (keys[DI.Key.Down])
-            {
-                myCamera.Pitch(-0.02f);
-            }
-            if (keys[DI.Key.Left])
-            {
-                if (keys[DI.Key.LeftAlt])
-                    myCamera.Yaw(0.02f);
-                else
-                    myCamera.MoveViewRotateLeftRight(0.02f);
-            }
-            if (keys[DI.Key.Right])
-            {
-                if (keys[DI.Key.LeftAlt])
-                    myCamera.Yaw(-0.02f);
-                else
-                    myCamera.MoveViewRotateLeftRight(-0.02f);
-            }
-            MoveBall();
         }
 
         protected void readWii()
         {
 
-            tablePosition = new Vector3(-5 * wii.HeadX, 5 * wii.HeadY, 0);
+            tablePosition = new Vector3(20 - 20 * wii.HeadX, -5+20 * wii.HeadY, 0);
 
         }
-
-
-        protected void setAnimationParameters()
-        {
-            if (pyrUpDown > 1 || pyrUpDown < -1)
-                pyrUpDownStep *= -1;
-
-            pyrUpDown += pyrUpDownStep;
-
-            if (angleTor > 0.3 || angleTor < -0.3)
-                angleTorStep *= -1;
-
-            angleTor += angleTorStep;
-
-            if (angleGlob >= 2 * Math.PI)
-                angleGlob = 0.0f;
-
-            angleGlob += angleGlobStep;
-
-        }
-
         public void CloseTheForm()
         {
             if (wii.Connected)
@@ -493,12 +450,30 @@ namespace HeadTracking2LEDs
 
         protected void TimerEventProcessor(object source, ElapsedEventArgs e)
         {
-            readKeyboard();
+            if (!gameover)
+            {
+                readKeyboard();
 
-            if (wii.Connected)
-                readWii();
+                if (wii.Connected)
+                    readWii();
 
-            setAnimationParameters();
+                MoveBall();
+
+                if (++interval_counter * TIMER_INTERVAL == 1000)
+                {
+                    seconds++;
+                    interval_counter = 0;
+                    if (seconds % 60 == 0)
+                    {
+                        seconds = 0;
+                        minutes++;
+                    }
+                    if (seconds % 15 == 0)
+                    {
+                        ballDirection *= 1.5f;
+                    }
+                }
+            }
             //setAudio();
         }
         static public void ReStart()
@@ -506,6 +481,11 @@ namespace HeadTracking2LEDs
             ballPosition = new Vector3(FieldWidth / 2, FieldHeight / 2, FieldLength / 2);
             ballDirection = new Vector3(0.2f, 0.1f, 0.7f);
             tablePosition = new Vector3(FieldWidth / 2, FieldHeight / 2, 0);
+            TIMER_INTERVAL = 40;
+            interval_counter = 0;    
+            minutes = 0;
+            seconds = 0;
+            gameover = false;
         }
         private Vector3 Reflect(Vector3 input, Vector3 normal)
         {
