@@ -18,7 +18,7 @@ namespace WiiApi
         ///<summary>
         /// Metoda za manipulaciju nad vibracijom kontrolera, za WiiEmulator metoda je prazna.
         ///</summary>
-        bool ukljuciVibrator(bool ukljucen);
+        bool postaviVibrator(bool ukljucen);
 
         ///<summary>
         /// Dogadjaj promene stanja
