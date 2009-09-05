@@ -49,7 +49,7 @@
     <Compile Include="ParametriDogadjaja.cs" />
     <Compile Include="Reakcija.cs" />
     <Compile Include="Stanje.cs" />
-    <Compile Include="WiiEmulator.cs" />
+    <Compile Include="Emulator.cs" />
     <Compile Include="WiiFabrika.cs" />
     <Compile Include="WiiMisAdapter.cs" />
   </ItemGroup>
