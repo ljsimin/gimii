@@ -5,9 +5,9 @@ using System.Text;
 
 namespace WiiApi
 {
-    class WiiEmulator : Kontroler
+    class Emulator : Kontroler
     {
-        public WiiEmulator(BinaryReadeer r){
+        public Emulator(BinaryReadeer r){
 
         }
 
