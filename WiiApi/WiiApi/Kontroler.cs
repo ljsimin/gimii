@@ -34,7 +34,7 @@ namespace WiiApi
         /// Dogadjaj pritiskanja dugmeta
         ///</summary>
         event WiiApi.ObradjivacPritiskaDugmeta PritisnutoDugme;
-        
+
         /// <summary>
         /// Metoda koja pokrece citanje iz fajla ukoliko je objekat koji se nalazi iza interfejsa
         /// WiiEmulator, a prazna je ukoliko je iza interfejsa WiiKontroler.

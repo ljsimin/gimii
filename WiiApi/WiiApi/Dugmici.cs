@@ -11,81 +11,85 @@ namespace WiiApi
     /// </summary>
     public class Dugmici
     {
-                        /// <summary>
-                        /// Polje za stanje dugmeta a
-                        /// </summary>
-        private bool    a = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta b
-                        /// </summary>
+        /// <summary>
+        /// Polje za stanje dugmeta a
+        /// </summary>
+        private bool a = false,
+            /// <summary>
+            /// Polje za stanje dugmeta b
+            /// </summary>
                         b = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta jedan
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta jedan
+            /// </summary>
                         jedan = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta dva
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta dva
+            /// </summary>
                         dva = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta dom
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta dom
+            /// </summary>
                         dom = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta gore
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta gore
+            /// </summary>
                         gore = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta dole
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta dole
+            /// </summary>
                         dole = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta levo
-                        /// </summary>  
+            /// <summary>
+            /// Polje za stanje dugmeta levo
+            /// </summary>  
                         levo = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta desno
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta desno
+            /// </summary>
                         desno = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta plus
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta plus
+            /// </summary>
                         plus = false,
-                        /// <summary>
-                        /// Polje za stanje dugmeta minus
-                        /// </summary>
+            /// <summary>
+            /// Polje za stanje dugmeta minus
+            /// </summary>
                         minus = false;
 
         /// <summary>
         /// stanje dugmeta A
         /// </summary>
-        public bool A {
-            get{return a;   } 
-            set{ a = value; }
+        public bool A
+        {
+            get { return a; }
+            set { a = value; }
         }
 
         /// <summary>
         /// stanje dugmeta B
         /// </summary>
-        public bool B{
-            get{return b;}
-            set{b = value;}
+        public bool B
+        {
+            get { return b; }
+            set { b = value; }
         }
 
         /// <summary>
         /// stanje dugmeta JEDAN
         /// </summary>
-        public bool JEDAN{
+        public bool JEDAN
+        {
             get { return jedan; }
-            set { jedan = value; } 
+            set { jedan = value; }
         }
 
         /// <summary>
         /// stanje dugmeta DVA
         /// </summary>
-        public bool DVA { 
-            get{return dva;}
-            set{ dva = value;}
+        public bool DVA
+        {
+            get { return dva; }
+            set { dva = value; }
         }
 
         /// <summary>
@@ -151,7 +155,7 @@ namespace WiiApi
             set { minus = value; }
         }
 
-         
+
 
         /// <summary>
         /// Konstruktor koji vrsi inicijalizaciju

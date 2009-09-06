@@ -25,7 +25,8 @@ namespace WiiApi
         /// </summary>
         public float z = 0;
 
-        public float X {
+        public float X
+        {
             get { return x; }
             set { x = value; }
         }

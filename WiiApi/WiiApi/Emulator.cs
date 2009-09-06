@@ -7,7 +7,8 @@ namespace WiiApi
 {
     class Emulator : Kontroler
     {
-        public Emulator(BinaryReadeer r){
+        public Emulator(BinaryReadeer r)
+        {
 
         }
 

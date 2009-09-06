@@ -19,7 +19,7 @@ namespace WiiApi
         /// <summary>
         /// Stanje po Y osi
         /// </summary>
-        public float x = 0;
+        public float y = 0;
 
         public float X
         {
@@ -39,7 +39,7 @@ namespace WiiApi
         /// <param name="x">vrednost po X osi</param>
         /// <param name="y">vrednost po Y osi</param>
         public ICSenzor(float x, float y) { X = x; Y = y; }
-        
+
         /// <summary>
         /// Podrazumevani konstruktor
         /// </summary>

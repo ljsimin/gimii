@@ -11,14 +11,32 @@ namespace WiiApi
         private Kontroler kontroler;
 
         /// <summary>
+        /// Konstante za definisanje tipa WiiMisa, tj da li se posmatra Akcelerator ili polozaj dioda
+        /// </summary>
+        public enum TipMisa { AKCELERATORSKI_MIS, DIODNI_MIS };
+
+        /// <summary>
+        /// Predstavlja postavljeni tip WiiMisa, u zavisnosti od ovog tipa potrebno
+        /// je drugacije reagovati na dogadjaje i ispaljivati razlicite dogadjaje
+        /// </summary>
+        private TipMisa tipMisa
+        {
+            get { return tipMisa; }
+            set { tipMisa = value; }
+        }
+
+        /// <summary>
         /// Konstruktor klase u koji se prosledjuje Kontroler
         /// </summary>
         /// <param name="kontroler"></param>
-        public WiiMisAdapter(Kontroler kontroler) { 
+        public WiiMisAdapter(Kontroler kontroler)
+        {
             /*
              * Potrebno je obradjivati dogadjaje kontrolera i ispaljivati dogadjaje WiiMisAdaptera
              */
         }
+
+        private WiiMisAdapter() { }
 
 
         ///<summary>
@@ -45,12 +63,12 @@ namespace WiiApi
         ///<summary>
         /// Dogadjaj pomeraja
         ///</summary>
-        event ObradjivacPomerajaMisa PomerenMis;
+        public event ObradjivacPomerajaMisa PomerenMis;
 
         ///<summary>
         /// Dogadjaj pritiska na dugme
         ///</summary>
-        event ObradjivacPritiskaMisa PritisnutMis;
+        public event ObradjivacPritiskaMisa PritisnutMis;
 
 
     }
