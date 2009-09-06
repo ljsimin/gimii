@@ -16,7 +16,8 @@ namespace WiiApi
         /// property
         public bool led1 = false, led2 = false, led3 = false, led4 = false;
 
-        public bool LED1{
+        public bool LED1
+        {
             get { return led1; }
             set { led1 = value; }
         }
@@ -44,18 +45,20 @@ namespace WiiApi
         /// </summary>
         public bool vibracija = false;
 
-        public bool VIBRACIJA {
+        public bool VIBRACIJA
+        {
             get { return vibracija; }
             set { vibracija = value; }
         }
 
-        public void postaviLED(bool led1, bool led2, bool led3, bool led4){
+        public void postaviLED(bool led1, bool led2, bool led3, bool led4)
+        {
             LED1 = led1;
             LED2 = led2;
             LED3 = led3;
             LED4 = led4;
         }
-        
+
         /// <summary>
         /// Konstruktor klase Reakcija
         /// </summary>
@@ -64,14 +67,15 @@ namespace WiiApi
         /// <param name="LED3">stanje LED 1</param>
         /// <param name="LED4">stanje LED 1</param>
         /// <param name="vibracija">stanje vibratora</param>
-        public Reakcija(bool led1, bool led2, bool led3, bool led4, bool vibracija) {
+        public Reakcija(bool led1, bool led2, bool led3, bool led4, bool vibracija)
+        {
             LED1 = led1;
             LED2 = led2;
             LED3 = led3;
             LED4 = led4;
             vibracija = vibracija;
         }
-        
+
         /// <summary>
         /// Podrazumevani konstruktor
         /// </summary>

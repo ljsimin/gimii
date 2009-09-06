@@ -8,14 +8,15 @@ namespace WiiApi
     /// TREBA DA IDE U EVENTARG A NE DA BUDE TO!
     /// vreme
     /// id kontrolera
-    class ParametriDogadjaja: EventArgs
+    class ParametriDogadjaja : EventArgs
     {
         /// <summary>
         /// Vreme kada se desio dogadjaj
         /// </summary>
         private DateTime vreme = DateTime.Now;
-        
-        public DateTime vremeDogadjaja(){
+
+        public DateTime vremeDogadjaja()
+        {
             return vreme;
         }
 
@@ -23,8 +24,9 @@ namespace WiiApi
         /// Reprezentuje stanje u kome se kontroler nalazio kada se desio dogadjaj
         /// </summary>
         private Stanje stanje;
-        
-        public Stanje dobaviStanje(){
+
+        public Stanje dobaviStanje()
+        {
             return stanje;
         }
 

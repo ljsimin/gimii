@@ -47,15 +47,21 @@
     <Compile Include="ICSenzor.cs" />
     <Compile Include="Kontroler.cs" />
     <Compile Include="ParametriDogadjaja.cs" />
+    <Compile Include="Polozaj2Diode.cs" />
     <Compile Include="Reakcija.cs" />
     <Compile Include="Stanje.cs" />
     <Compile Include="Emulator.cs" />
     <Compile Include="WiiFabrika.cs" />
     <Compile Include="WiiMisAdapter.cs" />
+    <Compile Include="WiiRekorderPolozaja.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
 </Project>

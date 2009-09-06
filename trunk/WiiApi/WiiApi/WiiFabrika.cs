@@ -25,9 +25,9 @@ namespace WiiApi
         /// Metoda za dobavljanje instance WiiFabrike.
         /// </summary>
         /// <returns>instanca WiiFabrike</returns>
-        public static WiiFabrika dobaviInstancu() 
+        public static WiiFabrika dobaviInstancu()
         {
-                return UnutrasnjaKlasa.instancaFabrike;
+            return UnutrasnjaKlasa.instancaFabrike;
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace WiiApi
         /// <summary>
         /// Kao singleton klasa konstruktor je private.
         /// </summary>
-        private WiiFabrika() 
+        private WiiFabrika()
         {
             //TODO
         }
@@ -72,21 +72,24 @@ namespace WiiApi
         /// Ako je polje "tip" postavljeno na WII_EMULATOR, kreira novi od fajla i vraca ga.
         /// Ako je polje "fajl" nevalidno vraca null.
         ///</summary>
-        public Kontroler kreirajKontroler() {
+        public Kontroler kreirajKontroler()
+        {
             return null;
         }
 
         ///<summary>
         /// Vraca instancu objekta WiiEmulator kreiranu na osnovi datoteke sa zadate putanje.
         ///</summary>
-        public Kontroler kreirajKontroler(String putanja){
+        public Kontroler kreirajKontroler(String putanja)
+        {
             return null;
         }
 
         ///<summary>
         /// Metoda prekida komunikaciju sa prosledjenim WiiKontrolerom
         ///</summary>
-        public void iskljuci(Kontroler kontroler){
+        public void iskljuci(Kontroler kontroler)
+        {
             return;
         }
     }
