@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace WiiApi
 {
     class Emulator : Kontroler
     {
-        public Emulator(BinaryReadeer r)
+        public Emulator(BinaryReader r)
         {
 
         }
@@ -20,7 +21,7 @@ namespace WiiApi
             return true;
         }
 
-        public bool ukljuciVibrator(bool ukljucen)
+        public bool postaviVibrator(bool ukljucen)
         {
             //Nema operacije ovde
             return true;
