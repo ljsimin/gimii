@@ -8,7 +8,7 @@ namespace WiiApi
     /// TREBA DA IDE U EVENTARG A NE DA BUDE TO!
     /// vreme
     /// id kontrolera
-    class ParametriDogadjaja : EventArgs
+    public class ParametriDogadjaja : EventArgs
     {
         /// <summary>
         /// Vreme kada se desio dogadjaj

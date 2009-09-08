@@ -43,24 +43,28 @@ namespace WiiApi
         /// Metoda vraca rastojanje izmedju 2 posmatrana IC izvora
         /// </summary>
         /// <returns></returns>
-        public float rastojanje() { return Math.Sqrt(Math.Pow(prva.X - druga.X, 2) + Math.Pow(prva.Y - druga.Y, 2)); }
+        public float rastojanje() { 
+            return (float)Math.Sqrt(
+                    Math.Pow(prva.X - druga.X, 2) + 
+                    Math.Pow(prva.Y - druga.Y, 2)); 
+        }
 
         /// <summary>
         /// Metoda vraca polozaj pracenog objekta u prostoru po x osi. Predstavlja srednju vrednost.
         /// </summary>
         /// <returns></returns>
-        public float x() { }
+        public float x() { return 0; }
 
         /// <summary>
         /// Metoda vraca polozaj pracenog objekta u prostoru po y osi. Predstavlja srednju vrednost.
         /// </summary>
         /// <returns></returns>
-        public float y() { }
+        public float y() { return 0; }
 
         /// <summary>
         /// Metoda vraca polozaj pracenog objekta u prostoru po z osi. Predstavlja srednju vrednost.
         /// </summary>
         /// <returns></returns>
-        public float z() { }
+        public float z() { return 0; }
     }
 }
