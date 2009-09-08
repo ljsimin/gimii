@@ -11,12 +11,12 @@ namespace WiiApi
     public interface Kontroler
     {
         ///<summary>
-        /// Metoda za manipulaciju nad LED kontrolera, za WiiEmulator metoda je prazna.
+        /// Metoda za manipulaciju nad LED kontrolera
         ///</summary>
         bool postaviLED(int pozicija, bool ukljucena);
 
         ///<summary>
-        /// Metoda za manipulaciju nad vibracijom kontrolera, za WiiEmulator metoda je prazna.
+        /// Metoda za manipulaciju nad vibracijom kontrolera
         ///</summary>
         bool postaviVibrator(bool ukljucen);
 
