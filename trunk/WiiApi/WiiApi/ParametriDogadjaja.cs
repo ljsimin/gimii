@@ -3,42 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WiiApi
-{
-    /// TREBA DA IDE U EVENTARG A NE DA BUDE TO!
-    /// vreme
-    /// id kontrolera
-    public class ParametriDogadjaja : EventArgs
-    {
-        /// <summary>
-        /// Vreme kada se desio dogadjaj
-        /// </summary>
-        private DateTime vreme = DateTime.Now;
+namespace WiiApi {
 
-        public DateTime vremeDogadjaja()
-        {
-            return vreme;
-        }
+	public class ParametriDogadjaja : EventArgs {
+		/// <summary>
+		/// Vreme kada se desio dogadjaj
+		/// </summary>
+		private DateTime vreme = DateTime.Now;
 
-        /// <summary>
-        /// Reprezentuje stanje u kome se kontroler nalazio kada se desio dogadjaj
-        /// </summary>
-        private Stanje stanje;
+		public DateTime vremeDogadjaja() {
+			return vreme;
+		}
 
-        public Stanje dobaviStanje()
-        {
-            return stanje;
-        }
+		/// <summary>
+		/// Reprezentuje stanje u kome se kontroler nalazio kada se desio dogadjaj
+		/// </summary>
+		private Stanje stanje;
 
-        /// <summary>
-        /// podrazumevani konstruktor
-        /// </summary>
-        public ParametriDogadjaja() { }
+		public Stanje Stanje {
+			get {
+				return stanje;
+			}
+		}
+
+		/// <summary>
+		/// podrazumevani konstruktor
+		/// </summary>
+		public ParametriDogadjaja() {
+		}
 
 
-        public ParametriDogadjaja(Stanje stanje)
-        {
-            this.stanje = stanje;
-        }
-    }
+		public ParametriDogadjaja(Stanje stanje) {
+			this.Stanje = stanje;
+		}
+	}
 }

@@ -3,76 +3,89 @@ using System.Collections.Generic;
 
 using System.Text;
 
-namespace WiiApi
-{
-    /// <summary>
-    /// Klasa koja sadrzhi informacije o stanju infracrvenog senzora Wii kontrolera.
-    /// </summary>
-    /// property
-    public class ICSenzor
-    {
-        /// <summary>
-        /// Da li je pronadjen senzor
-        /// </summary>
-        public bool nadjen = false;
+namespace WiiApi {
 
-        /// <summary>
-        /// Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
-        /// </summary>
-        private int velicina = 0;
+	/// <summary>
+	/// Klasa koja sadrzhi informacije o stanju infracrvenog senzora Wii kontrolera.
+	/// </summary>
+	/// property
+	public class ICSenzor {
 
-        public int Velicina
-        {
-            get { return velicina; }
-            set { velicina = value; }
-        }
+		/// <summary>
+		/// Da li je pronadjen senzor
+		/// </summary>
+		private bool nadjen = false;
 
-        /// <summary>
-        /// Stanje po X osi
-        /// </summary>
-        public float x = 0;
+		public bool Nadjen {
+			get {
+				return nadjen;
+			}
+			set {
+				nadjen = value;
+			}
+		}
 
-        /// <summary>
-        /// Stanje po Y osi
-        /// </summary>
-        public float y = 0;
+		/// <summary>
+		/// Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
+		/// </summary>
+		private int velicina = 0;
 
-        public float X
-        {
-            get { return x; }
-            set { x = value; }
-        }
+		public int Velicina {
+			get {
+				return velicina;
+			}
+			set {
+				velicina = value;
+			}
+		}
 
-        public float Y
-        {
-            get { return y; }
-            set { y = value; }
-        }
+		/// <summary>
+		/// Stanje po X osi
+		/// </summary>
+		public float x = 0;
 
-        public bool Nadjen
-        {
-            get { return nadjen; }
-            set { value = nadjen; }
-        }
 
-        /// <summary>
-        /// Konstruktor koji vrsi inicijalizaciju
-        /// </summary>
-        /// <param name="x">vrednost po X osi</param>
-        /// <param name="y">vrednost po Y osi</param>
-        /// <param name="nadjen">da li je senzor nadjen</param>
-        public ICSenzor(float x, float y, Boolean nadjen) 
-        { 
-            X = x; 
-            Y = y; this.nadjen = nadjen; 
-        }
+		public float X {
+			get {
+				return x;
+			}
+			set {
+				x = value;
+			}
+		}
 
-        /// <summary>
-        /// Podrazumevani konstruktor
-        /// </summary>
-        public ICSenzor()
-        {
+		/// <summary>
+		/// Stanje po Y osi
+		/// </summary>
+		public float y = 0;
 
-        }
-    }
+
+		public float Y {
+			get {
+				return y;
+			}
+			set {
+				y = value;
+			}
+		}
+
+		/// <summary>
+		/// Konstruktor koji vrsi inicijalizaciju
+		/// </summary>
+		/// <param name="x">vrednost po X osi</param>
+		/// <param name="y">vrednost po Y osi</param>
+		/// <param name="nadjen">da li je senzor nadjen</param>
+		public ICSenzor(float x, float y, Boolean nadjen) {
+			X = x;
+			Y = y;
+			this.nadjen = nadjen;
+		}
+
+		/// <summary>
+		/// Podrazumevani konstruktor
+		/// </summary>
+		public ICSenzor() {
+
+		}
+	}
 }
