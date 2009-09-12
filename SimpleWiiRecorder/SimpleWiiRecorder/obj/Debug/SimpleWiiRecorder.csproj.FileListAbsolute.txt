@@ -11,3 +11,12 @@ C:\Documents and Settings\gimii\My Documents\svn\trunk\SimpleWiiRecorder\SimpleW
 C:\Documents and Settings\gimii\My Documents\svn\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
 D:\Wii\GOOGLE PROJECT\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
 D:\Wii\GOOGLE PROJECT\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Form1.resources
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Properties.Resources.resources
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\prg\gimii\checkout\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb

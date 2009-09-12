@@ -20,6 +20,14 @@ namespace SimpleWiiRecorder
         public event ChangeHandler LogmoteChange;
         public event StopHandler LogmoteStop;
 
+        private bool stop = false;
+
+        public bool Stop
+        {
+            get { return stop; }
+            set { stop = value; }
+        }
+
         public void run()
         {
             //Ovo mora da se pokrene iz thread-a (zato je i namenjeno)
@@ -27,6 +35,12 @@ namespace SimpleWiiRecorder
             //nasa pozicija u listi
             foreach(SimpleWiiState s in list)
             {
+                if (stop)
+                {
+                    LogmoteStop(this);
+                    return;
+
+                }
                 TimeSpan tt;
                 //TimeSpan je razmak izmedju stanja koga smo upravo ucitali
                 //i sledeceg (i.e koliko cekamo)
