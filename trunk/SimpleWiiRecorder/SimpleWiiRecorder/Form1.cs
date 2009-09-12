@@ -261,13 +261,7 @@ namespace SimpleWiiRecorder
         {
             if (playing)
             {
-                playing = false;
-                rinput.Close();
-                input.Close();
-                l.LogmoteChange -= UpdateState;
-                l.LogmoteStop -= onStop;
-                btnRecord.Enabled = true;
-                btnLoad.Text = "Load";
+                l.Stop = true;
             }
             else
             {
