@@ -7,3 +7,5 @@ C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR
 C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
 C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.exe
 C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.pdb
+D:\Wii\SVN\GimiiIR\GimiiIR\obj\Release\GimiiIR.exe
+D:\Wii\SVN\GimiiIR\GimiiIR\obj\Release\GimiiIR.pdb
