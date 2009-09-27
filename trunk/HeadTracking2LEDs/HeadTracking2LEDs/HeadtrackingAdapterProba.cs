@@ -6,12 +6,15 @@ using System.Text;
 using System.Threading;
 
 using WiimoteLib;
+using Microsoft.DirectX;
 
 namespace HeadTracking2LEDs
 {
-    class WiiController
+    class HeadtrackingAdapterProba
     {
-     
+        public event ObradjivacPromenePolozaja PromenaPolozaja;                                 //      kao u apiju
+        public delegate void ObradjivacPromenePolozaja(object o, Vector3 polozaj);                 //   za slanje argumenata dogadjaja
+        Vector3 polozajGlave = new Vector3();
 
         Point firstPoint = new Point();
         Point secondPoint = new Point();
@@ -100,7 +103,7 @@ namespace HeadTracking2LEDs
         private delegate void UpdateWiimoteStateDelegate(WiimoteChangedEventArgs args);
         private delegate void LogStopHandler();
 
-        public WiiController()
+        public HeadtrackingAdapterProba()
         {
 
         }
@@ -159,8 +162,6 @@ namespace HeadTracking2LEDs
             {
                 UpdateWiimoteStateDelegate uwsd = new UpdateWiimoteStateDelegate(this.UpdateWiimoteChanged);
                 uwsd.BeginInvoke(args, null, null);
-                //IAsyncResult result = uwsd.BeginInvoke(args, null, null);
-                //BeginInvoke(new UpdateWiimoteStateDelegate(UpdateWiimoteChanged), args);
             }
             catch (Exception ex)
             {
@@ -265,6 +266,10 @@ namespace HeadTracking2LEDs
                     headY = .5f + (float)(movementScaling * Math.Sin(relativeVerticalAngle + cameraVerticaleAngle) * headDist);
                 else
                     headY = -.5f + (float)(movementScaling * Math.Sin(relativeVerticalAngle + cameraVerticaleAngle) * headDist);
+                polozajGlave.X = headX;
+                polozajGlave.Y = headY;
+                polozajGlave.Z = headDist;
+                PromenaPolozaja(this, polozajGlave);
             }
 
 

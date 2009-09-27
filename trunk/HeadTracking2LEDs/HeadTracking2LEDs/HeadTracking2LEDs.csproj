@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D13C16F2-E162-4FA2-AC6D-36978C18FA69}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -12,7 +12,7 @@
     <AssemblyName>HeadTracking2LEDs</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>HeadTracking2LEDs.Pong</StartupObject>
+    <StartupObject>HeadTracking2LEDs.Primer1ZidLopta</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +76,7 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeadtrackingAdapterProba.cs" />
     <Compile Include="Pong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,12 @@
       <DependentUpon>Pong.cs</DependentUpon>
     </Compile>
     <Compile Include="GeometryUtil.cs" />
+    <Compile Include="Primer1ZidLopta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Primer1ZidLopta.Designer.cs">
+      <DependentUpon>Primer1ZidLopta.cs</DependentUpon>
+    </Compile>
     <Compile Include="ScenaSoba.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,17 +97,8 @@
       <DependentUpon>ScenaSoba.cs</DependentUpon>
     </Compile>
     <Compile Include="WiiController.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -119,11 +117,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="i.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

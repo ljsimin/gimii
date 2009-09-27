@@ -7,3 +7,6 @@ C:\Documents and Settings\Mereon\My Documents\Visual Studio 2008\Projects\WiiApi
 F:\FAX\Wii\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
 F:\FAX\Wii\WiiApi\WiiApi\obj\Debug\WiiApi.dll
 F:\FAX\Wii\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
+D:\Wii\SVN\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Wii\SVN\WiiApi\WiiApi\obj\Debug\WiiApi.dll
+D:\Wii\SVN\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
