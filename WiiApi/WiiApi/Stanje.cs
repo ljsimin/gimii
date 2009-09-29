@@ -15,6 +15,9 @@ namespace WiiApi {
 		/// </summary>
 		private Dugmici dugmici = new Dugmici();
 
+        /// <summary>
+        /// Stanje dugmica
+        /// </summary>
 		public Dugmici Dugmici {
 			get {
 				return dugmici;
@@ -26,6 +29,9 @@ namespace WiiApi {
 		/// </summary>
 		private Akcelerometar akcelerometar = new Akcelerometar();
 
+        /// <summary>
+        /// Stanje akcelerometra
+        /// </summary>
 		public Akcelerometar Akcelerometar {
 			get {
 				return akcelerometar;
@@ -37,10 +43,17 @@ namespace WiiApi {
 		/// </summary>
 		private ICSenzor[] senzori = new ICSenzor[4];
 
+        /// <summary>
+        /// Stanje senzora
+        /// </summary>
 		public ICSenzor[] Senzori {
 			get {
 				return senzori;
 			}
+            set
+            {
+                senzori = value;
+            }
 		}
 
 
@@ -49,6 +62,9 @@ namespace WiiApi {
 		/// </summary>
 		private Reakcija reakcija = new Reakcija();
 
+        /// <summary>
+        /// Stanje LE Dioda i vibratora
+        /// </summary>
 		public Reakcija Reakcija {
 			get {
 				return reakcija;

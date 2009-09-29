@@ -16,6 +16,9 @@ namespace WiiApi {
 		/// </summary>
 		private bool nadjen = false;
 
+        /// <summary>
+        /// Da li je pronadjen senzor
+        /// </summary>
 		public bool Nadjen {
 			get {
 				return nadjen;
@@ -30,6 +33,9 @@ namespace WiiApi {
 		/// </summary>
 		private int velicina = 0;
 
+        /// <summary>
+        /// Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
+        /// </summary>
 		public int Velicina {
 			get {
 				return velicina;
@@ -44,7 +50,9 @@ namespace WiiApi {
 		/// </summary>
 		public float x = 0;
 
-
+        /// <summary>
+        /// Stanje po X osi
+        /// </summary>
 		public float X {
 			get {
 				return x;
@@ -59,7 +67,9 @@ namespace WiiApi {
 		/// </summary>
 		public float y = 0;
 
-
+        /// <summary>
+        /// Stanje po Y osi
+        /// </summary>
 		public float Y {
 			get {
 				return y;

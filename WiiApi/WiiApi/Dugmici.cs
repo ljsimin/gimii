@@ -10,50 +10,50 @@ namespace WiiApi {
 	/// </summary>
 	public class Dugmici {
 
-		/// <summary>
-		/// Polje za stanje dugmeta a
-		/// </summary>
-		private bool a = false,
-			/// <summary>
-			/// Polje za stanje dugmeta b
-			/// </summary>
-						b = false,
-			/// <summary>
-			/// Polje za stanje dugmeta jedan
-			/// </summary>
-						jedan = false,
-			/// <summary>
-			/// Polje za stanje dugmeta dva
-			/// </summary>
-						dva = false,
-			/// <summary>
-			/// Polje za stanje dugmeta dom
-			/// </summary>
-						dom = false,
-			/// <summary>
-			/// Polje za stanje dugmeta gore
-			/// </summary>
-						gore = false,
-			/// <summary>
-			/// Polje za stanje dugmeta dole
-			/// </summary>
-						dole = false,
-			/// <summary>
-			/// Polje za stanje dugmeta levo
-			/// </summary>  
-						levo = false,
-			/// <summary>
-			/// Polje za stanje dugmeta desno
-			/// </summary>
-						desno = false,
-			/// <summary>
-			/// Polje za stanje dugmeta plus
-			/// </summary>
-						plus = false,
-			/// <summary>
-			/// Polje za stanje dugmeta minus
-			/// </summary>
-						minus = false;
+        /// <summary>
+        /// Polje za stanje dugmeta a
+        /// </summary>
+        private bool a = false;
+        /// <summary>
+        /// Polje za stanje dugmeta b
+        /// </summary>
+        private bool b = false;
+        /// <summary>
+        /// Polje za stanje dugmeta jedan
+        /// </summary>
+        private bool jedan = false;
+        /// <summary>
+        /// Polje za stanje dugmeta dva
+        /// </summary>
+        private bool dva = false;
+        /// <summary>
+        /// Polje za stanje dugmeta dom
+        /// </summary>
+        private bool dom = false;
+        /// <summary>
+        /// Polje za stanje dugmeta gore
+        /// </summary>
+        private bool gore = false;
+        /// <summary>
+        /// Polje za stanje dugmeta dole
+        /// </summary>
+        private bool dole = false;
+        /// <summary>
+        /// Polje za stanje dugmeta levo
+        /// </summary>  
+        private bool levo = false;
+        /// <summary>
+        /// Polje za stanje dugmeta desno
+        /// </summary>
+        private bool desno = false;
+        /// <summary>
+        /// Polje za stanje dugmeta plus
+        /// </summary>
+        private bool plus = false;
+        /// <summary>
+        /// Polje za stanje dugmeta minus
+        /// </summary>
+        private bool minus = false;
 
 		/// <summary>
 		/// stanje dugmeta A

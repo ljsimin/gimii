@@ -25,18 +25,27 @@ namespace WiiApi
         /// </summary>
         public float z = 0;
 
+        /// <summary>
+        /// Stanje po X osi
+        /// </summary>
         public float X
         {
             get { return x; }
             set { x = value; }
         }
 
+        /// <summary>
+        /// Stanje po Y osi
+        /// </summary>
         public float Y
         {
             get { return y; }
             set { y = value; }
         }
 
+        /// <summary>
+        /// Stanje po Z osi
+        /// </summary>
         public float Z
         {
             get { return z; }

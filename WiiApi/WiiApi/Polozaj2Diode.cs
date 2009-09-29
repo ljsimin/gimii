@@ -14,6 +14,12 @@ namespace WiiApi {
 		/// </summary>
 		private ICSenzor prva, druga;
 
+        public Polozaj2Diode(ICSenzor prva, ICSenzor druga)
+        {
+            this.prva = prva;
+            this.druga = druga;
+        }
+
 		public ICSenzor Prva {
 			get {
 				return prva;
