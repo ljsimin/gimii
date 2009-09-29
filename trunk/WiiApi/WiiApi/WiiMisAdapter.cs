@@ -26,10 +26,10 @@ namespace WiiApi {
 
 		private TipMisa Tip {
 			get {
-				return tipMisa;
+				return tip;
 			}
 			set {
-				tipMisa = value;
+				tip = value;
 			}
 		}
 

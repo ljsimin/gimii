@@ -37,29 +37,28 @@ namespace WiiApi {
 					long l = 0;
 					l = r.ReadInt64();
 
-					s.dugmici.A = sacuvano.ReadBoolean();
-					s.dugmici.B = sacuvano.ReadBoolean();
+					s.Dugmici.A = sacuvano.ReadBoolean();
+					s.Dugmici.B = sacuvano.ReadBoolean();
 
-					s.dugmici.PLUS = sacuvano.ReadBoolean();
-					s.dugmici.DOM = sacuvano.ReadBoolean();
-					s.dugmici.MINUS = sacuvano.ReadBoolean();
-					s.dugmici.JEDAN = sacuvano.ReadBoolean();
-					s.dugmici.DVA = sacuvano.ReadBoolean();
+					s.Dugmici.PLUS = sacuvano.ReadBoolean();
+					s.Dugmici.DOM = sacuvano.ReadBoolean();
+					s.Dugmici.MINUS = sacuvano.ReadBoolean();
+					s.Dugmici.JEDAN = sacuvano.ReadBoolean();
+					s.Dugmici.DVA = sacuvano.ReadBoolean();
 
-					s.dugmici.LEVO = sacuvano.ReadBoolean();
-					s.dugmici.GORE = sacuvano.ReadBoolean();
-					s.dugmici.DESNO = sacuvano.ReadBoolean();
-					s.dugmici.DOLE = sacuvano.ReadBoolean();
+					s.Dugmici.LEVO = sacuvano.ReadBoolean();
+					s.Dugmici.GORE = sacuvano.ReadBoolean();
+					s.Dugmici.DESNO = sacuvano.ReadBoolean();
+					s.Dugmici.DOLE = sacuvano.ReadBoolean();
 
-					s.akcelerometar.X = sacuvano.ReadSingle();
-					s.akcelerometar.Y = sacuvano.ReadSingle();
-					s.akcelerometar.Z = sacuvano.ReadSingle();
-					s.senzori = new ICSenzor[4];
+					s.Akcelerometar.X = sacuvano.ReadSingle();
+					s.Akcelerometar.Y = sacuvano.ReadSingle();
+					s.Akcelerometar.Z = sacuvano.ReadSingle();
 					for(int i = 0; i < 4; i++) {
-						s.senzori[i].Nadjen = sacuvano.ReadBoolean();
-						s.senzori[i].X = sacuvano.ReadSingle();
-						s.senzori[i].Y = sacuvano.ReadSingle();
-						s.senzori[i].Velicina = sacuvano.ReadInt32();
+						s.Senzori[i].Nadjen = sacuvano.ReadBoolean();
+						s.Senzori[i].X = sacuvano.ReadSingle();
+						s.Senzori[i].Y = sacuvano.ReadSingle();
+						s.Senzori[i].Velicina = sacuvano.ReadInt32();
 					}
 					SnimljenoStanje ss = new SnimljenoStanje(s, l);
 					listaStanja.Add(ss);
@@ -129,11 +128,11 @@ namespace WiiApi {
 						tt = new TimeSpan(listaStanja[j + 1].Vreme - s.Vreme);
 					}
 					//ucitamo stanje povratne sprege iz emuliranih dioda & vibratora
-					s.Stanje.reakcija.LED1 = lediode[0];
-					s.Stanje.reakcija.LED2 = lediode[1];
-					s.Stanje.reakcija.LED3 = lediode[2];
-					s.Stanje.reakcija.LED4 = lediode[3];
-					s.Stanje.reakcija.VIBRACIJA = vibrator;
+					s.Stanje.Reakcija.LED1 = lediode[0];
+					s.Stanje.Reakcija.LED2 = lediode[1];
+					s.Stanje.Reakcija.LED3 = lediode[2];
+					s.Stanje.Reakcija.LED4 = lediode[3];
+					s.Stanje.Reakcija.VIBRACIJA = vibrator;
 					//Napravimo argumente wrappovanjem stanja u argumente dogadjaja
 					ParametriDogadjaja pd = new ParametriDogadjaja(s.Stanje);
 					Stanje staro = stanje;
@@ -141,31 +140,31 @@ namespace WiiApi {
 					//triggeruje se dogadjaj proemene stanja
 					PromenaStanja(this, pd);
 					//Da li nam ovo bas treba? Mnogo posla.
-					if((!staro.dugmici.A && stanje.dugmici.A) ||
-						(!staro.dugmici.B && stanje.dugmici.B) ||
-						(!staro.dugmici.DOM && stanje.dugmici.DOM) ||
-						(!staro.dugmici.PLUS && stanje.dugmici.PLUS) ||
-						(!staro.dugmici.MINUS && stanje.dugmici.MINUS) ||
-						(!staro.dugmici.JEDAN && stanje.dugmici.JEDAN) ||
-						(!staro.dugmici.DVA && stanje.dugmici.DVA) ||
-						(!staro.dugmici.GORE && stanje.dugmici.GORE) ||
-						(!staro.dugmici.DOLE && stanje.dugmici.DOLE) ||
-						(!staro.dugmici.LEVO && stanje.dugmici.LEVO) ||
-						(!staro.dugmici.DESNO && stanje.dugmici.DESNO)
+					if((!staro.Dugmici.A && stanje.Dugmici.A) ||
+						(!staro.Dugmici.B && stanje.Dugmici.B) ||
+						(!staro.Dugmici.DOM && stanje.Dugmici.DOM) ||
+						(!staro.Dugmici.PLUS && stanje.Dugmici.PLUS) ||
+						(!staro.Dugmici.MINUS && stanje.Dugmici.MINUS) ||
+						(!staro.Dugmici.JEDAN && stanje.Dugmici.JEDAN) ||
+						(!staro.Dugmici.DVA && stanje.Dugmici.DVA) ||
+						(!staro.Dugmici.GORE && stanje.Dugmici.GORE) ||
+						(!staro.Dugmici.DOLE && stanje.Dugmici.DOLE) ||
+						(!staro.Dugmici.LEVO && stanje.Dugmici.LEVO) ||
+						(!staro.Dugmici.DESNO && stanje.Dugmici.DESNO)
 						) {
 						PritisnutoDugme(this, pd);
 					}
-					if((staro.dugmici.A && !stanje.dugmici.A) ||
-						(staro.dugmici.B && !stanje.dugmici.B) ||
-						(staro.dugmici.DOM && !stanje.dugmici.DOM) ||
-						(staro.dugmici.PLUS && !stanje.dugmici.PLUS) ||
-						(staro.dugmici.MINUS && !stanje.dugmici.MINUS) ||
-						(staro.dugmici.JEDAN && !stanje.dugmici.JEDAN) ||
-						(staro.dugmici.DVA && !stanje.dugmici.DVA) ||
-						(staro.dugmici.GORE && !stanje.dugmici.GORE) ||
-						(staro.dugmici.DOLE && !stanje.dugmici.DOLE) ||
-						(staro.dugmici.LEVO && !stanje.dugmici.LEVO) ||
-						(staro.dugmici.DESNO && !stanje.dugmici.DESNO)
+					if((staro.Dugmici.A && !stanje.Dugmici.A) ||
+						(staro.Dugmici.B && !stanje.Dugmici.B) ||
+						(staro.Dugmici.DOM && !stanje.Dugmici.DOM) ||
+						(staro.Dugmici.PLUS && !stanje.Dugmici.PLUS) ||
+						(staro.Dugmici.MINUS && !stanje.Dugmici.MINUS) ||
+						(staro.Dugmici.JEDAN && !stanje.Dugmici.JEDAN) ||
+						(staro.Dugmici.DVA && !stanje.Dugmici.DVA) ||
+						(staro.Dugmici.GORE && !stanje.Dugmici.GORE) ||
+						(staro.Dugmici.DOLE && !stanje.Dugmici.DOLE) ||
+						(staro.Dugmici.LEVO && !stanje.Dugmici.LEVO) ||
+						(staro.Dugmici.DESNO && !stanje.Dugmici.DESNO)
 						) {
 						OtpustenoDugme(this, pd);
 					}
