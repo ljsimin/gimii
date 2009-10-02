@@ -17,3 +17,12 @@ C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWi
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\bin\Debug\WiimoteLib.dll
 D:\Wii\GOOGLE PROJECT\KeepWii\KeepWii\obj\Debug\KeepWii.exe
 D:\Wii\GOOGLE PROJECT\KeepWii\KeepWii\obj\Debug\KeepWii.pdb
+C:\prg\gimii\checkout\KeepWii\KeepWii\bin\Debug\KeepWii.exe
+C:\prg\gimii\checkout\KeepWii\KeepWii\bin\Debug\KeepWii.pdb
+C:\prg\gimii\checkout\KeepWii\KeepWii\bin\Debug\WiimoteLib.dll
+C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\ResolveAssemblyReference.cache
+C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.Form1.resources
+C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.Properties.Resources.resources
+C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.csproj.GenerateResource.Cache
+C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.exe
+C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.pdb

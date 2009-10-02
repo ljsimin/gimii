@@ -17,11 +17,29 @@ namespace KeepWii
 
         public void Connect() 
         {
-            kontroler.Connect();
-        if (kontroler.WiimoteState.ExtensionType != ExtensionType.BalanceBoard)
-            kontroler.SetReportType(InputReport.IRExtensionAccel, IRSensitivity.Maximum, true);
-        kontroler.WiimoteChanged += UpdateState;
-        label1.Text = "Connected";
+            Boolean b = false;
+            try
+            {
+                kontroler.Connect();
+                if (kontroler.WiimoteState.ExtensionType != ExtensionType.BalanceBoard)
+                {
+                    kontroler.SetReportType(InputReport.IRExtensionAccel, IRSensitivity.Maximum, true);
+                }
+                kontroler.WiimoteChanged += UpdateState;
+                label1.Text = "Connected";
+            }
+            catch (WiimoteNotFoundException wnfe)
+            {
+                DialogResult r = MessageBox.Show("Kontroler nije nadjen", "Kontroler nije nadjen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                b = true;
+            }
+            finally
+            {
+                if (b)
+                {
+                    Application.Exit();
+                }
+            }
         }
 
 
