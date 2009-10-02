@@ -10,3 +10,10 @@ F:\FAX\Wii\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
 D:\Wii\SVN\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
 D:\Wii\SVN\WiiApi\WiiApi\obj\Debug\WiiApi.dll
 D:\Wii\SVN\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
+C:\prg\gimii\checkout\WiiApi\WiiApi\bin\Debug\WiiApi.XML
+C:\prg\gimii\checkout\WiiApi\WiiApi\bin\Debug\WiiApi.dll
+C:\prg\gimii\checkout\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
+C:\prg\gimii\checkout\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
+C:\prg\gimii\checkout\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
+C:\prg\gimii\checkout\WiiApi\WiiApi\obj\Debug\WiiApi.dll
+C:\prg\gimii\checkout\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
