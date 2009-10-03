@@ -26,3 +26,12 @@ C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.Properties.Resources.res
 C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.csproj.GenerateResource.Cache
 C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.exe
 C:\prg\gimii\checkout\KeepWii\KeepWii\obj\Debug\KeepWii.pdb
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Debug\KeepWii.exe
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Debug\KeepWii.pdb
+C:\gimi031009\trunk\KeepWii\KeepWii\bin\Debug\KeepWii.exe
+C:\gimi031009\trunk\KeepWii\KeepWii\bin\Debug\KeepWii.pdb
+C:\gimi031009\trunk\KeepWii\KeepWii\bin\Debug\WiimoteLib.dll
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Debug\ResolveAssemblyReference.cache
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Debug\KeepWii.Form1.resources
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Debug\KeepWii.Properties.Resources.resources
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Debug\KeepWii.csproj.GenerateResource.Cache

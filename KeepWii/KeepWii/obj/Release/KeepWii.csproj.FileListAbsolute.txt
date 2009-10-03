@@ -7,3 +7,12 @@ C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWi
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.csproj.GenerateResource.Cache
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.exe
 C:\Documents and Settings\laptop\My Documents\Visual Studio 2008\Projects\KeepWii\KeepWii\obj\Release\KeepWii.pdb
+C:\gimi031009\trunk\KeepWii\KeepWii\bin\Release\KeepWii.exe
+C:\gimi031009\trunk\KeepWii\KeepWii\bin\Release\KeepWii.pdb
+C:\gimi031009\trunk\KeepWii\KeepWii\bin\Release\WiimoteLib.dll
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Release\ResolveAssemblyReference.cache
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Release\KeepWii.Form1.resources
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Release\KeepWii.Properties.Resources.resources
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Release\KeepWii.csproj.GenerateResource.Cache
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Release\KeepWii.exe
+C:\gimi031009\trunk\KeepWii\KeepWii\obj\Release\KeepWii.pdb

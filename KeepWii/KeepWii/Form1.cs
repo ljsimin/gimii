@@ -26,6 +26,7 @@ namespace KeepWii
                     kontroler.SetReportType(InputReport.IRExtensionAccel, IRSensitivity.Maximum, true);
                 }
                 kontroler.WiimoteChanged += UpdateState;
+                kontroler.SetLEDs(true, false, false, false);
                 label1.Text = "Connected";
             }
             catch (WiimoteNotFoundException wnfe)
