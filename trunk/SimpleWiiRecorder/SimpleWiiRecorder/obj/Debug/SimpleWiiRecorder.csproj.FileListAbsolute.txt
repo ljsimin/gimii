@@ -29,3 +29,12 @@ C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\ResolveAss
 C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Form1.resources
 C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Properties.Resources.resources
 C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Form1.resources
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.Properties.Resources.resources
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.csproj.GenerateResource.Cache
