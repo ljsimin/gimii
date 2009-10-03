@@ -1,0 +1,9 @@
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Form1.resources
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Properties.Resources.resources
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb
