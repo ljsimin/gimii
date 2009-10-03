@@ -57,6 +57,7 @@ namespace SimpleWiiRecorder
                     //u odnosu na vreme pocetka.
                     tt = new TimeSpan(list[j + 1].time - s.time);
                 }
+
                 WiimoteState ws = new WiimoteState();
                 //sada napunimo stanje ucitanim podacima
                 ButtonState bs = new ButtonState();
