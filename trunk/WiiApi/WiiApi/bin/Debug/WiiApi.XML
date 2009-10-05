@@ -455,6 +455,14 @@
              Vraca instancu objekta WiiEmulator kreiranu na osnovi datoteke sa zadate putanje.
             </summary>
         </member>
+        <member name="M:WiiApi.WiiFabrika.kreirajKontroler(System.Guid)">
+            <summary>
+            Kreiranje kontrolera sa specificiranim jedinstvenim identifikatorom
+            </summary>
+            <param name="identifikator">Jedinstveni identifikator koji zelimo</param>
+            <returns>kontroler koji enkapsulira indicirani wiimote. U slucaju da nema tog ID-a medju konektovanim
+            vraca se null</returns>
+        </member>
         <member name="M:WiiApi.WiiFabrika.iskljuci(WiiApi.Kontroler)">
             <summary>
              Metoda prekida komunikaciju sa prosledjenim WiiKontrolerom
