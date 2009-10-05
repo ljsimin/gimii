@@ -19,6 +19,12 @@ namespace WiiApi {
 	///</summary>
 	///up i down
 	public sealed class WiiFabrika {
+        /// <summary>
+        /// Tip kontrolera koji fabrika proizvodi.
+        /// </summary>
+        private WiiTip tipKontrolera = WiiTip.WII_EMULATOR;
+        private String putanjaFajla = "";
+
 		/// <summary>
 		/// Metoda za dobavljanje instance WiiFabrike.
 		/// </summary>
