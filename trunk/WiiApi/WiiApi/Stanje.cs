@@ -75,6 +75,10 @@ namespace WiiApi {
 		///  Podrazumevani konstruktor
 		///</summary>
 		public Stanje() {
+            senzori[0] = new ICSenzor();
+            senzori[1] = new ICSenzor();
+            senzori[2] = new ICSenzor();
+            senzori[3] = new ICSenzor();
 		}
 
 		/// <summary>

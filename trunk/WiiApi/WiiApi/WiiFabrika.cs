@@ -128,9 +128,9 @@ namespace WiiApi {
                 Emulator emulator = new Emulator(br);
                 return emulator;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return null;
+                throw ex;
             }
 		}
 
