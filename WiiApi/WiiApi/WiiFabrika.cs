@@ -134,6 +134,43 @@ namespace WiiApi {
             }
 		}
 
+        /// <summary>
+        /// Kreiranje kontrolera sa specificiranim jedinstvenim identifikatorom
+        /// </summary>
+        /// <param name="identifikator">Jedinstveni identifikator koji zelimo</param>
+        /// <returns>kontroler koji enkapsulira indicirani wiimote. U slucaju da nema tog ID-a medju konektovanim
+        /// vraca se null</returns>
+        public Kontroler kreirajKontroler(Guid identifikator)
+        {
+            try
+            {
+                if (kontroleri.ContainsKey(identifikator))
+                {
+                    return kontroleri[identifikator];
+                }
+                else
+                {
+                    WiimoteCollection w = new WiimoteCollection();
+                    w.FindAllWiimotes();
+                    IEnumerator<Wiimote> en = w.GetEnumerator();
+                    while (en.MoveNext())
+                    {
+                        if (en.Current.ID.Equals(identifikator))
+                        {
+                            WiiKontroler wk = new WiiKontroler(en.Current);
+                            kontroleri.Add(wk.Identifikator, wk);
+                            return wk;
+                        }
+                    }
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
 		///<summary>
 		/// Metoda prekida komunikaciju sa prosledjenim WiiKontrolerom
 		///</summary>
