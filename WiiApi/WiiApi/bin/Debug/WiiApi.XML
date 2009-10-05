@@ -445,7 +445,7 @@
         <member name="M:WiiApi.WiiFabrika.kreirajKontroler">
             <summary>
              Vraca instancu objekta WiiKontroler/WiiEmulator i njegov id vezuje u mapu "kontroleri".
-             Ako se trazi kontroler a svi su vec u mapi, vraca void inace vraca sledeci kontroler.
+             Ako se trazi kontroler a svi su vec u mapi, vraca null inace vraca sledeci kontroler.
              Ako je polje "tip" postavljeno na WII_EMULATOR, kreira novi od fajla i vraca ga.
              Ako je polje "fajl" nevalidno vraca null.
             </summary>
