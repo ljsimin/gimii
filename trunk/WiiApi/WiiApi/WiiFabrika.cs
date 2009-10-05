@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using System.Text;
+using WiimoteLib;
 
 namespace WiiApi {
 	/*
@@ -24,6 +24,7 @@ namespace WiiApi {
         /// </summary>
         private WiiTip tipKontrolera = WiiTip.WII_EMULATOR;
         private String putanjaFajla = "";
+        private Dictionary<Guid, Kontroler> kontroleri = new Dictionary<Guid, Kontroler>();
 
 		/// <summary>
 		/// Metoda za dobavljanje instance WiiFabrike.
@@ -60,7 +61,7 @@ namespace WiiApi {
 		/// Postavlja putanju do datoteke iz koje ce se citati ponasanje emulatora 
 		///</summary>
 		public void postaviDatoteku(String putanja) {
-			return;
+            putanjaFajla = putanja;
 		}
 
 		///<summary>
@@ -69,31 +70,79 @@ namespace WiiApi {
 		/// Koristi se WiiTip enumeracija
 		///</summary>
 		public void postaviTipKontrolera(WiiTip tip) {
-			return;
+            tipKontrolera = tip;
 		}
 
 		///<summary>
 		/// Vraca instancu objekta WiiKontroler/WiiEmulator i njegov id vezuje u mapu "kontroleri".
-		/// Ako se trazi kontroler a svi su vec u mapi, vraca void inace vraca sledeci kontroler.
+		/// Ako se trazi kontroler a svi su vec u mapi, vraca null inace vraca sledeci kontroler.
 		/// Ako je polje "tip" postavljeno na WII_EMULATOR, kreira novi od fajla i vraca ga.
 		/// Ako je polje "fajl" nevalidno vraca null.
 		///</summary>
 		public Kontroler kreirajKontroler() {
-			return null;
+            if (tipKontrolera == WiiTip.WII_EMULATOR)
+            {
+                try
+                {
+                    System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.FileStream(putanjaFajla, System.IO.FileMode.Open));
+                    Emulator emulator = new Emulator(br);
+                    return emulator;
+                }
+                catch (Exception)
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                try
+                {
+                    WiimoteCollection w = new WiimoteCollection();
+                    w.FindAllWiimotes();
+                    IEnumerator<Wiimote> en = w.GetEnumerator();
+                    while (en.MoveNext())
+                    {
+                        if (!kontroleri.ContainsKey(en.Current.ID))
+                        {
+                            WiiKontroler wk = new WiiKontroler(en.Current);
+                            kontroleri.Add(wk.Identifikator, wk);
+                            return wk;
+                        }
+                    }
+                    return null;
+                }
+                catch (Exception)
+                {
+                    return null;
+                }
+            }
 		}
 
 		///<summary>
 		/// Vraca instancu objekta WiiEmulator kreiranu na osnovi datoteke sa zadate putanje.
 		///</summary>
 		public Kontroler kreirajKontroler(String putanja) {
-			return null;
+            try
+            {
+                System.IO.BinaryReader br = new System.IO.BinaryReader(new System.IO.FileStream(putanja, System.IO.FileMode.Open));
+                Emulator emulator = new Emulator(br);
+                return emulator;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
 		}
 
 		///<summary>
 		/// Metoda prekida komunikaciju sa prosledjenim WiiKontrolerom
 		///</summary>
 		public void iskljuci(Kontroler kontroler) {
-			return;
+            kontroler.prekiniKomunikaciju();
+            if (kontroleri.ContainsKey(kontroler.Identifikator))
+            {
+                kontroleri.Remove(kontroler.Identifikator);
+            }
 		}
 	}
 
