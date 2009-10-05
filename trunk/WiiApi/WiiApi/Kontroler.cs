@@ -8,15 +8,34 @@ namespace WiiApi {
 	/// Interfejs koji implementiraju WiiEmulator i WiiKontroler
 	///</summary>
 	public interface Kontroler {
-		///<summary>
-		/// Metoda za manipulaciju nad LED kontrolera
-		///</summary>
+        /// <summary>
+        /// Metoda za manipulaciju nad LED kontrolera
+        /// </summary>
+        /// <param name="pozicija">Pozicija LED-a koji se menja indeksirano od 0.</param>
+        /// <param name="ukljucena">Da li da se dati LED ukljuci ili iskljuci</param>
+        /// <returns></returns>
 		bool postaviLED(int pozicija, bool ukljucena);
 
 		///<summary>
 		/// Metoda za manipulaciju nad vibracijom kontrolera
 		///</summary>
 		bool postaviVibrator(bool ukljucen);
+
+        /// <summary>
+        /// Identifikator ovog kontrolera jedinstven na nivou ove aplikacije
+        /// </summary>
+        Guid Identifikator
+        {
+            get;
+        }
+
+        /// <summary>
+        /// Trenutno stanje
+        /// </summary>
+        Stanje Stanje
+        {
+            get;
+        }
 
 		///<summary>
 		/// Dogadjaj promene stanja
