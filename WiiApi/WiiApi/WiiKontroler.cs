@@ -19,6 +19,7 @@ namespace WiiApi
         public WiiKontroler(Wiimote kontroler)
         {
             this.kontroler = kontroler;
+            this.kontroler.Connect();
             this.kontroler.WiimoteChanged += reagujNaPromenu;
         }
 
@@ -26,7 +27,7 @@ namespace WiiApi
         {
             Stanje stanje = napraviStanje(kontroler.WiimoteState);
             ParametriDogadjaja pd = new ParametriDogadjaja(stanje);
-            PromenaStanja(this, pd);
+            if (PromenaStanja != null) PromenaStanja(this, pd);
             staroStanje = stanje;
             if ((!staroStanje.Dugmici.A && stanje.Dugmici.A) ||
                         (!staroStanje.Dugmici.B && stanje.Dugmici.B) ||
@@ -41,7 +42,7 @@ namespace WiiApi
                         (!staroStanje.Dugmici.DESNO && stanje.Dugmici.DESNO)
                         )
             {
-                PritisnutoDugme(this, pd);
+                if(PritisnutoDugme != null) PritisnutoDugme(this, pd);
             }
             if ((staroStanje.Dugmici.A && !stanje.Dugmici.A) ||
                 (staroStanje.Dugmici.B && !stanje.Dugmici.B) ||
@@ -56,7 +57,7 @@ namespace WiiApi
                 (staroStanje.Dugmici.DESNO && !stanje.Dugmici.DESNO)
                 )
             {
-                OtpustenoDugme(this, pd);
+                if(OtpustenoDugme != null) OtpustenoDugme(this, pd);
             }
         }
 
@@ -85,21 +86,25 @@ namespace WiiApi
             s.Reakcija.LED4 = ws.LEDState.LED4;
             s.Reakcija.vibracija = ws.Rumble;
 
+            s.Senzori[0] = new ICSenzor();
             s.Senzori[0].Nadjen = ws.IRState.IRSensors[0].Found;
             s.Senzori[0].Velicina = ws.IRState.IRSensors[0].Size;
             s.Senzori[0].X = ws.IRState.IRSensors[0].Position.X;
             s.Senzori[0].Y = ws.IRState.IRSensors[0].Position.Y;
 
+            s.Senzori[1] = new ICSenzor();
             s.Senzori[1].Nadjen = ws.IRState.IRSensors[1].Found;
             s.Senzori[1].Velicina = ws.IRState.IRSensors[1].Size;
             s.Senzori[1].X = ws.IRState.IRSensors[1].Position.X;
             s.Senzori[1].Y = ws.IRState.IRSensors[1].Position.Y;
 
+            s.Senzori[2] = new ICSenzor();
             s.Senzori[2].Nadjen = ws.IRState.IRSensors[2].Found;
             s.Senzori[2].Velicina = ws.IRState.IRSensors[2].Size;
             s.Senzori[2].X = ws.IRState.IRSensors[2].Position.X;
             s.Senzori[2].Y = ws.IRState.IRSensors[2].Position.Y;
 
+            s.Senzori[3] = new ICSenzor();
             s.Senzori[3].Nadjen = ws.IRState.IRSensors[3].Found;
             s.Senzori[3].Velicina = ws.IRState.IRSensors[3].Size;
             s.Senzori[3].X = ws.IRState.IRSensors[3].Position.X;

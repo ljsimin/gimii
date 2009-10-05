@@ -105,65 +105,6 @@
             Reprezentuje stanje u kome se kontroler nalazio kada se desio dogadjaj
             </summary>
         </member>
-        <member name="T:WiiApi.ICSenzor">
-            <summary>
-            Klasa koja sadrzhi informacije o stanju infracrvenog senzora Wii kontrolera.
-            </summary>
-            property
-        </member>
-        <member name="F:WiiApi.ICSenzor.nadjen">
-            <summary>
-            Da li je pronadjen senzor
-            </summary>
-        </member>
-        <member name="F:WiiApi.ICSenzor.velicina">
-            <summary>
-            Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
-            </summary>
-        </member>
-        <member name="F:WiiApi.ICSenzor.x">
-            <summary>
-            Stanje po X osi
-            </summary>
-        </member>
-        <member name="F:WiiApi.ICSenzor.y">
-            <summary>
-            Stanje po Y osi
-            </summary>
-        </member>
-        <member name="M:WiiApi.ICSenzor.#ctor(System.Single,System.Single,System.Boolean)">
-            <summary>
-            Konstruktor koji vrsi inicijalizaciju
-            </summary>
-            <param name="x">vrednost po X osi</param>
-            <param name="y">vrednost po Y osi</param>
-            <param name="nadjen">da li je senzor nadjen</param>
-        </member>
-        <member name="M:WiiApi.ICSenzor.#ctor">
-            <summary>
-            Podrazumevani konstruktor
-            </summary>
-        </member>
-        <member name="P:WiiApi.ICSenzor.Nadjen">
-            <summary>
-            Da li je pronadjen senzor
-            </summary>
-        </member>
-        <member name="P:WiiApi.ICSenzor.Velicina">
-            <summary>
-            Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
-            </summary>
-        </member>
-        <member name="P:WiiApi.ICSenzor.X">
-            <summary>
-            Stanje po X osi
-            </summary>
-        </member>
-        <member name="P:WiiApi.ICSenzor.Y">
-            <summary>
-            Stanje po Y osi
-            </summary>
-        </member>
         <member name="T:WiiApi.Kontroler">
             <summary>
              Interfejs koji implementiraju WiiEmulator i WiiKontroler
@@ -223,6 +164,72 @@
         <member name="E:WiiApi.Kontroler.PritisnutoDugme">
             <summary>
              Dogadjaj pritiskanja dugmeta
+            </summary>
+        </member>
+        <member name="M:WiiApi.WiiKontroler.#ctor(WiimoteLib.Wiimote)">
+            <summary>
+            Konstruktor za WiiKontroler koji enkapsulira Wiimote objekat iz
+            WiimoteLib biblioteke. 
+            </summary>
+            <param name="kontroler">kontroler koji enkapsuliramo</param>
+        </member>
+        <member name="T:WiiApi.ICSenzor">
+            <summary>
+            Klasa koja sadrzhi informacije o stanju infracrvenog senzora Wii kontrolera.
+            </summary>
+            property
+        </member>
+        <member name="F:WiiApi.ICSenzor.nadjen">
+            <summary>
+            Da li je pronadjen senzor
+            </summary>
+        </member>
+        <member name="F:WiiApi.ICSenzor.velicina">
+            <summary>
+            Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
+            </summary>
+        </member>
+        <member name="F:WiiApi.ICSenzor.x">
+            <summary>
+            Stanje po X osi
+            </summary>
+        </member>
+        <member name="F:WiiApi.ICSenzor.y">
+            <summary>
+            Stanje po Y osi
+            </summary>
+        </member>
+        <member name="M:WiiApi.ICSenzor.#ctor(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Konstruktor koji vrsi inicijalizaciju
+            </summary>
+            <param name="x">vrednost po X osi</param>
+            <param name="y">vrednost po Y osi</param>
+            <param name="nadjen">da li je senzor nadjen</param>
+        </member>
+        <member name="M:WiiApi.ICSenzor.#ctor">
+            <summary>
+            Podrazumevani konstruktor
+            </summary>
+        </member>
+        <member name="P:WiiApi.ICSenzor.Nadjen">
+            <summary>
+            Da li je pronadjen senzor
+            </summary>
+        </member>
+        <member name="P:WiiApi.ICSenzor.Velicina">
+            <summary>
+            Velicina pronadjenog senzora. Vrednosti su od 0 do 15. Retko se javlja kao bitan faktor.
+            </summary>
+        </member>
+        <member name="P:WiiApi.ICSenzor.X">
+            <summary>
+            Stanje po X osi
+            </summary>
+        </member>
+        <member name="P:WiiApi.ICSenzor.Y">
+            <summary>
+            Stanje po Y osi
             </summary>
         </member>
         <member name="T:WiiApi.Akcelerometar">
@@ -721,13 +728,6 @@
             <summary>
             stanje dugmeta MINUS
             </summary>
-        </member>
-        <member name="M:WiiApi.WiiKontroler.#ctor(WiimoteLib.Wiimote)">
-            <summary>
-            Konstruktor za WiiKontroler koji enkapsulira Wiimote objekat iz
-            WiimoteLib biblioteke. 
-            </summary>
-            <param name="kontroler">kontroler koji enkapsuliramo</param>
         </member>
     </members>
 </doc>

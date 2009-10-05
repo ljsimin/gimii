@@ -25,7 +25,7 @@ namespace WiiApi {
 		//Emulacija stanja vibratora
 		private Boolean vibrator;
 
-		private Stanje stanje = null;
+		private Stanje stanje = new Stanje();
 
 		private System.Threading.Thread nit;
 
@@ -58,6 +58,7 @@ namespace WiiApi {
 					s.Akcelerometar.Y = sacuvano.ReadSingle();
 					s.Akcelerometar.Z = sacuvano.ReadSingle();
 					for(int i = 0; i < 4; i++) {
+                        s.Senzori[i] = new ICSenzor();
 						s.Senzori[i].Nadjen = sacuvano.ReadBoolean();
 						s.Senzori[i].X = sacuvano.ReadSingle();
 						s.Senzori[i].Y = sacuvano.ReadSingle();
@@ -111,6 +112,7 @@ namespace WiiApi {
 			int j = 0;
 			//nasa pozicija u listi
 			while(ponavljaj) {
+                j = 0;
 				foreach(SnimljenoStanje s in listaStanja) {
 					while(stoj && radi) {
 					} //Busy-wait. Lose resenje?
@@ -141,7 +143,7 @@ namespace WiiApi {
 					Stanje staro = stanje;
 					stanje = s.Stanje;
 					//triggeruje se dogadjaj proemene stanja
-					PromenaStanja(this, pd);
+                    if (PromenaStanja != null) PromenaStanja(this, pd);
 					//Da li nam ovo bas treba? Mnogo posla.
 					if((!staro.Dugmici.A && stanje.Dugmici.A) ||
 						(!staro.Dugmici.B && stanje.Dugmici.B) ||
@@ -155,7 +157,7 @@ namespace WiiApi {
 						(!staro.Dugmici.LEVO && stanje.Dugmici.LEVO) ||
 						(!staro.Dugmici.DESNO && stanje.Dugmici.DESNO)
 						) {
-						PritisnutoDugme(this, pd);
+                        if(PritisnutoDugme != null) PritisnutoDugme(this, pd);
 					}
 					if((staro.Dugmici.A && !stanje.Dugmici.A) ||
 						(staro.Dugmici.B && !stanje.Dugmici.B) ||
@@ -169,7 +171,7 @@ namespace WiiApi {
 						(staro.Dugmici.LEVO && !stanje.Dugmici.LEVO) ||
 						(staro.Dugmici.DESNO && !stanje.Dugmici.DESNO)
 						) {
-						OtpustenoDugme(this, pd);
+                        if(OtpustenoDugme != null) OtpustenoDugme(this, pd);
 					}
 					System.Threading.Thread.Sleep(tt);
 					j++;
@@ -193,7 +195,7 @@ namespace WiiApi {
 
         public Guid Identifikator
         {
-            get { throw new NotImplementedException(); }
+            get { return guid; }
         }
 
         #endregion
