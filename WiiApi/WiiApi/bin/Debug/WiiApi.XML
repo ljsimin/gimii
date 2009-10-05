@@ -171,8 +171,11 @@
         </member>
         <member name="M:WiiApi.Kontroler.postaviLED(System.Int32,System.Boolean)">
             <summary>
-             Metoda za manipulaciju nad LED kontrolera
+            Metoda za manipulaciju nad LED kontrolera
             </summary>
+            <param name="pozicija">Pozicija LED-a koji se menja indeksirano od 0.</param>
+            <param name="ukljucena">Da li da se dati LED ukljuci ili iskljuci</param>
+            <returns></returns>
         </member>
         <member name="M:WiiApi.Kontroler.postaviVibrator(System.Boolean)">
             <summary>
@@ -195,6 +198,16 @@
         <member name="M:WiiApi.Kontroler.prekiniKomunikaciju">
             <summary>
             Metoda za prekid konekcije sa WiiKontrolerom, odnosno kraj rada sa emulatorom
+            </summary>
+        </member>
+        <member name="P:WiiApi.Kontroler.Identifikator">
+            <summary>
+            Identifikator ovog kontrolera jedinstven na nivou ove aplikacije
+            </summary>
+        </member>
+        <member name="P:WiiApi.Kontroler.Stanje">
+            <summary>
+            Trenutno stanje
             </summary>
         </member>
         <member name="E:WiiApi.Kontroler.PromenaStanja">
@@ -400,6 +413,11 @@
              Singleton klasa koja sluzi ka kreiranje Kontrolera i prekid komunikaije sa kontrolerima.
             </summary>
             up i down
+        </member>
+        <member name="F:WiiApi.WiiFabrika.tipKontrolera">
+            <summary>
+            Tip kontrolera koji fabrika proizvodi.
+            </summary>
         </member>
         <member name="M:WiiApi.WiiFabrika.dobaviInstancu">
             <summary>
@@ -695,6 +713,13 @@
             <summary>
             stanje dugmeta MINUS
             </summary>
+        </member>
+        <member name="M:WiiApi.WiiKontroler.#ctor(WiimoteLib.Wiimote)">
+            <summary>
+            Konstruktor za WiiKontroler koji enkapsulira Wiimote objekat iz
+            WiimoteLib biblioteke. 
+            </summary>
+            <param name="kontroler">kontroler koji enkapsuliramo</param>
         </member>
     </members>
 </doc>

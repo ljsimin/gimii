@@ -53,6 +53,7 @@
     <Compile Include="Stanje.cs" />
     <Compile Include="Emulator.cs" />
     <Compile Include="WiiFabrika.cs" />
+    <Compile Include="WiiKontroler.cs" />
     <Compile Include="WiiMisAdapter.cs" />
     <Compile Include="WiiRekorderPolozaja.cs" />
   </ItemGroup>

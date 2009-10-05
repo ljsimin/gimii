@@ -16,6 +16,8 @@ namespace WiiApi {
 		private Boolean stoj = false;
 		//Da li je thread radi?
 		private Boolean radi = false;
+        //Nas jedinstveni guid
+        private Guid guid;
 
 
 		//Emulacija stanja dioda
@@ -28,6 +30,7 @@ namespace WiiApi {
 		private System.Threading.Thread nit;
 
 		public Emulator(BinaryReader r) {
+            guid = System.Guid.NewGuid();
 			sacuvano = r;
 			vibrator = false;
 			listaStanja = new List<SnimljenoStanje>();
@@ -184,5 +187,25 @@ namespace WiiApi {
 		}
 
 		#endregion
-	}
+
+        #region Kontroler Members
+
+
+        public Guid Identifikator
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        #endregion
+
+        #region Kontroler Members
+
+
+        public Stanje Stanje
+        {
+            get { return stanje; }
+        }
+
+        #endregion
+    }
 }
