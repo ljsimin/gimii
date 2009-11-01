@@ -17,3 +17,10 @@ C:\prg\gimii\checkout\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
 C:\prg\gimii\checkout\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
 C:\prg\gimii\checkout\WiiApi\WiiApi\obj\Debug\WiiApi.dll
 C:\prg\gimii\checkout\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
+c:\GIMii\trunk\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
+c:\GIMii\trunk\WiiApi\WiiApi\obj\Debug\WiiApi.dll
+c:\GIMii\trunk\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
+C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.XML
+C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.dll
+C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
+C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll

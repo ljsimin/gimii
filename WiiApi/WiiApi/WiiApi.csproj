@@ -75,7 +75,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="WiimoteLib, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\gimii\prg\WiimotLib_1.7\WiimoteLib.dll</HintPath>
+      <HintPath>.\WiimoteLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

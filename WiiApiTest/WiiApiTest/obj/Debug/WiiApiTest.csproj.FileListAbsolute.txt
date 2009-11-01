@@ -11,3 +11,11 @@ C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WiiApiTest\WiiApiTe
 C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.pdb
 C:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.exe
 C:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.pdb
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\bin\Debug\WindowsFormsApplication2.exe
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\bin\Debug\WindowsFormsApplication2.pdb
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\ResolveAssemblyReference.cache
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.JedanKontrolerForm.resources
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.KontrolerInfo.resources
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WiiApiTest.csproj.GenerateResource.Cache
+c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.ViseKontroleraForm.resources
