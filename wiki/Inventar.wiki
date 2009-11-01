@@ -5,11 +5,11 @@
   # *!WiiMote br 1*                -   _Danilo Basaric_
   # *!WiiMote br 2*                -   _Vladimir Ivančević_
   # *!BlueTooth dongle Ivetićev*   -   _Vladimir Ivančević_
-  # *!DebugBar v1.0*  (sjeb)       -   _Ljubomir Simin_
-  # *!HeadTracing Naocare*         -   _Ljubomir Simin_
-  # *IR marker Sith model br 1*   -   _Ljubomir Simin_
-  # *IR marker Sith model br 2*   -   _Ljubomir Simin_
-  # *IR marker Jedi model br 1*   -   _Ljubomir Simin_
-  # *IR marker Jedi model br 2*   -   _Ljubomir Simin_
-  # *IR !CrownCable*               -   _Ljubomir Simin_
-  # *Dongle Dragana Stevanova*       -   _Veljko Petrovic_
+  # *!DebugBar v1.0*  (sjeb)       -   _Dragan Stevanov_
+  # *!HeadTracing Naocare*         -   _Dragan Stevanov_
+  # *IR marker Sith model br 1*   -   _Dragan Stevanov_
+  # *IR marker Sith model br 2*   -   _Dragan Stevanov_
+  # *IR marker Jedi model br 1*   -   _Dragan Stevanov_
+  # *IR marker Jedi model br 2*   -   _Dragan Stevanov_
+  # *IR !CrownCable*               -   _Dragan Stevanovn_
+  # *Dongle Dragana Stevanova*       -   _Dragan Stevanov_
