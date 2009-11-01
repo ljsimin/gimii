@@ -447,7 +447,7 @@
             // 
             this.lblIC3velicina.AutoSize = true;
             this.lblIC3velicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIC3velicina.Location = new System.Drawing.Point(111, 80);
+            this.lblIC3velicina.Location = new System.Drawing.Point(6, 178);
             this.lblIC3velicina.Name = "lblIC3velicina";
             this.lblIC3velicina.Size = new System.Drawing.Size(61, 17);
             this.lblIC3velicina.TabIndex = 11;
@@ -457,7 +457,7 @@
             // 
             this.lblIC3Yosa.AutoSize = true;
             this.lblIC3Yosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIC3Yosa.Location = new System.Drawing.Point(111, 63);
+            this.lblIC3Yosa.Location = new System.Drawing.Point(6, 161);
             this.lblIC3Yosa.Name = "lblIC3Yosa";
             this.lblIC3Yosa.Size = new System.Drawing.Size(48, 17);
             this.lblIC3Yosa.TabIndex = 10;
@@ -467,7 +467,7 @@
             // 
             this.lblIC3Xosa.AutoSize = true;
             this.lblIC3Xosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIC3Xosa.Location = new System.Drawing.Point(111, 46);
+            this.lblIC3Xosa.Location = new System.Drawing.Point(6, 144);
             this.lblIC3Xosa.Name = "lblIC3Xosa";
             this.lblIC3Xosa.Size = new System.Drawing.Size(48, 17);
             this.lblIC3Xosa.TabIndex = 9;
@@ -477,7 +477,7 @@
             // 
             this.cbxIC3.AutoSize = true;
             this.cbxIC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbxIC3.Location = new System.Drawing.Point(114, 22);
+            this.cbxIC3.Location = new System.Drawing.Point(9, 120);
             this.cbxIC3.Name = "cbxIC3";
             this.cbxIC3.Size = new System.Drawing.Size(47, 21);
             this.cbxIC3.TabIndex = 8;
@@ -488,7 +488,7 @@
             // 
             this.lblIC2velicina.AutoSize = true;
             this.lblIC2velicina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIC2velicina.Location = new System.Drawing.Point(3, 178);
+            this.lblIC2velicina.Location = new System.Drawing.Point(111, 80);
             this.lblIC2velicina.Name = "lblIC2velicina";
             this.lblIC2velicina.Size = new System.Drawing.Size(61, 17);
             this.lblIC2velicina.TabIndex = 7;
@@ -498,7 +498,7 @@
             // 
             this.lblIC2Yosa.AutoSize = true;
             this.lblIC2Yosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIC2Yosa.Location = new System.Drawing.Point(3, 161);
+            this.lblIC2Yosa.Location = new System.Drawing.Point(111, 63);
             this.lblIC2Yosa.Name = "lblIC2Yosa";
             this.lblIC2Yosa.Size = new System.Drawing.Size(48, 17);
             this.lblIC2Yosa.TabIndex = 6;
@@ -508,7 +508,7 @@
             // 
             this.lblIC2Xosa.AutoSize = true;
             this.lblIC2Xosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIC2Xosa.Location = new System.Drawing.Point(3, 144);
+            this.lblIC2Xosa.Location = new System.Drawing.Point(111, 46);
             this.lblIC2Xosa.Name = "lblIC2Xosa";
             this.lblIC2Xosa.Size = new System.Drawing.Size(48, 17);
             this.lblIC2Xosa.TabIndex = 5;
@@ -518,7 +518,7 @@
             // 
             this.cbxIC2.AutoSize = true;
             this.cbxIC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cbxIC2.Location = new System.Drawing.Point(6, 120);
+            this.cbxIC2.Location = new System.Drawing.Point(114, 22);
             this.cbxIC2.Name = "cbxIC2";
             this.cbxIC2.Size = new System.Drawing.Size(47, 21);
             this.cbxIC2.TabIndex = 4;
@@ -596,7 +596,7 @@
             this.lblVreme.TabIndex = 9;
             this.lblVreme.Text = "Vreme: ";
             // 
-            // UserControl1
+            // KontrolerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -610,7 +610,7 @@
             this.Controls.Add(this.gbxOstalaDugmad);
             this.Controls.Add(this.gbxAkcionaDugmad);
             this.Controls.Add(this.gbxDirekcionaDugmad);
-            this.Name = "UserControl1";
+            this.Name = "KontrolerInfo";
             this.Size = new System.Drawing.Size(556, 443);
             this.gbxDirekcionaDugmad.ResumeLayout(false);
             this.gbxAkcionaDugmad.ResumeLayout(false);
