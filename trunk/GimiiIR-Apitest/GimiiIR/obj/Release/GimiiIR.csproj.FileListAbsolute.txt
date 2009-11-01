@@ -1,0 +1,21 @@
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\bin\Release\GimiiIR.exe
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\bin\Release\GimiiIR.pdb
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.frmMain.resources
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.Properties.Resources.resources
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.exe
+C:\Documents and Settings\gimii\My Documents\Visual Studio 2008\Projects\GimiiIR\GimiiIR\obj\Release\GimiiIR.pdb
+D:\Wii\SVN\GimiiIR\GimiiIR\obj\Release\GimiiIR.exe
+D:\Wii\SVN\GimiiIR\GimiiIR\obj\Release\GimiiIR.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.exe
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Release\GimiiIR.exe
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Release\GimiiIR.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Release\WiiApi.dll
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Release\WiimoteLib.dll
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\ResolveAssemblyReference.cache
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.frmMain.resources
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.Properties.Resources.resources
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
