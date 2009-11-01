@@ -1,0 +1,14 @@
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\GimiiIR.exe
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\GimiiIR.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\WiiApi.dll
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\WiimoteLib.dll
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\WiiApi.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\WiiApi.xml
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Debug\ResolveAssemblyReference.cache
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Debug\GimiiIR.frmMain.resources
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Debug\GimiiIR.Properties.Resources.resources
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Debug\GimiiIR.csproj.GenerateResource.Cache
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Debug\GimiiIR.exe
+C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Debug\GimiiIR.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\WiimoteLib.pdb
+C:\prg\gimii\playground\GimiiIR\GimiiIR\bin\Debug\WiimoteLib.xml
