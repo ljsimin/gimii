@@ -1,13 +1,8 @@
 #summary Spisak svih stvari koje koristimo i ko ih trenutno poseduje
 
-= Inventar =
-
-Ovde imamo spisak svih stvari koje su koristimo, kao i ko ih trenutno poseduje.
-
-
 == Lista ==
 
-  # *!WiiMote br 1*                -   _Danilo Basaric_(bez kutije(ne Danilo vec kontroler))
+  # *!WiiMote br 1*                -   _Danilo Basaric_
   # *!WiiMote br 2*                -   _Vladimir Ivančević_
   # *!BlueTooth dongle Ivetićev*   -   _Vladimir Ivančević_
   # *!DebugBar v1.0*  (sjeb)       -   _Ljubomir Simin_
