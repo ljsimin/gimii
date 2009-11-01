@@ -20,6 +20,8 @@ namespace WiiApi
         {
             this.kontroler = kontroler;
             this.kontroler.Connect();
+            if (this.kontroler.WiimoteState.ExtensionType != ExtensionType.BalanceBoard)
+                this.kontroler.SetReportType(InputReport.IRExtensionAccel, IRSensitivity.Maximum, true);
             this.kontroler.WiimoteChanged += reagujNaPromenu;
         }
 
