@@ -3,13 +3,13 @@
 == Lista ==
 
   # *!WiiMote br 1*                -   _Danilo Basaric_
-  # *!WiiMote br 2*                -   _Vladimir Ivančević_
-  # *!BlueTooth dongle Ivetićev*   -   _Vladimir Ivančević_
+  # *!WiiMote br 2*                -   _prof. Ivetić_
+  # *!BlueTooth dongle Ivetićev*   -   _prof. Ivetić_
   # *!DebugBar v1.0*  (sjeb)       -   _Dragan Stevanov_
   # *!HeadTracing Naocare*         -   _Dragan Stevanov_
   # *IR marker Sith model br 1*   -   _Dragan Stevanov_
   # *IR marker Sith model br 2*   -   _Dragan Stevanov_
   # *IR marker Jedi model br 1*   -   _Dragan Stevanov_
   # *IR marker Jedi model br 2*   -   _Dragan Stevanov_
-  # *IR !CrownCable*               -   _Dragan Stevanovn_
+  # *IR !CrownCable*               -   _Dragan Stevanov_
   # *Dongle Dragana Stevanova*       -   _Dragan Stevanov_
