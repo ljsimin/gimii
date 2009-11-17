@@ -24,3 +24,7 @@ C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.XML
 C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.dll
 C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
 C:\GIMii\trunk\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
+D:\Wii\SVN\WiiApi\WiiApi\bin\Debug\WiiApi.XML
+D:\Wii\SVN\WiiApi\WiiApi\bin\Debug\WiiApi.dll
+D:\Wii\SVN\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
+D:\Wii\SVN\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll

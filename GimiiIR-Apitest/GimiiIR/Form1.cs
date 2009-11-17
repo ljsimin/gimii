@@ -36,7 +36,7 @@ namespace GimiiIR
         {
             WiiFabrika.dobaviInstancu().postaviTipKontrolera(WiiTip.WII_KONTROLER);
             w = WiiFabrika.dobaviInstancu().kreirajKontroler();
-            //w = WiiFabrika.dobaviInstancu().kreirajKontroler("C:\\zzz");
+            ///w = WiiFabrika.dobaviInstancu().kreirajKontroler(@"d:\My documents\kacket3");
             try
             {
                 w.kreni(true);
