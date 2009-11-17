@@ -101,7 +101,7 @@ namespace HeadTracking2LEDs
             // postavi full screen
             Format current = Manager.Adapters[0].CurrentDisplayMode.Format;
 
-            if (Manager.CheckDeviceType(0, DeviceType.Hardware, current, current, false))
+            /*if (Manager.CheckDeviceType(0, DeviceType.Hardware, current, current, false))
             {
                 presentParams.Windowed = false;
                 presentParams.BackBufferFormat = current;
@@ -113,7 +113,7 @@ namespace HeadTracking2LEDs
             else
             {
                 presentParams.Windowed = true;
-            }
+            }*/
 
 
             // Depth Buffer
@@ -409,7 +409,7 @@ namespace HeadTracking2LEDs
         //kao reakcija na dogadjaj promene stanja kontrolera, osvezava koordinate glave
         private void ReakcijaNaPromenu(Vector3 args)
         {
-            args.Multiply(5); //prilagodjavanje pomeraja velicini scene, sto je scena veca posmatracemo je iz vece daljine i vise se pomeramo
+            args.Multiply(0.05f); //prilagodjavanje pomeraja velicini scene, sto je scena veca posmatracemo je iz vece daljine i vise se pomeramo
             polozajGlave = args;
         }
 

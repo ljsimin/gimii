@@ -19,3 +19,13 @@ C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\ResolveAssemblyReference.cac
 C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.frmMain.resources
 C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.Properties.Resources.resources
 C:\prg\gimii\playground\GimiiIR\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.exe
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.pdb
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\bin\Release\GimiiIR.exe
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\bin\Release\GimiiIR.pdb
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\ResolveAssemblyReference.cache
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.frmMain.resources
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.Properties.Resources.resources
+D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
+J:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.exe
+J:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.pdb

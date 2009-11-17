@@ -16,12 +16,12 @@ namespace HeadTracking2LEDs
         public delegate void ObradjivacPromenePolozaja(object o, Vector3 polozaj);                 //   za slanje argumenata dogadjaja
         Vector3 polozajGlave = new Vector3();
 
-        Point firstPoint = new Point();
-        Point secondPoint = new Point();
+        PointF firstPoint = new PointF();
+        PointF secondPoint = new PointF();
         int numvisible = 0;
 
         float dotDistanceInMM = 153.0f;//width of the wii sensor bar
-        float screenHeightinMM = 114.5f;
+        float screenHeightinMM = 300f;
         float radiansPerPixel = (float)(Math.PI / 4) / 1024.0f; //45 degree field of view with a 1024x768 camera
         float movementScaling = 1.0f;
 
@@ -195,22 +195,22 @@ namespace HeadTracking2LEDs
             numvisible = 0;
             if (ws.IRState.IRSensors[0].Found)
             {
-                firstPoint.X = ws.IRState.IRSensors[0].RawPosition.X;
-                firstPoint.Y = ws.IRState.IRSensors[0].RawPosition.Y;
+                firstPoint.X = ws.IRState.IRSensors[0].Position.X * 1024;
+                firstPoint.Y = ws.IRState.IRSensors[0].Position.Y * 768;
                 numvisible = 1;
             }
             if (ws.IRState.IRSensors[1].Found)
             {
                 if (numvisible == 0)
                 {
-                    firstPoint.X = ws.IRState.IRSensors[1].RawPosition.X;
-                    firstPoint.Y = ws.IRState.IRSensors[1].RawPosition.Y;
+                    firstPoint.X = ws.IRState.IRSensors[1].Position.X * 1024;
+                    firstPoint.Y = ws.IRState.IRSensors[1].Position.Y * 768;
                     numvisible = 1;
                 }
                 else
                 {
-                    secondPoint.X = ws.IRState.IRSensors[1].RawPosition.X;
-                    secondPoint.Y = ws.IRState.IRSensors[1].RawPosition.Y;
+                    secondPoint.X = ws.IRState.IRSensors[1].Position.X * 1024;
+                    secondPoint.Y = ws.IRState.IRSensors[1].Position.Y * 768;
                     numvisible = 2;
                 }
             }
@@ -218,14 +218,14 @@ namespace HeadTracking2LEDs
             {
                 if (numvisible == 0)
                 {
-                    firstPoint.X = ws.IRState.IRSensors[2].RawPosition.X;
-                    firstPoint.Y = ws.IRState.IRSensors[2].RawPosition.Y;
+                    firstPoint.X = ws.IRState.IRSensors[2].Position.X * 1024;
+                    firstPoint.Y = ws.IRState.IRSensors[2].Position.Y * 768;
                     numvisible = 1;
                 }
                 else if (numvisible == 1)
                 {
-                    secondPoint.X = ws.IRState.IRSensors[2].RawPosition.X;
-                    secondPoint.Y = ws.IRState.IRSensors[2].RawPosition.Y;
+                    secondPoint.X = ws.IRState.IRSensors[2].Position.X * 1024;
+                    secondPoint.Y = ws.IRState.IRSensors[2].Position.Y * 768;
                     numvisible = 2;
                 }
             }
@@ -233,8 +233,8 @@ namespace HeadTracking2LEDs
             {
                 if (numvisible == 1)
                 {
-                    secondPoint.X = ws.IRState.IRSensors[3].RawPosition.X;
-                    secondPoint.Y = ws.IRState.IRSensors[3].RawPosition.Y;
+                    secondPoint.X = ws.IRState.IRSensors[3].Position.X * 1024;
+                    secondPoint.Y = ws.IRState.IRSensors[3].Position.Y * 768;
                     numvisible = 2;
                 }
             }
@@ -242,14 +242,13 @@ namespace HeadTracking2LEDs
             if (numvisible == 2)
             {
 
-
                 float dx = firstPoint.X - secondPoint.X;
                 float dy = firstPoint.Y - secondPoint.Y;
                 float pointDist = (float)Math.Sqrt(dx * dx + dy * dy);
 
                 float angle = radiansPerPixel * pointDist / 2;
                 //in units of screen hieght since the box is a unit cube and box hieght is 1
-                headDist = movementScaling * (float)((dotDistanceInMM / 2) / Math.Tan(angle)) / screenHeightinMM;
+                headDist = movementScaling * (float)((dotDistanceInMM / 2) / Math.Tan(angle));// / screenHeightinMM;
 
 
                 float avgX = (firstPoint.X + secondPoint.X) / 2.0f;
@@ -261,14 +260,10 @@ namespace HeadTracking2LEDs
                 headX = (float)(movementScaling * Math.Sin(radiansPerPixel * (avgX - 512)) * headDist);
 
                 relativeVerticalAngle = (avgY - 384) * radiansPerPixel;//relative angle to camera axis
-
-                if (cameraIsAboveScreen)
-                    headY = .5f + (float)(movementScaling * Math.Sin(relativeVerticalAngle + cameraVerticaleAngle) * headDist);
-                else
-                    headY = -.5f + (float)(movementScaling * Math.Sin(relativeVerticalAngle + cameraVerticaleAngle) * headDist);
+                headY = (0.5f*screenHeightinMM)+(float)( Math.Sin(relativeVerticalAngle + cameraVerticaleAngle) * headDist);
                 polozajGlave.X = headX;
                 polozajGlave.Y = headY;
-                polozajGlave.Z = headDist;
+                polozajGlave.Z = (float) Math.Sqrt(headDist*headDist-headX*headX-headY*headY);
                 PromenaPolozaja(this, polozajGlave);
             }
 
@@ -277,9 +272,7 @@ namespace HeadTracking2LEDs
         public void CalibrateAngle()
         {
             //zeros the head position and computes the camera tilt
-            double angle = Math.Acos(.5 / headDist) - Math.PI / 2;//angle of head to screen
-            if (!cameraIsAboveScreen)
-                angle = -angle;
+            double angle = Math.Acos((screenHeightinMM*0.5f)/ headDist) - Math.PI / 2;//angle of head to screen
             cameraVerticaleAngle = (float)((angle - relativeVerticalAngle));//absolute camera angle 
         }
 
