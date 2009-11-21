@@ -25,11 +25,11 @@ namespace Headtracking2LEDs
         //Inicijalizacija potrebnih promenljivih vezano za hardversku postavku sistema
         //********************************************************
 
-        private bool fullscreen = false; //mod prikaza
+        private bool fullscreen = true; //mod prikaza
 
-        private const int sirinaEkrana = 1024;// rezolucija ekrana u pikselima
+        private const int sirinaEkrana = 1440;// rezolucija ekrana u pikselima
 
-        private const int visinaEkrana = 768; //rezolucija ekrana u pikselima
+        private const int visinaEkrana = 900; //rezolucija ekrana u pikselima
 
         private const float razmakDiodaMM = 155f; //razmak izmedju leve i desne diode u milimetrima
 
