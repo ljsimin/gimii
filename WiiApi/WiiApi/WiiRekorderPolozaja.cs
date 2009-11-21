@@ -498,7 +498,7 @@ namespace WiiApi {
         /// <param name="prednjaTacka">Izvor koji vidi kamera.</param>
         /// <param name="desnaTacka">Izvor koji vidi kamera.</param>
         /// <returns>Vrednost granice</returns>
-        public double GornjaGranicaAproksimacije(PointF levaTacka, PointF prednjaTacka, PointF desnaTacka)
+        private double GornjaGranicaAproksimacije(PointF levaTacka, PointF prednjaTacka, PointF desnaTacka)
         {
             double S = prednjaTacka.X * (levaTacka.X - desnaTacka.X) + prednjaTacka.Y * (levaTacka.Y - desnaTacka.Y);
             return (-S - Math.Sqrt(-4 * (-Math.Pow(levaTacka.X, 2) - Math.Pow(levaTacka.Y, 2) + levaTacka.X * prednjaTacka.X + levaTacka.Y * prednjaTacka.Y) * (Math.Pow(desnaTacka.X, 2) + Math.Pow(desnaTacka.Y, 2) - desnaTacka.X * prednjaTacka.X - desnaTacka.Y * prednjaTacka.Y) + Math.Pow(S, 2))) /
@@ -512,7 +512,7 @@ namespace WiiApi {
         /// <param name="prednjaTacka">Izvor koji vidi kamera.</param>
         /// <param name="desnaTacka">Izvor koji vidi kamera.</param>
         /// <returns>Vrednost granice.</returns>
-        public double DonjaGranicaAproksimacije(PointF levaTacka, PointF prednjaTacka, PointF desnaTacka)
+        private double DonjaGranicaAproksimacije(PointF levaTacka, PointF prednjaTacka, PointF desnaTacka)
         {
             return Math.Sqrt((Math.Pow(desnaTacka.X, 2) + Math.Pow(desnaTacka.Y, 2) + Math.Pow(z, 2)) / (Math.Pow(levaTacka.X, 2) + Math.Pow(levaTacka.Y, 2) + Math.Pow(z, 2)));
         }
