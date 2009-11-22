@@ -8,3 +8,13 @@ C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.Propert
 C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.csproj.GenerateResource.Cache
 C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.exe
 C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.pdb
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.exe
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.pdb
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\bin\Release\TwoPaneDemo.exe
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\bin\Release\TwoPaneDemo.pdb
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\bin\Release\WiiApi.dll
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\bin\Release\WiimoteLib.dll
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\obj\Release\ResolveAssemblyReference.cache
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.frmMain.resources
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.Properties.Resources.resources
+C:\prg\gimii\checkout2\TwoPaneDemo\TwoPaneDemo\obj\Release\TwoPaneDemo.csproj.GenerateResource.Cache
