@@ -1,0 +1,10 @@
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\TwoPaneDemo.exe
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\TwoPaneDemo.pdb
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.frmMain.resources
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.Properties.Resources.resources
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.csproj.GenerateResource.Cache
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.exe
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.pdb
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\WiiApi.dll
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\WiimoteLib.dll
