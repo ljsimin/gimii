@@ -24,7 +24,7 @@ namespace WiiApi {
         /// <summary>
         /// Identifikator ovog kontrolera jedinstven na nivou ove aplikacije
         /// </summary>
-        Guid Identifikator
+        String Identifikator
         {
             get;
         }

@@ -148,9 +148,9 @@ namespace WiiApi
             }
         }
 
-        public Guid Identifikator
+        public String Identifikator
         {
-            get { return kontroler.ID; }
+            get { return kontroler.HIDDevicePath; }
         }
 
         public event ObradjivacPromeneStanja PromenaStanja;
