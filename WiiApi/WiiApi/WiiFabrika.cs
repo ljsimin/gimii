@@ -24,7 +24,7 @@ namespace WiiApi {
         /// </summary>
         private WiiTip tipKontrolera = WiiTip.WII_EMULATOR;
         private String putanjaFajla = "";
-        private Dictionary<Guid, Kontroler> kontroleri = new Dictionary<Guid, Kontroler>();
+        private Dictionary<String, Kontroler> kontroleri = new Dictionary<String, Kontroler>();
 
 		/// <summary>
 		/// Metoda za dobavljanje instance WiiFabrike.
@@ -93,7 +93,7 @@ namespace WiiApi {
                     return null;
                 }
             }
-            else
+            else if(tipKontrolera == WiiTip.WII_KONTROLER)
             {
                 try
                 {
@@ -102,10 +102,11 @@ namespace WiiApi {
                     IEnumerator<Wiimote> en = w.GetEnumerator();
                     while (en.MoveNext())
                     {
-                        if (!kontroleri.ContainsKey(en.Current.ID))
+
+                        if (!kontroleri.ContainsKey(en.Current.HIDDevicePath))
                         {
                             WiiKontroler wk = new WiiKontroler(en.Current);
-                            kontroleri.Add(wk.Identifikator, wk);
+                            kontroleri.Add(en.Current.HIDDevicePath, wk);
                             return wk;
                         }
                     }
@@ -116,6 +117,7 @@ namespace WiiApi {
                     return null;
                 }
             }
+            return null;
 		}
 
 		///<summary>
@@ -140,13 +142,13 @@ namespace WiiApi {
         /// <param name="identifikator">Jedinstveni identifikator koji zelimo</param>
         /// <returns>kontroler koji enkapsulira indicirani wiimote. U slucaju da nema tog ID-a medju konektovanim
         /// vraca se null</returns>
-        public Kontroler kreirajKontroler(Guid identifikator)
+        public Kontroler kreirajImenovanKontroler(String identifikator)
         {
             try
             {
-                if (kontroleri.ContainsKey(identifikator))
+                if (kontroleri.ContainsKey(identifikator.ToString()))
                 {
-                    return kontroleri[identifikator];
+                    return kontroleri[identifikator.ToString()];
                 }
                 else
                 {
@@ -158,7 +160,7 @@ namespace WiiApi {
                         if (en.Current.ID.Equals(identifikator))
                         {
                             WiiKontroler wk = new WiiKontroler(en.Current);
-                            kontroleri.Add(wk.Identifikator, wk);
+                            kontroleri.Add(wk.Identifikator.ToString(), wk);
                             return wk;
                         }
                     }
@@ -176,9 +178,9 @@ namespace WiiApi {
 		///</summary>
 		public void iskljuci(Kontroler kontroler) {
             kontroler.prekiniKomunikaciju();
-            if (kontroleri.ContainsKey(kontroler.Identifikator))
+            if (kontroleri.ContainsKey(kontroler.Identifikator.ToString()))
             {
-                kontroleri.Remove(kontroler.Identifikator);
+                kontroleri.Remove(kontroler.Identifikator.ToString());
             }
 		}
 	}
