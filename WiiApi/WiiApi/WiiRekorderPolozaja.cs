@@ -254,23 +254,26 @@ namespace WiiApi {
                 float dx = levaTacka.X - desnaTacka.X;
                 float dy = levaTacka.Y - desnaTacka.Y;
                 float razmak = (float)Math.Sqrt(dx * dx + dy * dy);
-                
-                Point3F polozaj=new Point3F();
-                float ugao = radianaPoPikselu * razmak / 2;
-                
+
+                Point3F polozaj = new Point3F();
+                float ugao = radianaPoPikselu * razmak / 2;//ugao izmedju leve i desne diode/2
+
                 udaljenostGlave = (float)((razmakDiodaMM / 2) / Math.Tan(ugao));
 
 
                 float avgX = (levaTacka.X + desnaTacka.X) / 2.0f;
                 float avgY = (levaTacka.Y + desnaTacka.Y) / 2.0f;
 
-                polozaj.X = (float)(Math.Sin(radianaPoPikselu * (avgX - 512)) * udaljenostGlave);
+                float ugaoGlave = (float)(Math.Sqrt(avgX * avgX + avgY * avgY) * radianaPoPikselu);//ugao izmedju vektora polozaja glave i z ose
+
+                polozaj.Z = (float)(udaljenostGlave * Math.Cos(ugaoGlave));
+
+                polozaj.X = (float)(Math.Sin(radianaPoPikselu * (avgX - 512)) * polozaj.Z);
                 relativniVertikalniUgao = (avgY - 384) * radianaPoPikselu;
-                if(kontrolerIznadEkrana)
-                    polozaj.Y = .5f * visinaEkranaMM + (float)(Math.Sin(relativniVertikalniUgao + ugaoKamere) * udaljenostGlave);
+                if (kontrolerIznadEkrana)
+                    polozaj.Y = .5f * visinaEkranaMM + (float)(Math.Sin(relativniVertikalniUgao + ugaoKamere) * polozaj.Z);
                 else
-                    polozaj.Y = -.5f * visinaEkranaMM + (float)(Math.Sin(relativniVertikalniUgao + ugaoKamere) * udaljenostGlave);
-                polozaj.Z = (float)Math.Sqrt(udaljenostGlave * udaljenostGlave - polozaj.X * polozaj.X - polozaj.Y * polozaj.Y);
+                    polozaj.Y = -.5f * visinaEkranaMM + (float)(Math.Sin(relativniVertikalniUgao + ugaoKamere) * polozaj.Z);
                 PolozajGlave polozajGlave = new PolozajGlave(true, polozaj);
                 PromenaPolozaja(this, polozajGlave);
             }
