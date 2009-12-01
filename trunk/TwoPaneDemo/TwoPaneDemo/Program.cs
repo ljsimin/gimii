@@ -16,7 +16,8 @@ namespace TwoPaneDemo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmMain());
-            GLPrikaz.Run();
+            Application.Run(new Kalibracija());
+            //GLPrikaz.Run();
         }
     }
 }
