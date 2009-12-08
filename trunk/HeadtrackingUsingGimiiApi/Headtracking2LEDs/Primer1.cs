@@ -33,7 +33,7 @@ namespace Headtracking2LEDs
 
         private const float razmakDiodaMM = 155f; //razmak izmedju leve i desne diode u milimetrima
 
-        private const float visinaEkranaMM = 300f; //fizicka visina ekrana u milimetrima
+        private const float visinaEkranaMM = 250f; //fizicka visina ekrana u milimetrima
 
         private const bool kontrolerIznadEkrana = true; // ako je kontroler iznad ekrana true, ako je ispod false
 

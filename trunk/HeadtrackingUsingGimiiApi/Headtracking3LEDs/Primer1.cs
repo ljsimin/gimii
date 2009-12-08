@@ -36,7 +36,7 @@ namespace Headtracking3LEDs
 
         private const float udaljenostPrednjeDiodeMM=92f; // udaljenost prednje diode od linije koja spaja levu i desnu
 
-        private const float visinaEkranaMM=300f; //fizicka visina ekrana u milimetrima
+        private const float visinaEkranaMM=250f; //fizicka visina ekrana u milimetrima
 
         private const bool kontrolerIznadEkrana=true; // ako je kontroler iznad ekrana true, ako je ispod false
 

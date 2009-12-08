@@ -268,12 +268,12 @@ namespace WiiApi {
 
                 polozaj.Z = (float)(udaljenostGlave * Math.Cos(ugaoGlave));
 
-                polozaj.X = (float)(Math.Sin(radianaPoPikselu * (avgX - 512)) * polozaj.Z);
+                polozaj.X = (float)(Math.Tan(radianaPoPikselu * (avgX - 512)) * polozaj.Z);
                 relativniVertikalniUgao = (avgY - 384) * radianaPoPikselu;
                 if (kontrolerIznadEkrana)
-                    polozaj.Y = .5f * visinaEkranaMM + (float)(Math.Sin(relativniVertikalniUgao + ugaoKamere) * polozaj.Z);
+                    polozaj.Y = .5f * visinaEkranaMM + (float)(Math.Tan(relativniVertikalniUgao + ugaoKamere) * polozaj.Z);
                 else
-                    polozaj.Y = -.5f * visinaEkranaMM + (float)(Math.Sin(relativniVertikalniUgao + ugaoKamere) * polozaj.Z);
+                    polozaj.Y = -.5f * visinaEkranaMM + (float)(Math.Tan(relativniVertikalniUgao + ugaoKamere) * polozaj.Z);
                 PolozajGlave polozajGlave = new PolozajGlave(true, polozaj);
                 PromenaPolozaja(this, polozajGlave);
             }
