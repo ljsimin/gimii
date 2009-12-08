@@ -28,3 +28,13 @@ D:\Wii\SVN TEST2\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtrack
 D:\Wii\SVN TEST2\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.csproj.GenerateResource.Cache
 D:\Wii\SVN TEST2\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.exe
 D:\Wii\SVN TEST2\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.pdb
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.exe
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.pdb
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\bin\Debug\Headtracking2LEDs.exe
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\bin\Debug\Headtracking2LEDs.pdb
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\bin\Debug\WiiApi.dll
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\bin\Debug\WiimoteLib.dll
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\ResolveAssemblyReference.cache
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.Primer1.resources
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.Properties.Resources.resources
+D:\Wii\SVN FINAL\HeadtrackingUsingGimiiApi\Headtracking2LEDs\obj\Debug\Headtracking2LEDs.csproj.GenerateResource.Cache

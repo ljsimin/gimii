@@ -42,3 +42,10 @@ D:\Wii\SVN TEST2\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
 D:\Wii\SVN TEST2\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
 D:\Wii\SVN TEST2\WiiApi\WiiApi\obj\Debug\WiiApi.dll
 D:\Wii\SVN TEST2\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
+D:\Wii\SVN FINAL\WiiApi\WiiApi\bin\Debug\WiiApi.XML
+D:\Wii\SVN FINAL\WiiApi\WiiApi\bin\Debug\WiiApi.dll
+D:\Wii\SVN FINAL\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
+D:\Wii\SVN FINAL\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
+D:\Wii\SVN FINAL\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Wii\SVN FINAL\WiiApi\WiiApi\obj\Debug\WiiApi.dll
+D:\Wii\SVN FINAL\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
