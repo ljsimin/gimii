@@ -1,0 +1,26 @@
+#summary Tutorijali, linkovi, kodovi i korisne stvari vezane za Microsoft XNA Game Studio.
+
+= XNA Game Studio =
+,,Aktuelna verzija je 3.1, koja je manje više kompatibilna sa 3.0,,
+
+Linkovi:
+  * [http://www.xnadevelopment.com/ XNA development]
+  ,,2D tutorijal za početnike - postepeno kreiranje 2D igrice sa sprajtovima.,,
+
+  ,,Ako ne znade gde da započnete, predlažem ovo.,,
+
+  ,,Možete proći sve za pola dana i posle znaćete osnove 2D-a u XNA.,,
+    
+  * [http://msdn.microsoft.com/en-us/library/bb200104.aspx XNA Developer Center]
+  ,,XNA Game Studio 3.1 dokumentacija.,,
+
+  * [http://creators.xna.com/en-US/ XNA Creators Club Online]
+  ,,Zvanični XNA creators club - 2D i 3D tutorijali, igrice, primeri.,,
+
+  * [http://forums.xna.com/forums/t/12882.aspx XNA game engines]
+  ,,Lista engine-a za XNA framework. Ima 2D, 3D, sa fizokom, open source i raznih.,,
+
+  * [http://www.codeplex.com/wikipage?ProjectName=XNACommunity&title=Web%20Cam&referringTitle=Home XNACommunity - webcam]
+  <wiki:video url="http://www.youtube.com/watch?v=1s63YEWwgqI"/>
+
+  ,,Primer korišćenja video streama iz web kamere kao teksture.,,
