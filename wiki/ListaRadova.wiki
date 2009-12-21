@@ -9,4 +9,4 @@ Ovde bi trebalo da svako napiše da li radi bachelor ili seminarski rad, kao i i
 
   * Danilo Basarić   -   Odriče se pisanja rada
   * Ljubomir Simin   -   wii hardver, način funkcionisanja wiimote-a, moguće upotrebe u virtual reality sistemima
-  * Željko Vrbaški   -   ja bih bio zadovoljan da pišem o API'ju, ali koliko se o tome može pisati
+  * Željko Vrbaški   -   Specifikacija API-ja za korišćenje Wii kontrolera u aplikacijama virtuene stvarnosti
