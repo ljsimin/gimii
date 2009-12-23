@@ -1,0 +1,7 @@
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\VR\WindowsGame1\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Fax\VR\WindowsGame1\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\WindowsGame1\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\VR\VR_2D_Navigacija\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
