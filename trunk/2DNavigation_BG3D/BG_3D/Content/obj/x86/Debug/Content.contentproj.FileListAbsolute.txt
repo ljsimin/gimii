@@ -1,0 +1,8 @@
+E:\VR_XNA\BG_3D_Chapter10\BG_3D\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\VR_XNA\BG_3D_Chapter10\BG_3D\Content\obj\x86\Debug\Audio\TutorialAudio.xml
+E:\Fax\VR\BG_3D_Chapter10\BG_3D\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\BG_3D_Chapter10\BG_3D\Content\obj\x86\Debug\Audio\TutorialAudio.xml
+D:\Fax\VR\BG_3D_Chapter10\BG_3D\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Fax\VR\BG_3D_Chapter10\BG_3D\Content\obj\x86\Debug\Audio\TutorialAudio.xml
+E:\Fax\VR\gimii\trunk\2DNavigation_BG3D\BG_3D\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\2DNavigation_BG3D\BG_3D\Content\obj\x86\Debug\Audio\TutorialAudio.xml
