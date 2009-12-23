@@ -95,6 +95,7 @@ namespace WiiApi {
             }
             else if(tipKontrolera == WiiTip.WII_KONTROLER)
             {
+                System.Console.WriteLine("Wii1");
                 try
                 {
                     WiimoteCollection w = new WiimoteCollection();
@@ -102,7 +103,7 @@ namespace WiiApi {
                     IEnumerator<Wiimote> en = w.GetEnumerator();
                     while (en.MoveNext())
                     {
-
+                        System.Console.WriteLine("Wii pronadjen");
                         if (!kontroleri.ContainsKey(en.Current.HIDDevicePath))
                         {
                             WiiKontroler wk = new WiiKontroler(en.Current);
@@ -114,6 +115,7 @@ namespace WiiApi {
                 }
                 catch (Exception)
                 {
+                    System.Console.WriteLine("Wii exception!!!");
                     return null;
                 }
             }

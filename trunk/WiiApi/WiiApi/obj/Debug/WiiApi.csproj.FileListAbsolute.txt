@@ -49,3 +49,10 @@ D:\Wii\SVN FINAL\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
 D:\Wii\SVN FINAL\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
 D:\Wii\SVN FINAL\WiiApi\WiiApi\obj\Debug\WiiApi.dll
 D:\Wii\SVN FINAL\WiiApi\WiiApi\obj\Debug\WiiApi.pdb
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.XML
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.dll
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\bin\Debug\WiiApi.pdb
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\bin\Debug\WiimoteLib.dll
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\obj\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\obj\Debug\WiiApi.dll
+E:\Fax\VR\gimii\trunk\WiiApi\WiiApi\obj\Debug\WiiApi.pdb

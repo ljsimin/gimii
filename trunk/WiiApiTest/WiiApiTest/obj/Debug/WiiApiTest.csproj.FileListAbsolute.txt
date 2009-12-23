@@ -22,3 +22,9 @@ c:\GIMii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.ViseKont
 D:\Wii\SVN\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.exe
 D:\Wii\SVN\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.pdb
 d:\Wii\SVN\WiiApiTest\WiiApiTest\obj\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\WiiApiTest\WiiApiTest\obj\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+E:\Fax\VR\gimii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.KontrolerInfo.resources
+E:\Fax\VR\gimii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WiiApiTest.csproj.GenerateResource.Cache
+E:\Fax\VR\gimii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.exe
+E:\Fax\VR\gimii\trunk\WiiApiTest\WiiApiTest\obj\Debug\WindowsFormsApplication2.pdb
