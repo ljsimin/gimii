@@ -33,3 +33,12 @@ C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDem
 C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Form1.resources
 C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Properties.Resources.resources
 C:\Documents and Settings\laptop\My Documents\projects\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.csproj.GenerateResource.Cache
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.exe
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.pdb
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\bin\Debug\MouseAccelDemo.exe
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\bin\Debug\MouseAccelDemo.pdb
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\bin\Debug\WiimoteLib.dll
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Form1.resources
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.Properties.Resources.resources
+E:\Fax\VR\gimii\trunk\MouseAccelDemo\MouseAccelDemo\obj\Debug\MouseAccelDemo.csproj.GenerateResource.Cache

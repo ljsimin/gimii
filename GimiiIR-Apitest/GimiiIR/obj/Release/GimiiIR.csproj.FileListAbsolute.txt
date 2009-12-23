@@ -29,3 +29,12 @@ D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.Properties.Resources.reso
 D:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache
 J:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.exe
 J:\Wii\SVN\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.pdb
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.exe
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.pdb
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\bin\Release\GimiiIR.exe
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\bin\Release\GimiiIR.pdb
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\bin\Release\WiimoteLib.dll
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\obj\Release\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.frmMain.resources
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.Properties.Resources.resources
+E:\Fax\VR\gimii\trunk\GimiiIR-Apitest\GimiiIR\obj\Release\GimiiIR.csproj.GenerateResource.Cache

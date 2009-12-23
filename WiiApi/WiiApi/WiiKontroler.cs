@@ -67,8 +67,9 @@ namespace WiiApi
         {
             Stanje s = new Stanje();
             s.Akcelerometar.X = ws.AccelState.Values.X;
-            s.Akcelerometar.X = ws.AccelState.Values.Y;
-            s.Akcelerometar.X = ws.AccelState.Values.Z;
+            s.Akcelerometar.Y = ws.AccelState.Values.Y;
+            s.Akcelerometar.Z = ws.AccelState.Values.Z;
+
 
             s.Dugmici.A = ws.ButtonState.A;
             s.Dugmici.B = ws.ButtonState.B;
