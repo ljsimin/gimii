@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DNavigation_Squash", "WindowsGame1\2DNavigation_Squash.csproj", "{164D8638-A55B-48DB-828A-24318C19E933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiiApi", "..\WiiApi\WiiApi\WiiApi.csproj", "{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164D8638-A55B-48DB-828A-24318C19E933}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Debug|x86.ActiveCfg = Debug|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Debug|x86.Build.0 = Debug|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Release|Any CPU.ActiveCfg = Release|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Release|Mixed Platforms.Build.0 = Release|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Release|x86.ActiveCfg = Release|x86
+		{164D8638-A55B-48DB-828A-24318C19E933}.Release|x86.Build.0 = Release|x86
+		{41A68687-D6C5-4425-8E40-B34E73977C0C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{41A68687-D6C5-4425-8E40-B34E73977C0C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{41A68687-D6C5-4425-8E40-B34E73977C0C}.Debug|x86.ActiveCfg = Debug|x86
+		{41A68687-D6C5-4425-8E40-B34E73977C0C}.Release|Any CPU.ActiveCfg = Release|x86
+		{41A68687-D6C5-4425-8E40-B34E73977C0C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{41A68687-D6C5-4425-8E40-B34E73977C0C}.Release|x86.ActiveCfg = Release|x86
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

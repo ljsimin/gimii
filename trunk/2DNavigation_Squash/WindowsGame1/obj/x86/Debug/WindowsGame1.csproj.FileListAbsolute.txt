@@ -1,0 +1,112 @@
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Translucent_Glass_Tinted_0.xnb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.dll
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\WiimoteLib.dll
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.pdb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.xml
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Oliver\Documents\Visual Studio 2008\Projects\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb
+H:\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+H:\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+D:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+D:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.dll
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiimoteLib.dll
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.pdb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.xml
+D:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb
+D:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.dll
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiimoteLib.dll
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.pdb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\WiiApi.xml
+E:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+E:\Fax\VR\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Textures\wall_texture.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Audio\RacketBall.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Audio\WallBall.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Text\font.xnb
+E:\Fax\VR\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Text\font2.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+I:\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\wall_texture.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Audio\RacketBall.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Audio\WallBall.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Text\font.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Text\font2.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.dll
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiimoteLib.dll
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.pdb
+I:\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.xml
+I:\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\wall_texture.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Audio\RacketBall.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Audio\WallBall.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Text\font.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Text\font2.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.dll
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiimoteLib.dll
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.pdb
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.xml
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Textures\wall_texture.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Audio\RacketBall.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Audio\WallBall.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Text\font.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Text\font2.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.dll
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiimoteLib.dll
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.pdb
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\bin\x86\Debug\WiiApi.xml
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
