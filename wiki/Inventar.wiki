@@ -4,13 +4,13 @@
   # Nikola Rajačić (_00:1E:35:00:23:47_, raspoloživ)
   # Veljko Petrović
   # Veljko Petrović
-  # -
-  # -
+  # Sabolč Nađ (kod Atile Barčik)
+  # Sabolč Nađ (kod Atile Barčik)
   # -
  * *MSI Mega !BlueTooth Dongle*
   # Nikola Rajačić (_SKY20821004903_, raspoloživ)
   # Veljko Petrović
-  # -
+  # Sabolč Nađ (kod Atile Barčik)
   # -
  * *!BlueTooth Dongle Ostali*
   # -
@@ -18,7 +18,7 @@
  * *Web Camera*
   # Danilo Basarić
   # Nemanja Nedić
-  # -
+  # Sabolč Nađ (kod Atile Barčik)
   # -
  * *IR Marker*
   * Sith Model
@@ -31,7 +31,7 @@
    # Nikola Rajačić (raspoloživ)
    # Nikola Rajačić (raspoloživ)
   * Ostali?
-   # ...
+   # Flomaster-slabo-radi-marker Atila Barčik x2
  * *!HeadTracing Naocare*
   * -
  * *IR !CrownCable*
