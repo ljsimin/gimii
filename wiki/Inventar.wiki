@@ -1,3 +1,4 @@
+#summary Spisak svih stvari koje koristimo i ko ih trenutno poseduje
 == Lista ==
  * *!WiiMote*
   # Nikola Rajačić (_00:1E:35:00:23:47_, raspoloživ)
