@@ -1,15 +1,87 @@
 #summary Spisak svih stvari koje koristimo i ko ih trenutno poseduje
 
 == Lista ==
+ * *!WiiMote*
+  # Nikola Rajačić (00:1E:35:00:23:47, raspoloživ)
+  # Veljko Petrović
+  # Veljko Petrović
+  # -
+  # -
+  # -
+ * *MSI Mega !BlueTooth Dongle*
+  # Nikola Rajačić (SKY20821004903, raspoloživ)
+  # Veljko Petrović
+  # -
+  # -
+ * *!BlueTooth Dongle Ostali*
+  # -
+  # ?
+ * *Web Camera*
+  # Danilo Basarić
+  # Nemanja Nedić
+  # -
+  # -
+ * *IR Marker*
+  * Sith Model
+   # -
+   # -
+  * Jedi Model
+   # -
+   # -
+  * Droid Model
+   # Nikola Rajačić (raspoloživ)
+   # Nikola Rajačić (raspoloživ)
+  * Ostali?
+   # ...
+ * *!HeadTracing Naocare*
+  * -
+ * *IR !CrownCable*
+  * -
+ * *!DebugBar v1.0*
+  * -
+ * *!DebugBar Vladin*
+  # -
+  # -#summary Spisak svih stvari koje koristimo i ko ih trenutno poseduje
 
-  # *!WiiMote br 1*                -   _Danilo Basaric_
-  # *!WiiMote br 2*                -   _prof. Ivetić_
-  # *!BlueTooth dongle Ivetićev*   -   _prof. Ivetić_
-  # *!DebugBar v1.0*  (sjeb)       -   _Dragan Stevanov_
-  # *!HeadTracing Naocare*         -   _Dragan Stevanov_
-  # *IR marker Sith model br 1*   -   _Dragan Stevanov_
-  # *IR marker Sith model br 2*   -   _Dragan Stevanov_
-  # *IR marker Jedi model br 1*   -   _Dragan Stevanov_
-  # *IR marker Jedi model br 2*   -   _Dragan Stevanov_
-  # *IR !CrownCable*               -   _Dragan Stevanov_
-  # *Dongle Dragana Stevanova*       -   _Dragan Stevanov_
+== Lista ==
+ * *!WiiMote*
+  # Nikola Rajačić (_00:1E:35:00:23:47_, raspoloživ)
+  # Veljko Petrović
+  # Veljko Petrović
+  # -
+  # -
+  # -
+ * *MSI Mega !BlueTooth Dongle*
+  # Nikola Rajačić (_SKY20821004903_, raspoloživ)
+  # Veljko Petrović
+  # -
+  # -
+ * *!BlueTooth Dongle Ostali*
+  # -
+  # ?
+ * *Web Camera*
+  # Danilo Basarić
+  # Nemanja Nedić
+  # -
+  # -
+ * *IR Marker*
+  * Sith Model
+   # -
+   # -
+  * Jedi Model
+   # -
+   # -
+  * Droid Model
+   # Nikola Rajačić (raspoloživ)
+   # Nikola Rajačić (raspoloživ)
+  * Ostali?
+   # ...
+ * *!HeadTracing Naocare*
+  * -
+ * *IR !CrownCable*
+  * -
+ * *!DebugBar v1.0*
+  * -
+ * *!DebugBar Vladin*
+  # -
+  # -
