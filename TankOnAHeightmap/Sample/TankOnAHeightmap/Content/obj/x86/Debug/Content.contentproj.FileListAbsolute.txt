@@ -1,0 +1,2 @@
+C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmap\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\gimii\trunk\TankOnAHeightmap\Sample\TankOnAHeightmap\Content\obj\x86\Debug\ResolveAssemblyReference.cache
