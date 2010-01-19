@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TankOnAHeightmapWindows">
+</Property><Property Name="Solution File" Value="C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmapWindows.sln">
+</Property><Property Name="Date" Value="Saturday, December 19, 2009">
+</Property><Property Name="Time" Value="21:49 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TankOnAHeightmapWindows.sln" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmapWindows.sln">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Upgraded XNA Game Studio nested content projects to XNA Framework 3.0.">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Upgraded XNA Game Studio project to XNA Framework 3.0.">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Project file successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\TankOnAHeightmapWindows.csproj">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\HeightMapInfo.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\HeightMapInfo.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\Tank.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\Tank.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmap.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\TankOnAHeightmap.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\Game.ico" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\Game.ico">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmap.png" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmap\TankOnAHeightmap.png">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj" Description="Project file successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\HeightMapInfoContent.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmapPipeline\HeightMapInfoContent.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmapPipeline\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TerrainProcessor.cs" Description="File successfully backed up as C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\Backup\TankOnAHeightmapPipeline\TerrainProcessor.cs">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TankOnAHeightmapWindows.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TankOnAHeightmapWindows.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapWindows" Source="TankOnAHeightmap\TankOnAHeightmapWindows.csproj" Description="Upgraded XNA Framework references to XNA Framework 3.0.">
+</Event><Event ErrorLevel="0" Project="Content" Source="Content.contentproj" Description="Copied XNA Game Studio Content Project content to backup location.">
+</Event><Event ErrorLevel="0" Project="Content" Source="engine_diff_tex.tga" Description="Copied XNA Game Studio Content Project content to backup location.">
+</Event><Event ErrorLevel="0" Project="Content" Source="rocks.bmp" Description="Copied XNA Game Studio Content Project content to backup location.">
+</Event><Event ErrorLevel="0" Project="Content" Source="tank.fbx" Description="Copied XNA Game Studio Content Project content to backup location.">
+</Event><Event ErrorLevel="0" Project="Content" Source="terrain.bmp" Description="Copied XNA Game Studio Content Project content to backup location.">
+</Event><Event ErrorLevel="0" Project="Content" Source="turret_alt_diff_tex.tga" Description="Copied XNA Game Studio Content Project content to backup location.">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj" Description="Upgraded XNA Framework Content Pipeline References.">
+</Event><Event ErrorLevel="0" Project="TankOnAHeightmapPipeline" Source="TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj" Description="Upgraded XNA Framework references to XNA Framework 3.0.">
+</Event></UpgradeLog>

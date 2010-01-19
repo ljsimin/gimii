@@ -1,0 +1,5 @@
+C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmapPipeline\bin\Xbox 360\Debug\TanksOnAHeightmapPipeline.dll
+C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmapPipeline\bin\Xbox 360\Debug\TanksOnAHeightmapPipeline.pdb
+C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmapPipeline\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmapPipeline\obj\Xbox 360\Debug\TanksOnAHeightmapPipeline.dll
+C:\Users\Oliver\Desktop\TankOnAHeightmap\Sample\TankOnAHeightmapPipeline\obj\Xbox 360\Debug\TanksOnAHeightmapPipeline.pdb
