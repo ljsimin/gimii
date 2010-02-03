@@ -80,7 +80,7 @@ namespace WindowsGame1
         Vector3[] prethodnaStanja = new Vector3[10];        
 
         public Game1()
-        {
+        {            
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
@@ -219,7 +219,7 @@ namespace WindowsGame1
                 UpravljanjeWiiKontrolerom();               
             }
 
-            RotacijaReketa();//sluzi za rotaciju reketa(udarac)
+            RotacijaReketa();//sluzi za animaciju udarca reketa
             Vibracija();
             KretanjeLopte();           
 
