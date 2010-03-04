@@ -1,0 +1,52 @@
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Form1.resources
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Properties.Resources.resources
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\gimii031009-01\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Form1.resources
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Properties.Resources.resources
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\gimii031009-02\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\My Documents\wii\trunk\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiiApi.dll
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiiApi.pdb
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiiApi.xml
+C:\Documents and Settings\Administrator\Desktop\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.help.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiiApi.pdb
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Release\WiiApi.xml
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Form1.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.help.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.Properties.Resources.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.csproj.GenerateResource.Cache
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb

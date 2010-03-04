@@ -1,0 +1,26 @@
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\XO.Form1.resources
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\XO.help.resources
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\XO.Properties.Resources.resources
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\XO.csproj.GenerateResource.Cache
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\bin\Release\WiiApi.pdb
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\bin\Release\WiiApi.xml
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Release\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Release\WiiApi.dll
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Release\WiimoteLib.dll
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Release\WiiApi.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Release\WiiApi.xml
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\XO.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\XO.help.resources
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\XO.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\XO.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Release\SimpleWiiRecorder.pdb

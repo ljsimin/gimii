@@ -1,0 +1,51 @@
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\WiiApi.pdb
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\bin\Debug\WiiApi.xml
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\XO.Form1.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\XO.help.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\XO.Properties.Resources.resources
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\XO.csproj.GenerateResource.Cache
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+M:\SimpleWiiRecorder10.12.b\SimpleWiiRecorder\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\bin\Debug\WiiApi.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\bin\Debug\WiiApi.xml
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\XO.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\XO.help.resources
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\XO.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\XO\XO\XO\SimpleWiiRecorder\obj\Debug\XO.csproj.GenerateResource.Cache
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+F:\XO2\XO\XO\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiiApi.pdb
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiiApi.xml
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.Form1.resources
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.help.resources
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.Properties.Resources.resources
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.csproj.GenerateResource.Cache
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\Raja\Desktop\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.exe
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Debug\SimpleWiiRecorder.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiiApi.dll
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiimoteLib.dll
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiiApi.pdb
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\bin\Debug\WiiApi.xml
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.help.resources
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\XO\SimpleWiiRecorder\obj\Debug\XO.csproj.GenerateResource.Cache
