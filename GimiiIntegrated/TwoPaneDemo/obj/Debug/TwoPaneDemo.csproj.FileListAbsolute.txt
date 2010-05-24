@@ -1,0 +1,25 @@
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\TwoPaneDemo.exe
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\TwoPaneDemo.pdb
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.frmMain.resources
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.Properties.Resources.resources
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.csproj.GenerateResource.Cache
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.exe
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\obj\Debug\TwoPaneDemo.pdb
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\WiiApi.dll
+C:\prg\gimii\3d tracking\TwoPaneDemo\TwoPaneDemo\bin\Debug\WiimoteLib.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\TwoPaneDemo.exe
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\TwoPaneDemo.pdb
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\WiiApi.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\WiimoteLib.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\WiiApi.pdb
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\WiiApi.xml
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\WiimoteLib.pdb
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\bin\Debug\WiimoteLib.xml
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\TwoPaneDemo.frmMain.resources
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\TwoPaneDemo.Properties.Resources.resources
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\ResGen.read.1.tlog
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\ResGen.write.1.tlog
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\TwoPaneDemo.exe
+D:\Fakultet\VR\Repository\GimiiIntegrated\TwoPaneDemo\obj\Debug\TwoPaneDemo.pdb
