@@ -1,0 +1,12 @@
+D:\Fakultet\VR\WiimoteLib_1.7_src\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.XML
+D:\Fakultet\VR\WiimoteLib_1.7_src\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.dll
+D:\Fakultet\VR\WiimoteLib_1.7_src\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.pdb
+D:\Fakultet\VR\WiimoteLib_1.7_src\WiimoteCS\WiimoteLib\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\VR\WiimoteLib_1.7_src\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.dll
+D:\Fakultet\VR\WiimoteLib_1.7_src\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.pdb
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\bin\Debug\WiimoteLib.XML
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\bin\Debug\WiimoteLib.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\bin\Debug\WiimoteLib.pdb
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\obj\Debug\ResolveAssemblyReference.cache
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\obj\Debug\WiimoteLib.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\obj\Debug\WiimoteLib.pdb

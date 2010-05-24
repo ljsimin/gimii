@@ -1,0 +1,5 @@
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\obj\Debug MSRS\ResolveAssemblyReference.cache
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\bin\Debug MSRS\WiimoteLib.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\bin\Debug MSRS\WiimoteLib.pdb
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\obj\Debug MSRS\WiimoteLib.dll
+D:\Fakultet\VR\Repository\GimiiIntegrated\WiimoteLib\obj\Debug MSRS\WiimoteLib.pdb
