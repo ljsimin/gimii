@@ -11,9 +11,10 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using Common;
 using WiiApi;
 
-namespace XNAExample
+namespace Caliibrator
 {
     /// <summary>
     /// This is the main type for your game

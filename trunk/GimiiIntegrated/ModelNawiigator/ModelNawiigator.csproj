@@ -88,7 +88,7 @@
     <Compile Include="BasicModel.cs" />
     <Compile Include="Calibrator\BasicModel.cs" />
     <Compile Include="Calibrator\Camera.cs" />
-    <Compile Include="Calibrator\CircularBuffer.cs" />
+    <Compile Include="Common\CircularBuffer.cs" />
     <Compile Include="Calibrator\Game1.cs" />
     <Compile Include="Calibrator\Grid.cs" />
     <Compile Include="Calibrator\MobileModel.cs" />
