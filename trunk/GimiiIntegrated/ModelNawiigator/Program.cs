@@ -9,9 +9,9 @@ namespace ModelNawiigator
         /// </summary>
         static void Main(string[] args)
         {
-            Caliibrator.Game1 calibrator = new Caliibrator.Game1();
+            Caliibrator.CalibrationMain calibrator = new Caliibrator.CalibrationMain();
             calibrator.Run();
-            Game1 game = new Game1(calibrator.getCalibrationMinimum(), calibrator.getCalibrationMaximum(), calibrator.wLeft, calibrator.wRight);
+            NawiigatorMain game = new NawiigatorMain(calibrator.getCalibrationMinimum(), calibrator.getCalibrationMaximum(), calibrator.wLeft, calibrator.wRight);
             game.Run();
         }
     }

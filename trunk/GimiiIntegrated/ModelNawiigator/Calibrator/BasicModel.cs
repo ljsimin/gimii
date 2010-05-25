@@ -12,11 +12,11 @@ namespace Caliibrator
         public Model model { get; protected set; }
         public Texture2D texture { get; set; }
         protected Matrix world = Matrix.Identity;
-        protected Game1 game; 
+        protected CalibrationMain game; 
 
         public BasicModel(Model m, Game g)
         {
-            game = (Game1)g;
+            game = (CalibrationMain)g;
             model = m;
         }
 
