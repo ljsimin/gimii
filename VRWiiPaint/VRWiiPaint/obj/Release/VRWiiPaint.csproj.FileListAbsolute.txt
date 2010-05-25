@@ -1,0 +1,11 @@
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\bin\Release\VRWiiPaint.exe
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\bin\Release\VRWiiPaint.pdb
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\bin\Release\WiimoteLib.dll
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\ResolveAssemblyReference.cache
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.Form1.resources
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.Properties.Resources.resources
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.csproj.GenerateResource.Cache
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.exe
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.pdb
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.FormUvod.resources
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Release\VRWiiPaint.Kalibracija.resources

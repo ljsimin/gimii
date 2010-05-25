@@ -1,0 +1,22 @@
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\bin\Debug\VRWiiPaint.exe
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\bin\Debug\VRWiiPaint.pdb
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\ResolveAssemblyReference.cache
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.Form1.resources
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.Properties.Resources.resources
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.csproj.GenerateResource.Cache
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.exe
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.pdb
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\bin\Debug\WiimoteLib.dll
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.FormUvod.resources
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.exe
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.pdb
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\bin\Debug\VRWiiPaint.exe
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\bin\Debug\VRWiiPaint.pdb
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\bin\Debug\WiiApi.dll
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\bin\Debug\WiimoteLib.dll
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\ResolveAssemblyReference.cache
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.Form1.resources
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.FormUvod.resources
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.Properties.Resources.resources
+D:\Dusko_ne_brisi\mojProjekat - 1.3\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.csproj.GenerateResource.Cache
+D:\Dusko_ne_brisi\mojProjekat\VRWiiPaint\VRWiiPaint\obj\Debug\VRWiiPaint.Kalibracija.resources
