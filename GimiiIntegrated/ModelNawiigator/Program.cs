@@ -9,9 +9,9 @@ namespace ModelNawiigator
         /// </summary>
         static void Main(string[] args)
         {
-            XNAExample.Game1 gameq = new XNAExample.Game1();
-            gameq.Run();
-            Game1 game = new Game1(gameq.getCalibrationMinimum(), gameq.getCalibrationMaximum(), gameq.wLeft, gameq.wRight);
+            Caliibrator.Game1 calibrator = new Caliibrator.Game1();
+            calibrator.Run();
+            Game1 game = new Game1(calibrator.getCalibrationMinimum(), calibrator.getCalibrationMaximum(), calibrator.wLeft, calibrator.wRight);
             game.Run();
         }
     }
