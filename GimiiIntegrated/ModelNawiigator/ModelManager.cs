@@ -65,7 +65,7 @@ namespace ModelNawiigator
             // Loop through and draw each model
             foreach (BasicModel bm in models)
             {
-                bm.Draw(((Game1)Game).camera);
+                bm.Draw(((NawiigatorMain)Game).camera);
             }
 
             base.Draw(gameTime);

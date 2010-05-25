@@ -17,7 +17,7 @@ namespace ModelNawiigator
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class NawiigatorMain : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -34,7 +34,7 @@ namespace ModelNawiigator
             protected set;
         }
 
-        public Game1(Vector3 min, Vector3 max, Kontroler wLeft, Kontroler wRight)
+        public NawiigatorMain(Vector3 min, Vector3 max, Kontroler wLeft, Kontroler wRight)
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";

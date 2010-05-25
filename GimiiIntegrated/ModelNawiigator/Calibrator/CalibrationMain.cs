@@ -19,7 +19,7 @@ namespace Caliibrator
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class CalibrationMain : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -68,7 +68,7 @@ namespace Caliibrator
         private bool dofilter = false;
         TextWriter tw;
 
-        public Game1()
+        public CalibrationMain()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";

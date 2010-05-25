@@ -170,20 +170,20 @@ namespace ModelNawiigator
 
 
 
-            Vector3 r = ((Game1)(this.Game)).pc.getRotate();
+            Vector3 r = ((NawiigatorMain)(this.Game)).pc.getRotate();
             angle.X += MathHelper.ToRadians(r.X * 20); 
             angle.Y += MathHelper.ToRadians(r.Y * 20);
             angle.Z += MathHelper.ToRadians(r.Z * 20);
 
             Matrix rot = Matrix.CreateRotationX(MathHelper.ToRadians(angle.X)) * Matrix.CreateRotationY(MathHelper.ToRadians(angle.Y)) * Matrix.CreateRotationZ(MathHelper.ToRadians(angle.Z));
 
-            Vector3 t = ((Game1)(this.Game)).pc.getTranslation();
+            Vector3 t = ((NawiigatorMain)(this.Game)).pc.getTranslation();
 
             pomeraj += Vector3.Transform(new Vector3(0, 0, t.Z), rot);
             pomeraj += Vector3.Transform(new Vector3(t.X, 0, 0), rot);
             pomeraj += Vector3.Transform(new Vector3(0, t.Y, 0), rot);
 
-            cameraFov += MathHelper.ToRadians(((Game1)(this.Game)).pc.getScale());
+            cameraFov += MathHelper.ToRadians(((NawiigatorMain)(this.Game)).pc.getScale());
             
             if (MathHelper.ToDegrees(cameraFov) > 90.0f)
             {

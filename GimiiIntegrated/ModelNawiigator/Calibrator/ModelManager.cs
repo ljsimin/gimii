@@ -71,7 +71,7 @@ namespace Caliibrator
             // Loop through and draw each model
             foreach (BasicModel bm in models)
             {
-                bm.Draw(((Game1)Game).camera);
+                bm.Draw(((CalibrationMain)Game).camera);
             }
 
             base.Draw(gameTime);
