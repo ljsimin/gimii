@@ -22,8 +22,8 @@ namespace GEarthController
             InitializeComponent();
             geApp = new ApplicationGEClass();
             geCamera = geApp.GetCamera(1);
-            //UpdateChange();
-            //timerUpdate.Start();
+            UpdateChange();
+            timerUpdate.Start();
         }
 
         public void UpdateChange()
@@ -49,31 +49,35 @@ namespace GEarthController
             geCamera.Range = zoom;
             geCamera.Azimuth = azimuth;
             geCamera.Tilt = tilt;
+            geCamera.FocusPointAltitudeMode = AltitudeModeGE.RelativeToGroundAltitudeGE;
         }
 
         private void onChange(object sender, EventArgs e)
         {
+            timerUpdate.Stop();
             ExecuteChange();
-            geApp.SetCamera(geCamera, 32000);
+            geApp.SetCamera(geCamera, 6);
+            UpdateChange();
+            timerUpdate.Start();
         }
 
         private void timerUpdate_Tick(object sender, EventArgs e)
         {
             if (!changing)
             {
-                //geCamera = geApp.GetCamera(1);
-                //UpdateChange();
+                geCamera = geApp.GetCamera(1);
+                UpdateChange();
             }
         }
 
         private void onMouseDown(object sender, MouseEventArgs e)
         {
-            changing = true;
+            //changing = true;
         }
 
         private void onMouseUp(object sender, MouseEventArgs e)
         {
-            changing = false;
+            //changing = false;
         }
     }
 }

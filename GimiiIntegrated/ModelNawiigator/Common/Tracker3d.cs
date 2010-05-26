@@ -79,8 +79,8 @@ namespace Common
                 float cx = (lx + rx) / 2;
                 float cy = (ly + ry) / 2;
 
-                double alpha = (1 - lx) * Math.PI / 4 + (Math.PI / 8) * 3;
-                double beta = rx * Math.PI / 4 + (Math.PI / 8) * 3;
+                double alpha = (1 - lx) * MathHelper.PiOver4 + (Math.PI / 8) * 3;
+                double beta = rx * MathHelper.PiOver4 + (Math.PI / 8) * 3;
 
                 float cz = (float)(1 / ((1 / Math.Tan(alpha)) + (1 / Math.Tan(beta))));
 

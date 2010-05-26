@@ -137,36 +137,43 @@ namespace ModelNawiigator
             }
 
 
-            /*if (kState.IsKeyDown(Keys.W))
-            {
-                pomeraj -= 363 * Vector3.Transform(Vector3.UnitZ, rot);
-                //cameraUp -= Vector3.UnitZ;
-            }
+            float dx = 0.0f;
+            float dy = 0.0f;
+            float dz = 0.0f;
 
-            if (kState.IsKeyDown(Keys.S))
-            {
-                pomeraj += 363 * Vector3.Transform(Vector3.UnitZ, rot);
+            if(kState.IsKeyDown(Keys.NumPad8)){
+                dz -= 10;
             }
-
-            if (kState.IsKeyDown(Keys.A))
+            if (kState.IsKeyDown(Keys.NumPad2))
             {
-                pomeraj -= 363 * Vector3.Transform(Vector3.UnitX, rot);
+                dz += 10;
             }
-
-            if (kState.IsKeyDown(Keys.D))
+            if (kState.IsKeyDown(Keys.NumPad4))
             {
-                pomeraj += 363 * Vector3.Transform(Vector3.UnitX, rot);
+                dx -= 10;
             }
-
-            if (kState.IsKeyDown(Keys.F))
+            if (kState.IsKeyDown(Keys.NumPad6))
             {
-                pomeraj -= 363 * Vector3.Transform(Vector3.UnitY, rot);
+                dx += 10;
             }
-
-            if (kState.IsKeyDown(Keys.R))
+            if (kState.IsKeyDown(Keys.NumPad7) || kState.IsKeyDown(Keys.NumPad9))
             {
-                pomeraj += 363 * Vector3.Transform(Vector3.UnitY, rot);
-            }*/
+                dy += 10;
+            }
+            if (kState.IsKeyDown(Keys.NumPad9) || kState.IsKeyDown(Keys.NumPad3))
+            {
+                dy -= 10;
+            }
+            if (kState.IsKeyDown(Keys.NumPad5))
+            {
+                cameraPosition = cameraPosition_orig;
+                cameraTarget = cameraTarget_orig;
+                cameraUp = cameraUp_orig;
+                cameraFov = MathHelper.PiOver4;
+                pomeraj = Vector3.Zero;
+                angle = Vector3.Zero;
+                return;
+            }
 
 
 
@@ -179,9 +186,9 @@ namespace ModelNawiigator
 
             Vector3 t = ((NawiigatorMain)(this.Game)).pc.getTranslation();
 
-            pomeraj += Vector3.Transform(new Vector3(0, 0, t.Z), rot);
-            pomeraj += Vector3.Transform(new Vector3(t.X, 0, 0), rot);
-            pomeraj += Vector3.Transform(new Vector3(0, t.Y, 0), rot);
+            pomeraj += Vector3.Transform(new Vector3(0, 0, t.Z + dz), rot);
+            pomeraj += Vector3.Transform(new Vector3(t.X + dx, 0, 0), rot);
+            pomeraj += Vector3.Transform(new Vector3(0, t.Y + dy, 0), rot);
 
             cameraFov += MathHelper.ToRadians(((NawiigatorMain)(this.Game)).pc.getScale());
             
@@ -200,15 +207,6 @@ namespace ModelNawiigator
             cameraUp = Vector3.Transform(cameraUp_orig, rot);
             cameraPosition = Vector3.Transform(cameraPosition_orig, tran);
             cameraTarget = Vector3.Transform(cameraTarget_orig, tran);
-
-
-            /*
-             * 
-             *  Matrix rot = Matrix.CreateRotationX(MathHelper.ToRadians(-0.1f * (float)deltaTime));
-                Vector3 q = (cameraTarget - cameraPosition);
-                cameraPosition = cameraTarget - Vector3.Transform(q, rot) + cameraPosition;
-             * 
-             */
         }
     }
 }
