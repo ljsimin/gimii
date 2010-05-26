@@ -42,6 +42,11 @@ namespace Common
         private float maxZ = 10;
 
         private CircularBuffer<Vector3>[] positions = new CircularBuffer<Vector3>[2];
+        public CircularBuffer<Vector3>[] Positions
+        {
+            get { return positions; }
+            protected set { positions = value; }
+        }
 
         public Tracker3d(Kontroler l, Kontroler r)
         {
