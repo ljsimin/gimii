@@ -7,6 +7,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Caliibrator
 {
+    /// <summary>
+    /// Bazicna klasa sa modele kalibratora. 
+    /// </summary>
     class BasicModel
     {
         public Model model { get; protected set; }
@@ -22,32 +25,37 @@ namespace Caliibrator
 
         public virtual void Update(GameTime gameTime)
         {
-            //Base class does nothing here
+            //Bazna klasa ne radi nista sto je vremenski zavisno
         }
 
         public void Draw(Camera camera)
         {
-            //Set transfroms
+            //Postavi matricu transformacija za sve povezane elemente modela
             Matrix[] transforms = new Matrix[model.Bones.Count];
             model.CopyAbsoluteBoneTransformsTo(transforms);
 
-            //Loop through meshes and their effects 
+            //Za svaki mesh u modelu
             foreach (ModelMesh mesh in model.Meshes)
             {
+                //Za svaki efekat u efektima tog mesh-a
                 foreach (BasicEffect be in mesh.Effects)
                 {
-                    //Set BasicEffect information
+                    //Postavi opcije efekta koje su neophodne, to ukljucuje:
+                    //Teksturu, ako je namestena
                     if (texture != null)
                     {
                         be.Texture = texture;
                         be.TextureEnabled = true;
                     }
+                    //Podrazumevano osvetljenje
                     be.EnableDefaultLighting();
+                    //Projekciju i pogled kamere
                     be.Projection = camera.projection;
                     be.View = camera.view;
+                    //Postaraj se da artikulacija radi
                     be.World = GetWorld() * mesh.ParentBone.Transform;
                 }
-                //Draw
+                //iscrtaj mesh
                 mesh.Draw();
             }
         }
