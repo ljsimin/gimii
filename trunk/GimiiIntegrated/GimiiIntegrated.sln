@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelNawiigator", "ModelNaw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEarthController", "GEarthController\GEarthController.csproj", "{9A46A047-8CAA-499F-A67B-D3EDF90983A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiiApi.Tracking3d", "WiiApi.Tracking3d\WiiApi.Tracking3d.csproj", "{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -251,6 +253,36 @@ Global
 		{1E0D459B-24E4-45DE-A9D4-A6F295C5EE34}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{1E0D459B-24E4-45DE-A9D4-A6F295C5EE34}.Release|x64.ActiveCfg = Release|x86
 		{1E0D459B-24E4-45DE-A9D4-A6F295C5EE34}.Release|x86.ActiveCfg = Release|x86
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug MSRS|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug MSRS|Any CPU.Build.0 = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug MSRS|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug MSRS|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug MSRS|x64.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug MSRS|x86.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.MSRS Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.MSRS Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.MSRS Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.MSRS Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.MSRS Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.MSRS Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release MSRS|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release MSRS|Any CPU.Build.0 = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release MSRS|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release MSRS|Mixed Platforms.Build.0 = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release MSRS|x64.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release MSRS|x86.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
