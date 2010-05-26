@@ -53,7 +53,7 @@
             this.sliderLat.Maximum = 90;
             this.sliderLat.Minimum = -90;
             this.sliderLat.Name = "sliderLat";
-            this.sliderLat.Size = new System.Drawing.Size(874, 45);
+            this.sliderLat.Size = new System.Drawing.Size(874, 42);
             this.sliderLat.TabIndex = 1;
             this.sliderLat.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.sliderLat.Scroll += new System.EventHandler(this.onChange);
@@ -66,7 +66,7 @@
             this.sliderLong.Maximum = 180;
             this.sliderLong.Minimum = -180;
             this.sliderLong.Name = "sliderLong";
-            this.sliderLong.Size = new System.Drawing.Size(874, 45);
+            this.sliderLong.Size = new System.Drawing.Size(874, 42);
             this.sliderLong.TabIndex = 2;
             this.sliderLong.TickFrequency = 2;
             this.sliderLong.TickStyle = System.Windows.Forms.TickStyle.Both;
@@ -81,7 +81,7 @@
             this.sliderZoom.Maximum = 20000000;
             this.sliderZoom.Minimum = 300;
             this.sliderZoom.Name = "sliderZoom";
-            this.sliderZoom.Size = new System.Drawing.Size(874, 45);
+            this.sliderZoom.Size = new System.Drawing.Size(874, 42);
             this.sliderZoom.SmallChange = 50;
             this.sliderZoom.TabIndex = 3;
             this.sliderZoom.TickFrequency = 1000000;
@@ -97,7 +97,7 @@
             this.sliderAzimuth.Maximum = 180;
             this.sliderAzimuth.Minimum = -180;
             this.sliderAzimuth.Name = "sliderAzimuth";
-            this.sliderAzimuth.Size = new System.Drawing.Size(874, 45);
+            this.sliderAzimuth.Size = new System.Drawing.Size(874, 42);
             this.sliderAzimuth.TabIndex = 4;
             this.sliderAzimuth.TickFrequency = 2;
             this.sliderAzimuth.TickStyle = System.Windows.Forms.TickStyle.Both;
@@ -110,7 +110,7 @@
             this.sliderTilt.Location = new System.Drawing.Point(12, 301);
             this.sliderTilt.Maximum = 90;
             this.sliderTilt.Name = "sliderTilt";
-            this.sliderTilt.Size = new System.Drawing.Size(874, 45);
+            this.sliderTilt.Size = new System.Drawing.Size(874, 42);
             this.sliderTilt.TabIndex = 5;
             this.sliderTilt.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.sliderTilt.Scroll += new System.EventHandler(this.onChange);
@@ -164,7 +164,6 @@
             // 
             // timerUpdate
             // 
-            this.timerUpdate.Interval = 2000;
             this.timerUpdate.Tick += new System.EventHandler(this.timerUpdate_Tick);
             // 
             // MainForm
