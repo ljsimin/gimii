@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEarthController", "GEarthC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiiApi.Tracking3d", "WiiApi.Tracking3d\WiiApi.Tracking3d.csproj", "{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GEarthNawiigator", "GEarthNawiigator\GEarthNawiigator.csproj", "{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -283,6 +285,56 @@ Global
 		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|x64.ActiveCfg = Release|Any CPU
 		{AD8B1D71-4BDF-4250-9C70-EA123975A7B6}.Release|x86.ActiveCfg = Release|Any CPU
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug MSRS|Any CPU.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug MSRS|Mixed Platforms.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug MSRS|Mixed Platforms.Build.0 = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug MSRS|x64.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug MSRS|x86.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug MSRS|x86.Build.0 = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug|x64.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug|x86.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Debug|x86.Build.0 = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.MSRS Debug|Any CPU.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.MSRS Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.MSRS Debug|Mixed Platforms.Build.0 = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.MSRS Debug|x64.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.MSRS Debug|x86.ActiveCfg = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.MSRS Debug|x86.Build.0 = Debug|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release MSRS|Any CPU.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release MSRS|Mixed Platforms.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release MSRS|Mixed Platforms.Build.0 = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release MSRS|x64.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release MSRS|x86.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release MSRS|x86.Build.0 = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release|Any CPU.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release|Mixed Platforms.Build.0 = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release|x64.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release|x86.ActiveCfg = Release|x86
+		{576FE39E-EF30-49BB-A3B3-BFFC4F8C1852}.Release|x86.Build.0 = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug MSRS|Any CPU.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug MSRS|Mixed Platforms.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug MSRS|x64.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug MSRS|x86.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug|x64.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Debug|x86.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.MSRS Debug|Any CPU.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.MSRS Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.MSRS Debug|x64.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.MSRS Debug|x86.ActiveCfg = Debug|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release MSRS|Any CPU.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release MSRS|Mixed Platforms.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release MSRS|x64.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release MSRS|x86.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release|Any CPU.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release|x64.ActiveCfg = Release|x86
+		{761D7A8C-CBC0-4CAE-B32C-70C32FAE7346}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
