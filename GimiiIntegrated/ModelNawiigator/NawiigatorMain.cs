@@ -22,8 +22,24 @@ namespace ModelNawiigator
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        SpriteFont helpFont;
+
         public OrbitCamera camera { get; protected set; }
         ModelManager modelManager;
+
+        private bool help = false;
+        private string helpMessage = @"
+                                HELP               
+               * W => povezi wii kontroler
+               * K => raskini vezu sa kontrolerom
+               * + => povecaj prag filtriranja za 1
+               * - => smani prag filtriranja za 1
+               * F => ukljuci filter
+               * U => iskljuci filter
+               * Strelice i Page Up/Down => rotacija
+               * Numpad => Translacija
+               * Home/End => Zoom in/out 
+        ";
 
         private Vector3 cMin;
         private Vector3 cMax;
@@ -70,6 +86,7 @@ namespace ModelNawiigator
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            helpFont = Content.Load<SpriteFont>(@"fonts\helpfont");
         }
 
         /// <summary>
@@ -95,6 +112,15 @@ namespace ModelNawiigator
                 this.Exit();
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.F1))
+            {
+                help = true;
+            }
+            else
+            {
+                help = false;
+            }
+
             pc.Update(gameTime);
 
             base.Update(gameTime);
@@ -107,6 +133,19 @@ namespace ModelNawiigator
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.White, 1.0f, 0);
+            spriteBatch.Begin();
+            if (help)
+            {
+                Vector2 size = helpFont.MeasureString(helpMessage);
+                //Vector2 position = new Vector2(Window.ClientBounds.Width / 2 - size.X / 2, Window.ClientBounds.Height / 2 - size.Y / 2);
+                Vector2 position = new Vector2(20, 20);
+                spriteBatch.DrawString(helpFont, helpMessage, position, Color.Black, 0, Vector2.Zero, 1, SpriteEffects.None, 1);
+                spriteBatch.End();
+                return;
+            }
+            spriteBatch.End();
+
+
             GraphicsDevice.RenderState.DepthBufferEnable = true;
             GraphicsDevice.PresentationParameters.EnableAutoDepthStencil = true;
 

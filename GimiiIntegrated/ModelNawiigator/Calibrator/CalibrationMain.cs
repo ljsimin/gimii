@@ -58,10 +58,6 @@ namespace Caliibrator
         public Vector3 wiipos1 { get; set; }
         public Vector3 wiipos2 { get; set; }
 
-        private const float XFACTOR = 300.0f;//30.0f;
-        private const float YFACTOR = -120.0f;//12.0f;
-        private const float ZFACTOR = -360.0f;//36.0f;
-
         float minX = 0;
         float maxX = 1;
         float minY = 0;
@@ -79,11 +75,6 @@ namespace Caliibrator
         private bool calibrated = false;
 
         private bool help = false;
-
-        private CircularBuffer<Vector3> positions1 = new CircularBuffer<Vector3>(30);
-        private CircularBuffer<Vector3> positions2 = new CircularBuffer<Vector3>(30);
-
-        private static float FILTERING_THRESHOLD = 12.0f;
 
         private delegate void Obrada(ParametriDogadjaja p);
 
@@ -208,7 +199,7 @@ namespace Caliibrator
             if (Keyboard.GetState().IsKeyDown(Keys.Subtract))
             {
                 tracker.FILTERING_THRESHOLD -= 1.0f;
-                if (FILTERING_THRESHOLD < 0)
+                if (tracker.FILTERING_THRESHOLD < 0)
                 {
                     tracker.FILTERING_THRESHOLD = 0;
                 }
@@ -283,7 +274,7 @@ namespace Caliibrator
             message += "\n";
             message += (dofilter) ? "Filtered: Yes" : "Filtered: No";
             message += "\n";
-            message += "Threshold: " + Math.Round(FILTERING_THRESHOLD, 2);
+            message += "Threshold: " + Math.Round((tracker == null) ? 12.0f : tracker.FILTERING_THRESHOLD, 2);
             message += "\n";
 
 

@@ -118,7 +118,7 @@ namespace ModelNawiigator
                 angle -= Vector3.UnitZ;
             }
 
-            if (kState.IsKeyDown(Keys.Add))
+            if (kState.IsKeyDown(Keys.Home))
             {
                 cameraFov -= MathHelper.ToRadians(1);
                 if (MathHelper.ToDegrees(cameraFov) < 1.0f)
@@ -127,7 +127,7 @@ namespace ModelNawiigator
                 }
             }
 
-            if (kState.IsKeyDown(Keys.Subtract))
+            if (kState.IsKeyDown(Keys.End))
             {
                 cameraFov += MathHelper.ToRadians(1);
                 if (MathHelper.ToDegrees(cameraFov) > 90.0f)
@@ -160,7 +160,7 @@ namespace ModelNawiigator
             {
                 dy += 10;
             }
-            if (kState.IsKeyDown(Keys.NumPad9) || kState.IsKeyDown(Keys.NumPad3))
+            if (kState.IsKeyDown(Keys.NumPad1) || kState.IsKeyDown(Keys.NumPad3))
             {
                 dy -= 10;
             }
