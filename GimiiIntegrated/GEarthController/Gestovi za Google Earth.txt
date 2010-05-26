@@ -1,0 +1,27 @@
+Pomeranje mape:
+
+	- marker dole = latitude++
+	- marker gore = latitude--
+	- marker levo = longitude++
+	- marker desno = longitude--
+
+Zumiranje:
+
+	- priblizavanje markera = range++
+	- udaljavanje markera = range--
+
+Azimut (okretanje mape) - rotiranje po X osi:
+
+	- marker levo = azimuth++
+	- marker desno = azimuth--
+
+Tilt ("naginjanje" mape) - rotiranje po Z osi:
+
+	- marker blizu wii-a = tilt++
+	- marker dalje od wii-a = tilt--
+
+OPCIONO ZA TILT
+Tilt ("naginjanje" mape) - rotiranje po Y osi:
+
+	- marker gore = tilt++
+	- marker dole = tilt--
