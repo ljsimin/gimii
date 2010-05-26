@@ -93,6 +93,7 @@
     <Compile Include="Calibrator\Grid.cs" />
     <Compile Include="Calibrator\MobileModel.cs" />
     <Compile Include="Calibrator\ModelManager.cs" />
+    <Compile Include="Common\Tracker3d.cs" />
     <Compile Include="ComplexModel.cs" />
     <Compile Include="ModelManager.cs" />
     <Compile Include="OrbitCamera.cs" />

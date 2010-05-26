@@ -5,6 +5,10 @@ using System.Text;
 
 namespace Common
 {
+    /// <summary>
+    /// Jednostavna implementacija kruznog bafera.
+    /// </summary>
+    /// <typeparam name="T">Tip podatka koji se upisuje u bafer</typeparam>
     public class CircularBuffer<T>
     {
         private T[] data;

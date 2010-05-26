@@ -17,21 +17,41 @@ using WiiApi;
 namespace Caliibrator
 {
     /// <summary>
-    /// This is the main type for your game
+    /// Glavna klasa kalibratora.
     /// </summary>
     public class CalibrationMain : Microsoft.Xna.Framework.Game
     {
+        //Osnovne klase, za iscrtavanje
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont font;
+        SpriteFont helpFont;
+
         public Camera camera { get; protected set; }
         ModelManager modelManager;
-        Grid grid1;
+        Grid grid;
 
-        private String message = "";
+        private String message = ""; //sta se iscrtava na ekranu
+        private String helpMessage = @"
+                            HELP               
+                * W => povezi wii kontroler
+                * K => raskini vezu sa kontrolerom
+                * + => povecaj prag filtriranja za 1
+                * - => smani prag filtriranja za 1
+                * F => ukljuci filter
+                * U => iskljuci filter
+                * C => ukljuci postavljenu kalibraciju
+                * R => resetuj kalibraciju
+                * Levo, desno, gore, dole => postavi levu, 
+                * desnu, donju odn. gornju granicu na 
+                * trenutni polozaj markera
+                * Page up, page down => postavlja najudaljeniju 
+                * odn. najblizu granicu na trenutni polozaj ";//pomoc
 
         public Kontroler wLeft;
         public Kontroler wRight;
+        public Tracker3d tracker;
+
         public bool connected {get; set;}
         public bool wiimode { get; set; }
 
@@ -58,6 +78,8 @@ namespace Caliibrator
 
         private bool calibrated = false;
 
+        private bool help = false;
+
         private CircularBuffer<Vector3> positions1 = new CircularBuffer<Vector3>(30);
         private CircularBuffer<Vector3> positions2 = new CircularBuffer<Vector3>(30);
 
@@ -66,6 +88,7 @@ namespace Caliibrator
         private delegate void Obrada(ParametriDogadjaja p);
 
         private bool dofilter = false;
+
         TextWriter tw;
 
         public CalibrationMain()
@@ -101,14 +124,14 @@ namespace Caliibrator
             modelManager = new ModelManager(this);
             Components.Add(modelManager);
 
-            grid1 = new Grid(this, camera);
-            grid1.Visible = true;
-            grid1.GridX = 256;
-            grid1.GridY = 256;
-            grid1.Spacing = 32.0f;
-            grid1.Position = new Vector3(0, -100, -25);
-            grid1.Rotation = Vector3.Zero;
-            Components.Add(grid1);
+            grid = new Grid(this, camera);
+            grid.Visible = true;
+            grid.GridX = 256;
+            grid.GridY = 256;
+            grid.Spacing = 32.0f;
+            grid.Position = new Vector3(0, -100, -25);
+            grid.Rotation = Vector3.Zero;
+            Components.Add(grid);
 
             wiipos1 = new Vector3();
             wiipos2 = new Vector3();
@@ -126,6 +149,7 @@ namespace Caliibrator
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             font = Content.Load<SpriteFont>(@"fonts\arial");
+            helpFont = Content.Load<SpriteFont>(@"fonts\helpfont");
 
             // TODO: use this.Content to load your game content here
         }
@@ -137,8 +161,6 @@ namespace Caliibrator
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
-            //WiiFabrika.dobaviInstancu().iskljuci(wLeft);
-            //WiiFabrika.dobaviInstancu().iskljuci(wRight);
         }
 
         /// <summary>
@@ -151,12 +173,21 @@ namespace Caliibrator
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            /*if (Keyboard.GetState().IsKeyDown(Keys.Delete))
-            {
-                tw.Flush();
-                tw.Close();
-                this.Exit();
-            }*/
+
+            /*
+                * W => povezi wii kontroler
+                * K => raskini vezu sa kontrolerom
+                * + => povecaj prag filtriranja za 1
+                * - => smani prag filtriranja za 1
+                * F => ukljuci filter
+                * U => iskljuci filter
+                * C => ukljuci postavljenu kalibraciju
+                * R => resetuj kalibraciju
+                * Levo, desno, gore, dole => postavi levu, desnu, donju 
+                * odn. gornju granicu na trenutni polozaj markera
+                * Page up, page down => postavlja najudaljeniju 
+                * odn. najblizu granicu na trenutni polozaj 
+             */
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
@@ -170,24 +201,23 @@ namespace Caliibrator
 
             if (Keyboard.GetState().IsKeyDown(Keys.Add))
             {
-                FILTERING_THRESHOLD += 1.0f;
+                tracker.FILTERING_THRESHOLD += 1.0f;
 
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.Subtract))
             {
-                FILTERING_THRESHOLD -= 1.0f;
+                tracker.FILTERING_THRESHOLD -= 1.0f;
                 if (FILTERING_THRESHOLD < 0)
                 {
-                    FILTERING_THRESHOLD = 0;
+                    tracker.FILTERING_THRESHOLD = 0;
                 }
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.F))
             {
                 dofilter = true;
-                positions1.clear();
-                positions2.clear();
+                tracker.clearHistory();
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.U))
@@ -233,6 +263,15 @@ namespace Caliibrator
                 }
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.F1))
+            {
+                help = true;
+            }
+            else
+            {
+                help = false;
+            }
+
 
             message = "";
 
@@ -247,7 +286,6 @@ namespace Caliibrator
             message += "Threshold: " + Math.Round(FILTERING_THRESHOLD, 2);
             message += "\n";
 
-            // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
@@ -255,6 +293,8 @@ namespace Caliibrator
         {
             if (wLeft == null || wRight == null)
             {
+                if (wLeft != null) WiiFabrika.dobaviInstancu().iskljuci(wLeft);
+                if (wRight != null) WiiFabrika.dobaviInstancu().iskljuci(wRight);
                 WiiFabrika.dobaviInstancu().postaviTipKontrolera(WiiTip.WII_KONTROLER);
                 wLeft = WiiFabrika.dobaviInstancu().kreirajKontroler();
                 wRight = WiiFabrika.dobaviInstancu().kreirajKontroler();
@@ -277,6 +317,7 @@ namespace Caliibrator
             {
                 wiimode = true;
             }
+            tracker = new Tracker3d(wLeft, wRight);
         }
 
         /// <summary>
@@ -288,7 +329,19 @@ namespace Caliibrator
             GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.White, 1.0f, 0);
             spriteBatch.Begin();
             // Draw fonts
-            spriteBatch.DrawString(font, message,new Vector2(10, 10), Color.Black, 0, Vector2.Zero,1, SpriteEffects.None, 1);
+            if (help)
+            {
+                Vector2 size = helpFont.MeasureString(helpMessage);
+                //Vector2 position = new Vector2(Window.ClientBounds.Width / 2 - size.X / 2, Window.ClientBounds.Height / 2 - size.Y / 2);
+                Vector2 position = new Vector2(20, 20);
+                spriteBatch.DrawString(helpFont, helpMessage, position, Color.Black, 0, Vector2.Zero, 1, SpriteEffects.None, 1);
+                spriteBatch.End();
+                return;
+            }
+            else
+            {
+                spriteBatch.DrawString(font, message, new Vector2(10, 10), Color.Black, 0, Vector2.Zero, 1, SpriteEffects.None, 1);
+            }
             spriteBatch.End();
             GraphicsDevice.RenderState.DepthBufferEnable = true;
             GraphicsDevice.PresentationParameters.EnableAutoDepthStencil = true;
@@ -298,122 +351,35 @@ namespace Caliibrator
 
         private void calculate()
         {
-            if (wLeft.Stanje.Senzori[0].Nadjen && wRight.Stanje.Senzori[0].Nadjen)
+            if (tracker.found(0))
             {
-                float lx = wLeft.Stanje.Senzori[0].X;
-                float ly = wLeft.Stanje.Senzori[0].Y;
-
-                float rx = wRight.Stanje.Senzori[0].X;
-                float ry = wRight.Stanje.Senzori[0].Y;
-
-                float cx = (lx + rx) / 2;
-                float cy = (ly + ry) / 2;
-
-                double alpha = (1 - lx) * Math.PI / 4 + (Math.PI / 8) * 3;
-                double beta = rx * Math.PI / 4 + (Math.PI / 8) * 3;
-
-                float cz = (float)(1 / ((1 / Math.Tan(alpha)) + (1 / Math.Tan(beta))));
-
-                //koristimo trenutno izracunate podatke za kalibraciju
-                calibrate(cx, cy, cz);
-
-                float x, y, z;
-
-                //primena kalibracije
+                tracker.Calibrated = false;
+                tracker.Filtered = false;
+                tracker.Level = TrackerLevel.RAW;
+                Vector3 raw = tracker.getPosition(0);
+                calibrate(raw.X, raw.Y, raw.Z);
+                tracker.Calibrated = calibrated;
+                tracker.Filtered = dofilter;
+                tracker.Level = TrackerLevel.COOKED;
                 if (calibrated)
                 {
-                    x = (cx - minX) / (maxX - minX);
-                    y = (cy - minY) / (maxY - minY);
-                    z = (cz - minZ) / (maxZ - minZ);
+                    tracker.calibrate(minX, maxX, minY, maxY, minZ, maxZ);
                 }
-                else
-                {
-                    x = cx;
-                    y = cy;
-                    z = (cz - 1.5f) / 8.5f;
-                }
-                wiipos1 = new Vector3((x - 0.5f) * XFACTOR, -(y - 0.5f) * YFACTOR, (z - 0.5f) * ZFACTOR);
-                if (calibrated && dofilter)
-                {
-                    wiipos1 = filter(wiipos1, positions1);
-                }
-                positions1.add(wiipos1);
+                wiipos1 = tracker.getPosition(0);
             }
-
-            if (wLeft.Stanje.Senzori[1].Nadjen && wRight.Stanje.Senzori[1].Nadjen)
+            if (tracker.found(1))
             {
-                float lx = wLeft.Stanje.Senzori[1].X;
-                float ly = wLeft.Stanje.Senzori[1].Y;
-
-                float rx = wRight.Stanje.Senzori[1].X;
-                float ry = wRight.Stanje.Senzori[1].Y;
-
-                float cx = (lx + rx) / 2;
-                float cy = (ly + ry) / 2;
-
-                double alpha = (1 - lx) * Math.PI / 4 + (Math.PI / 8) * 3;
-                double beta = rx * Math.PI / 4 + (Math.PI / 8) * 3;
-
-                float cz = (float)(1 / ((1 / Math.Tan(alpha)) + (1 / Math.Tan(beta))));
-
-                float x, y, z;
-
-                //primena kalibracije
+                tracker.Calibrated = calibrated;
+                tracker.Filtered = dofilter;
+                tracker.Level = TrackerLevel.COOKED;
                 if (calibrated)
                 {
-                    x = (cx - minX) / (maxX - minX);
-                    y = (cy - minY) / (maxY - minY);
-                    z = (cz - minZ) / (maxZ - minZ);
+                    tracker.calibrate(minX, maxX, minY, maxY, minZ, maxZ);
                 }
-                else
-                {
-                    x = cx;
-                    y = cy;
-                    z = (cz - 1.5f) / 8.5f;
-                }
-                wiipos2 = new Vector3((x - 0.5f) * XFACTOR, -(y - 0.5f) * YFACTOR, (z - 0.5f) * ZFACTOR);                
-                if (calibrated && dofilter)
-                {
-                    wiipos2 = filter(wiipos2, positions2);
-                }
-                positions2.add(wiipos2);
+                wiipos2 = tracker.getPosition(1);
             }
-            message += "X1 : " + wiipos1.X + " " + "X2: " + wiipos2.X + "\n";
-            message += "Y1 : " + wiipos1.Y + " " + "Y2: " + wiipos2.Y + "\n";
-            message += "Z1 : " + wiipos1.Z + " " + "Z2: " + wiipos2.Z + "\n";
         }
 
-        private Vector3 filter(Vector3 input, CircularBuffer<Vector3> history){
-            Vector3 result;
-            float x = 0;
-            float y = 0;
-            float z = 0;
-
-            if (history.Count == 0)
-            {
-                x = input.X;
-                y = input.Y;
-                z = input.Z;
-            }
-            else
-            {
-                Vector3 last = history[history.Count - 1];
-                if (Math.Abs(last.Z - input.Z) < FILTERING_THRESHOLD)
-                {
-                    x = input.X;
-                    y = input.Y;
-                    z = last.Z;
-                }
-                else
-                {
-                    x = input.X;
-                    y = input.Y;
-                    z = input.Z;
-                }
-            }
-            result = new Vector3(x, y, z);
-            return result;
-        }
 
         private void calibrate(float x, float y, float z)
         {
