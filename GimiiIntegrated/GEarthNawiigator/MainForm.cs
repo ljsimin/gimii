@@ -103,8 +103,26 @@ namespace GEarthNawiigator
             {
                 //TRANSLATION
                 Vector3 tran = cc.getTranslation();
-                geCamera.FocusPointLatitude = geCamera.FocusPointLatitude + tran.Y / 100 * (geCamera.Range / 1765390);
-                geCamera.FocusPointLongitude = geCamera.FocusPointLongitude + tran.X / 100 * (geCamera.Range / 1765390);
+                geCamera.FocusPointLatitude = geCamera.FocusPointLatitude - tran.Y / 100 * (geCamera.Range / 1765390);
+                geCamera.FocusPointLongitude = geCamera.FocusPointLongitude - tran.X / 100 * (geCamera.Range / 1765390);
+                changed = true;
+            }
+            if (tracker.found(0) && tracker.found(1))
+            {
+                //SCALE
+                float scale = cc.getScale();
+                if (scale != 0.0f)
+                {
+                    geCamera.Range *= 1.0f + scale / 10;
+                    changed = true;
+                }
+            }
+            if (tracker.found(0) && tracker.found(1))
+            {
+                //ROTATION
+                Vector3 rot = cc.getRotate();
+                geCamera.Azimuth += 2 * rot.Y;
+                geCamera.Tilt += 2 * rot.X;
                 changed = true;
             }
             if (changed)
