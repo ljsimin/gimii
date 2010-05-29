@@ -55,8 +55,8 @@ namespace GEarthNawiigator
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            Hide();
+            //e.Cancel = true;
+            //Hide();
         }
 
         private void MainForm_Shown(object sender, EventArgs e)
@@ -96,21 +96,32 @@ namespace GEarthNawiigator
             {
                 cc.touchFound2 = false;
             }
+            bool changed = false;
             geCamera = geApp.GetCamera(1);
             geCamera.FocusPointAltitudeMode = AltitudeModeGE.RelativeToGroundAltitudeGE;
             if (tracker.found(0) && !tracker.found(1))
             {
                 //TRANSLATION
                 Vector3 tran = cc.getTranslation();
-                geCamera.FocusPointLatitude = geCamera.FocusPointLatitude + tran.X;
-                geCamera.FocusPointLongitude = geCamera.FocusPointLongitude + tran.Y;
+                geCamera.FocusPointLatitude = geCamera.FocusPointLatitude + tran.Y / 100 * (geCamera.Range / 1765390);
+                geCamera.FocusPointLongitude = geCamera.FocusPointLongitude + tran.X / 100 * (geCamera.Range / 1765390);
+                changed = true;
             }
-            geApp.SetCamera(geCamera, 6);
+            if (changed)
+            {
+                geApp.SetCamera(geCamera, 6);
+            }
         }
 
         private Vector3 convert(Vector x)
         {
             return new Vector3(x.X, x.Y, x.Z);
+        }
+
+        private void tsmExit_Click(object sender, EventArgs e)
+        {
+            //Application.Exit();
+            Close();
         }
     }
 }

@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.icoNotify = new System.Windows.Forms.NotifyIcon(this.components);
+            this.cmsIcon = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsIcon.SuspendLayout();
             this.SuspendLayout();
             // 
             // updateTimer
@@ -40,9 +43,24 @@
             // 
             // icoNotify
             // 
+            this.icoNotify.ContextMenuStrip = this.cmsIcon;
             this.icoNotify.Icon = ((System.Drawing.Icon)(resources.GetObject("icoNotify.Icon")));
             this.icoNotify.Text = "EarthNawiigator";
             this.icoNotify.Visible = true;
+            // 
+            // cmsIcon
+            // 
+            this.cmsIcon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmExit});
+            this.cmsIcon.Name = "cmsIcon";
+            this.cmsIcon.Size = new System.Drawing.Size(104, 26);
+            // 
+            // tsmExit
+            // 
+            this.tsmExit.Name = "tsmExit";
+            this.tsmExit.Size = new System.Drawing.Size(103, 22);
+            this.tsmExit.Text = "Exit";
+            this.tsmExit.Click += new System.EventHandler(this.tsmExit_Click);
             // 
             // MainForm
             // 
@@ -54,6 +72,7 @@
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
+            this.cmsIcon.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -62,5 +81,7 @@
 
         private System.Windows.Forms.Timer updateTimer;
         private System.Windows.Forms.NotifyIcon icoNotify;
+        private System.Windows.Forms.ContextMenuStrip cmsIcon;
+        private System.Windows.Forms.ToolStripMenuItem tsmExit;
     }
 }
