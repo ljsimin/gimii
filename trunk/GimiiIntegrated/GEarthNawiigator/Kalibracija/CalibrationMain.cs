@@ -80,14 +80,14 @@ namespace Caliibrator
 
         private bool dofilter = false;
 
-        TextWriter tw;
+        
 
         public CalibrationMain()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             connected = false;
-            tw = new StreamWriter("data.txt");
+            //tw = new StreamWriter("save.txt");
         }
 
         public Vector3 getCalibrationMinimum()
@@ -215,7 +215,38 @@ namespace Caliibrator
             {
                 dofilter = false;
             }
-            
+
+            if (Keyboard.GetState().IsKeyDown(Keys.S))
+            {
+                //SAVE CALIBRATION DATA
+                FileStream f = File.Open("save.txt", FileMode.Create);
+                TextWriter tw = new StreamWriter(f);
+                tw.WriteLine(minX);
+                tw.WriteLine(maxX);
+                tw.WriteLine(minY);
+                tw.WriteLine(maxY);
+                tw.WriteLine(minZ);
+                tw.WriteLine(maxZ);
+                tw.Close();
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.L))
+            {
+                TextReader tr = new StreamReader("save.txt");
+                String s = tr.ReadLine();
+                minX = float.Parse(s);
+                s = tr.ReadLine();
+                maxX = float.Parse(s);
+                s = tr.ReadLine();
+                minY = float.Parse(s);
+                s = tr.ReadLine();
+                maxY = float.Parse(s);
+                s = tr.ReadLine();
+                minZ = float.Parse(s);
+                s = tr.ReadLine();
+                maxZ = float.Parse(s);
+                tr.Close();
+            }
 
             if (wiimode)
             {
