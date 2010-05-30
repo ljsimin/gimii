@@ -40,6 +40,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.timerUpdate = new System.Windows.Forms.Timer(this.components);
+            this.txtLatitude = new System.Windows.Forms.TextBox();
+            this.txtLongtitude = new System.Windows.Forms.TextBox();
+            this.txtZoom = new System.Windows.Forms.TextBox();
+            this.txtAzimuth = new System.Windows.Forms.TextBox();
+            this.txtTilt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.sliderLat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sliderLong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sliderZoom)).BeginInit();
@@ -166,11 +171,51 @@
             // 
             this.timerUpdate.Tick += new System.EventHandler(this.timerUpdate_Tick);
             // 
+            // txtLatitude
+            // 
+            this.txtLatitude.Location = new System.Drawing.Point(893, 51);
+            this.txtLatitude.Name = "txtLatitude";
+            this.txtLatitude.Size = new System.Drawing.Size(50, 20);
+            this.txtLatitude.TabIndex = 11;
+            // 
+            // txtLongtitude
+            // 
+            this.txtLongtitude.Location = new System.Drawing.Point(893, 119);
+            this.txtLongtitude.Name = "txtLongtitude";
+            this.txtLongtitude.Size = new System.Drawing.Size(53, 20);
+            this.txtLongtitude.TabIndex = 12;
+            // 
+            // txtZoom
+            // 
+            this.txtZoom.Location = new System.Drawing.Point(893, 187);
+            this.txtZoom.Name = "txtZoom";
+            this.txtZoom.Size = new System.Drawing.Size(53, 20);
+            this.txtZoom.TabIndex = 13;
+            // 
+            // txtAzimuth
+            // 
+            this.txtAzimuth.Location = new System.Drawing.Point(893, 255);
+            this.txtAzimuth.Name = "txtAzimuth";
+            this.txtAzimuth.Size = new System.Drawing.Size(50, 20);
+            this.txtAzimuth.TabIndex = 14;
+            // 
+            // txtTilt
+            // 
+            this.txtTilt.Location = new System.Drawing.Point(893, 323);
+            this.txtTilt.Name = "txtTilt";
+            this.txtTilt.Size = new System.Drawing.Size(54, 20);
+            this.txtTilt.TabIndex = 15;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 358);
+            this.ClientSize = new System.Drawing.Size(950, 358);
+            this.Controls.Add(this.txtTilt);
+            this.Controls.Add(this.txtAzimuth);
+            this.Controls.Add(this.txtZoom);
+            this.Controls.Add(this.txtLongtitude);
+            this.Controls.Add(this.txtLatitude);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -206,6 +251,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timerUpdate;
+        private System.Windows.Forms.TextBox txtLatitude;
+        private System.Windows.Forms.TextBox txtLongtitude;
+        private System.Windows.Forms.TextBox txtZoom;
+        private System.Windows.Forms.TextBox txtAzimuth;
+        private System.Windows.Forms.TextBox txtTilt;
     }
 }
 

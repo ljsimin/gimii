@@ -29,11 +29,17 @@ namespace GEarthController
         public void UpdateChange()
         {
             sliderLat.Value = (int)geCamera.FocusPointLatitude;
+            txtLatitude.Text = geCamera.FocusPointLatitude.ToString();
             sliderLong.Value = (int)geCamera.FocusPointLongitude;
+            txtLongtitude.Text = geCamera.FocusPointLongitude.ToString();
             int zoom = (int)geCamera.Range;
             sliderZoom.Value = (zoom > sliderZoom.Maximum) ? sliderZoom.Maximum : zoom;
+            txtZoom.Text = geCamera.Range.ToString();
             sliderAzimuth.Value = (int)geCamera.Azimuth;
+            txtAzimuth.Text = geCamera.Azimuth.ToString();
             sliderTilt.Value = (int)geCamera.Tilt;
+            txtTilt.Text = geCamera.Tilt.ToString();
+            
         }
 
         public void ExecuteChange()
