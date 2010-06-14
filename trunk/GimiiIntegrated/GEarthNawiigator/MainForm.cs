@@ -212,7 +212,17 @@ namespace GEarthNawiigator
             if (gestureBuffer.Count < 40)
                 return;
 
-            icoNotify.ShowBalloonTip(100, "Gesture points count", gestureBuffer.Count.ToString(), ToolTipIcon.None);
+            double[] input = Util.PrepareInput(gestureBuffer);
+            double[] output = homeRBF.Calculate(input);
+            int success = (int)(output[0] * 100);
+            icoNotify.ShowBalloonTip(100, "Gesture recognition", "home: " + success + "%", ToolTipIcon.None);
+            if (success >= 80)
+            {
+                geCamera = geApp.GetCamera(1);
+                geCamera.FocusPointAltitudeMode = AltitudeModeGE.RelativeToGroundAltitudeGE;
+                geCamera.Azimuth = 0;
+                geApp.SetCamera(geCamera, 0.3);
+            }
         }
     }
 }
