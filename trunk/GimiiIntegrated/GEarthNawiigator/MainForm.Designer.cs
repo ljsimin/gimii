@@ -33,7 +33,9 @@
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.icoNotify = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsIcon = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmGestureMode = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestureTimer = new System.Windows.Forms.Timer(this.components);
             this.cmsIcon.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,16 +53,31 @@
             // cmsIcon
             // 
             this.cmsIcon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmGestureMode,
             this.tsmExit});
             this.cmsIcon.Name = "cmsIcon";
-            this.cmsIcon.Size = new System.Drawing.Size(104, 26);
+            this.cmsIcon.Size = new System.Drawing.Size(149, 48);
+            // 
+            // tsmGestureMode
+            // 
+            this.tsmGestureMode.CheckOnClick = true;
+            this.tsmGestureMode.Name = "tsmGestureMode";
+            this.tsmGestureMode.Size = new System.Drawing.Size(148, 22);
+            this.tsmGestureMode.Text = "Gesture Mode";
+            this.tsmGestureMode.ToolTipText = "Switch to gesture recognition mode.";
+            this.tsmGestureMode.CheckedChanged += new System.EventHandler(this.tsmGestureMode_CheckedChanged);
             // 
             // tsmExit
             // 
             this.tsmExit.Name = "tsmExit";
-            this.tsmExit.Size = new System.Drawing.Size(103, 22);
+            this.tsmExit.Size = new System.Drawing.Size(148, 22);
             this.tsmExit.Text = "Exit";
             this.tsmExit.Click += new System.EventHandler(this.tsmExit_Click);
+            // 
+            // gestureTimer
+            // 
+            this.gestureTimer.Interval = 5;
+            this.gestureTimer.Tick += new System.EventHandler(this.gestureTimer_Tick);
             // 
             // MainForm
             // 
@@ -83,5 +100,7 @@
         private System.Windows.Forms.NotifyIcon icoNotify;
         private System.Windows.Forms.ContextMenuStrip cmsIcon;
         private System.Windows.Forms.ToolStripMenuItem tsmExit;
+        private System.Windows.Forms.ToolStripMenuItem tsmGestureMode;
+        private System.Windows.Forms.Timer gestureTimer;
     }
 }

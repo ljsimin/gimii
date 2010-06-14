@@ -10,6 +10,7 @@ using EARTHLib;
 using WiiApi;
 using WiiApi.Tracking3d;
 using Microsoft.Xna.Framework;
+using GEarthNawiigator.NeuralNetwork;
 
 namespace GEarthNawiigator
 {
@@ -27,6 +28,10 @@ namespace GEarthNawiigator
 
         private CommandCalculator cc;
 
+        private bool gestureMode = false;
+        private List<Vector> gestureBuffer;
+        private RBFNetwork homeRBF;
+
         public MainForm(Kontroler l, Kontroler r, Vector3 min, Vector3 max)
         {
             InitializeComponent();
@@ -43,6 +48,9 @@ namespace GEarthNawiigator
             geApp = new ApplicationGEClass();
             geCamera = geApp.GetCamera(1);
             updateTimer.Start();
+
+            gestureBuffer = new List<Vector>(200);
+            homeRBF = new RBFNetwork("home.xml");
         }
 
         private void MainForm_Resize(object sender, EventArgs e)
@@ -68,7 +76,7 @@ namespace GEarthNawiigator
         {
             if (tracker.found(0))
             {
-                wiipos1 = convert(tracker.getPosition(0));
+                wiipos1 = Convert(tracker.getPosition(0));
                 cc.wiipos1 = wiipos1;
                 cc.history[0].add(wiipos1);
                 if (!cc.touchFound1)
@@ -83,7 +91,7 @@ namespace GEarthNawiigator
             }
             if (tracker.found(1))
             {
-                wiipos2 = convert(tracker.getPosition(1));
+                wiipos2 = Convert(tracker.getPosition(1));
                 cc.wiipos2 = wiipos2;
                 cc.history[1].add(wiipos2);
                 if (!cc.touchFound2)
@@ -99,7 +107,7 @@ namespace GEarthNawiigator
             bool changed = false;
             geCamera = geApp.GetCamera(1);
             geCamera.FocusPointAltitudeMode = AltitudeModeGE.RelativeToGroundAltitudeGE;
-            if (tracker.found(0) && !tracker.found(1))
+            if (tracker.found(0) && !tracker.found(1) && !gestureMode)
             {
                 //TRANSLATION
                 Vector3 tran = cc.getTranslation();
@@ -119,7 +127,7 @@ namespace GEarthNawiigator
             {
                 //SCALE
                 float scale = cc.getScale();
-                if (scale != 0.0f)
+                if (scale != 0.0f && !gestureMode)
                 {
                     geCamera.Range *= 1.0f + scale / 10;
                     changed = true;
@@ -129,9 +137,16 @@ namespace GEarthNawiigator
             {
                 //ROTATION
                 Vector3 rot = cc.getRotate();
-                geCamera.Azimuth += 2 * rot.Y;
-                geCamera.Tilt += 2 * rot.X;
-                changed = true;
+                if (Math.Abs(rot.Z) < 0.5 && !gestureMode)
+                {
+                    geCamera.Azimuth += 2 * rot.Y;
+                    geCamera.Tilt += 2 * rot.X;
+                    changed = true;
+                }
+                else
+                {
+                        tsmGestureMode.Checked = (rot.Z > 0);
+                }
             }
             if (changed)
             {
@@ -139,7 +154,7 @@ namespace GEarthNawiigator
             }
         }
 
-        private Vector3 convert(Vector x)
+        private Vector3 Convert(Vector x)
         {
             return new Vector3(x.X, x.Y, x.Z);
         }
@@ -148,6 +163,56 @@ namespace GEarthNawiigator
         {
             //Application.Exit();
             Close();
+        }
+
+        private void tsmGestureMode_CheckedChanged(object sender, EventArgs e)
+        {
+           if (tsmGestureMode.Checked)
+            {
+                EnterGestureMode();
+            }
+            else
+            {
+                ExitGestureMode();
+            }
+        }
+
+        private void EnterGestureMode()
+        {
+            gestureMode = true;
+            icoNotify.ShowBalloonTip(1000, "Gesture Mode", "Enabled", ToolTipIcon.None);
+            gestureTimer.Start();
+        }
+
+        private void ExitGestureMode()
+        {
+            gestureMode = false;
+            icoNotify.ShowBalloonTip(1000, "Gesture Mode", "Disabled", ToolTipIcon.None);
+            gestureTimer.Stop();
+        }
+
+        private void gestureTimer_Tick(object sender, EventArgs e)
+        {
+            if (tracker.found(0))
+            {
+                gestureBuffer.Add(tracker.getPosition(0));
+            }
+            else
+            {
+                if (gestureBuffer.Count > 0)
+                {
+                    ProcessGesture();
+                    gestureBuffer.Clear();
+                }
+            }
+        }
+
+        private void ProcessGesture()
+        {
+            if (gestureBuffer.Count < 40)
+                return;
+
+            icoNotify.ShowBalloonTip(100, "Gesture points count", gestureBuffer.Count.ToString(), ToolTipIcon.None);
         }
     }
 }

@@ -91,10 +91,10 @@ namespace GEarthNawiigator.NeuralNetwork
 
         public RBFNetwork(string xmlFile)
         {
-            fromXml(xmlFile);
+            FromXml(xmlFile);
         }
 
-        public void fromXml(string xmlFile)
+        public void FromXml(string xmlFile)
         {
             int inputSize;
             int hiddenSize;
@@ -190,13 +190,13 @@ namespace GEarthNawiigator.NeuralNetwork
                 _bias = 0;
         }
 
-        public double[] calculate(double[] input)
+        public double[] Calculate(double[] input)
         {
             double[] inter = new double[_hiddenSize + 1];
             inter[0] = _bias;
             for (int i = 1; i <= _hiddenSize; i++)
             {
-                inter[i] = Util.gaussian(_lambdas[i - 1], input, _centers[i - 1]);
+                inter[i] = Util.Gaussian(_lambdas[i - 1], input, _centers[i - 1]);
             }
             double[] output = new double[_outputSize];
             for (int i = 0; i < _outputSize; i++)
@@ -206,7 +206,7 @@ namespace GEarthNawiigator.NeuralNetwork
                 {
                     output[i] += _weights[_weightIndex[i][j]] * inter[j];
                 }
-                output[i] = Util.sigmoid(_alphas[i], output[i]);
+                output[i] = Util.Sigmoid(_alphas[i], output[i]);
             }
             return output;
         }
