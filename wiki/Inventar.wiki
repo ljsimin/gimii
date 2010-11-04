@@ -1,14 +1,14 @@
 #summary Spisak svih stvari koje koristimo i ko ih trenutno poseduje
 == Lista ==
  * *!WiiMote*
-  # Cvetko Zubanov (_00:1E:35:00:23:47_)
+  # Nikola Rajačić (_00:1E:35:00:23:47_)
   # Veljko Petrović
   # Veljko Petrović
   # Sabolč Nađ (kod Atile Barčik)
   # Sabolč Nađ (kod Atile Barčik)
   # -
  * *MSI Mega !BlueTooth Dongle*
-  # Cvetko Zubanov (_SKY20821004903_)
+  # Nikola Rajačić (_SKY20821004903_)
   # Veljko Petrović
   # Sabolč Nađ (kod Atile Barčik)
   # -
@@ -28,8 +28,8 @@
    # -
    # -
   * Droid Model
-   # Cvetko Zubanov (raspoloživ)
-   # Cvetko Zubanov (raspoloživ)
+   # Nikola Rajačić
+   # Nikola Rajačić
   * Ostali?
    # Flomaster-slabo-radi-marker Atila Barčik x2
  * *!HeadTracing Naocare*
