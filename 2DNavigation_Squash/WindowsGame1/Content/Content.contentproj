@@ -42,13 +42,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Textures\texture.png">
-      <Name>texture</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Models\ball.fbx">
       <Name>ball</Name>
       <Importer>FbxImporter</Importer>
