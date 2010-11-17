@@ -51,7 +51,7 @@ namespace WindowsGame1
         int zastitaOdVisestrukogUnosa = 0;//prilikom odabiranja stanja pomocu Wii kontrolera
 
         BasicEffect sobaEfekti;
-        BasicShape soba = new BasicShape(new Vector3(6, 7, 8), new Vector3(0, 0, 0));        
+        Cube soba = new Cube(new Vector3(6, 7, 8), new Vector3(0, 0, 0));        
 
         GameObject reket = new GameObject();
         GameObject lopta = new GameObject();
@@ -271,6 +271,16 @@ namespace WindowsGame1
             if (zastitaOdVisestrukogUnosa > 0)
                 zastitaOdVisestrukogUnosa--;
 
+            if (kontroler.Stanje.Dugmici.GORE)
+            {
+                if (reket.position.Z >= soba.shapeSize.Z / 2)
+                    reket.position.Z -= 0.15f;
+            }
+            if (kontroler.Stanje.Dugmici.DOLE)
+            {
+                if (reket.position.Z <= soba.shapeSize.Z + 2)
+                    reket.position.Z += 0.15f;
+            }
 
             if (mode == Mode.AkcAku)
             {
@@ -336,6 +346,16 @@ namespace WindowsGame1
             {
                 if (reket.position.X < (soba.shapeSize.X - 2.4))
                     reket.position.X += 0.15f;
+            }
+            if (keyboardState.IsKeyDown(Keys.W))
+            {
+                if (reket.position.Z >= soba.shapeSize.Z/2)
+                    reket.position.Z -= 0.15f;
+            }
+            if (keyboardState.IsKeyDown(Keys.S))
+            {
+                if(reket.position.Z <= soba.shapeSize.Z+2)
+                    reket.position.Z += 0.15f;
             }
             //za sada nije omoguceno kontrolisanje udarca, samo se animira
             if (keyboardState.IsKeyDown(Keys.Space) && udaracReketa <= 0)

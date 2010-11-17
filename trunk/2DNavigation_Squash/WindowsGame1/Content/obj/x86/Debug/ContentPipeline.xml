@@ -11,15 +11,6 @@
       <Time>2009-12-18T19:23:40+01:00</Time>
     </Item>
     <Item>
-      <Source>Textures\texture.png</Source>
-      <Name>Textures\texture</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Textures\texture.xnb</Output>
-      <Time>2009-12-18T22:40:52+01:00</Time>
-    </Item>
-    <Item>
       <Source>Textures\wall_texture.jpg</Source>
       <Name>Textures\wall_texture</Name>
       <Importer>TextureImporter</Importer>
