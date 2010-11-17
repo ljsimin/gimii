@@ -2,8 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DNavigation_Squash", "WindowsGame1\2DNavigation_Squash.csproj", "{164D8638-A55B-48DB-828A-24318C19E933}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F} = {1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiiApi", "..\WiiApi\WiiApi\WiiApi.csproj", "{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiiApi", "..\gimii\trunk\WiiApi\WiiApi\WiiApi.csproj", "{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

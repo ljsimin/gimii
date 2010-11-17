@@ -51,7 +51,7 @@ namespace WindowsGame1
         int zastitaOdVisestrukogUnosa = 0;//prilikom odabiranja stanja pomocu Wii kontrolera
 
         BasicEffect sobaEfekti;
-        Cube soba = new Cube(new Vector3(6, 7, 8), new Vector3(0, 0, 0));        
+        BasicShape soba = new BasicShape(new Vector3(6, 7, 8), new Vector3(0, 0, 0));        
 
         GameObject reket = new GameObject();
         GameObject lopta = new GameObject();

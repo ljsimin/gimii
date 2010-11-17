@@ -6,3 +6,4 @@ I:\VR\VR_2D_Navigacija\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReferen
 E:\Fax\VR\VR_2D_Navigacija\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Fax\VR\VR_2D_Navigacija\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\obj\x86\Debug\ResolveAssemblyReference.cache

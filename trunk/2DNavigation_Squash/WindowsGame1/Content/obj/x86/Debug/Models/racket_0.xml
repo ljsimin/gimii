@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>Model</Name>
     <Identity>
-      <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+      <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -1217,7 +1217,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>M_0020_Red</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -1231,7 +1231,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>FrontColor</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -1245,7 +1245,7 @@
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Name>M_0136_Charcoal</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -1259,7 +1259,7 @@
     <Resource ID="#Resource4" Type="Graphics:BasicMaterialContent">
       <Name>M_0020_Red</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -1273,7 +1273,7 @@
     <Resource ID="#Resource5" Type="Graphics:BasicMaterialContent">
       <Name>M_0010_Snow</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -1287,7 +1287,7 @@
     <Resource ID="#Resource6" Type="Graphics:BasicMaterialContent">
       <Name>Translucent_Glass_Tinted</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\racket.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
