@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb</Output>
-      <Time>2009-12-18T19:23:40+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Textures\GameThumbnail.xnb</Output>
+      <Time>2010-11-17T16:38:45.9864063+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\wall_texture.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Textures\wall_texture.xnb</Output>
-      <Time>2009-12-20T17:16:24+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Textures\wall_texture.xnb</Output>
+      <Time>2010-11-17T16:38:45.9932422+01:00</Time>
     </Item>
     <Item>
       <Source>Models\ball.fbx</Source>
@@ -25,11 +25,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb</Output>
-      <Time>2009-12-19T01:58:44+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\ball.xnb</Output>
+      <Time>2010-11-17T16:38:44.739336+01:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\ball_0.xml</Key>
-        <Value>2010-02-01T17:41:50.7210782+01:00</Value>
+        <Value>2010-11-17T16:40:25.9795703+01:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -38,13 +38,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb</Output>
-      <Time>2009-12-21T23:46:56+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\racket.xnb</Output>
+      <Time>2010-11-17T16:38:44.7354297+01:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\racket_0.xml</Key>
-        <Value>2010-02-01T17:41:54.1429532+01:00</Value>
+        <Value>2010-11-17T16:40:29.4805469+01:00</Value>
       </Dependency>
-      <Request>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb</Request>
+      <Request>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb</Request>
     </Item>
     <Item>
       <Source>Audio\RacketBall.wav</Source>
@@ -52,8 +52,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Audio\RacketBall.xnb</Output>
-      <Time>2009-12-20T18:55:14+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Audio\RacketBall.xnb</Output>
+      <Time>2010-11-17T16:38:32.8877735+01:00</Time>
     </Item>
     <Item>
       <Source>Audio\WallBall.wav</Source>
@@ -61,8 +61,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Audio\WallBall.xnb</Output>
-      <Time>2009-12-20T19:16:12+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Audio\WallBall.xnb</Output>
+      <Time>2010-11-17T16:38:32.8965625+01:00</Time>
     </Item>
     <Item>
       <Source>Text\font.spritefont</Source>
@@ -70,8 +70,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Text\font.xnb</Output>
-      <Time>2009-12-21T17:02:42+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Text\font.xnb</Output>
+      <Time>2010-11-17T16:38:46.0635547+01:00</Time>
     </Item>
     <Item>
       <Source>Text\font2.spritefont</Source>
@@ -79,22 +79,22 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Text\font2.xnb</Output>
-      <Time>2009-12-21T17:34:30+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Text\font2.xnb</Output>
+      <Time>2010-11-17T16:38:46.0655078+01:00</Time>
     </Item>
     <Item>
       <Source>Models\ball.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\ball_0.xml</Output>
-      <Time>2009-12-19T01:58:44+01:00</Time>
+      <Time>2010-11-17T16:38:44.739336+01:00</Time>
     </Item>
     <Item>
       <Source>Models\racket.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\racket_0.xml</Output>
-      <Time>2009-12-21T23:46:56+01:00</Time>
+      <Time>2010-11-17T16:38:44.7354297+01:00</Time>
     </Item>
     <Item>
       <Source>Models\racket\Translucent_Glass_Tinted.jpg</Source>
@@ -108,18 +108,18 @@
         <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb</Output>
-      <Time>2009-12-21T23:46:38+01:00</Time>
+      <Output>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\Models\racket\Translucent_Glass_Tinted_0.xnb</Output>
+      <Time>2010-11-17T16:38:44.7217578+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\</RootDirectory>
-      <LoggerRootDirectory>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\</RootDirectory>
+      <LoggerRootDirectory>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -128,7 +128,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WiiApi\WiiApi\WiiApi.csproj">
+    <ProjectReference Include="..\..\gimii\trunk\WiiApi\WiiApi\WiiApi.csproj">
       <Project>{1046FB11-E062-4BB5-BCB9-E2C0791B3A8F}</Project>
       <Name>WiiApi</Name>
     </ProjectReference>

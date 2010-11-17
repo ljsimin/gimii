@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>Model</Name>
     <Identity>
-      <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
+      <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -60,7 +60,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Color_F09</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -74,7 +74,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>Color_002</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -88,7 +88,7 @@
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Name>FrontColor</Name>
       <Identity>
-        <SourceFilename>E:\Fax\VR\gimii\trunk\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
+        <SourceFilename>E:\Fax\VR\2DNavigation_Squash\WindowsGame1\Content\Models\ball.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
